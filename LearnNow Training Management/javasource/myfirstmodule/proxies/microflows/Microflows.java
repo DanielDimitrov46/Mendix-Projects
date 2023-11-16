@@ -26,6 +26,12 @@ public class Microflows
 		params.put("Course", _course == null ? null : _course.getMendixObject());
 		Core.microflowCall("MyFirstModule.ACT_Course_ScheduleTrainingEvent").withParams(params).execute(context);
 	}
+	public static void aCT_Registration_Save(IContext context, myfirstmodule.proxies.Registration _registration)
+	{
+		Map<java.lang.String, Object> params = new HashMap<>();
+		params.put("Registration", _registration == null ? null : _registration.getMendixObject());
+		Core.microflowCall("MyFirstModule.ACT_Registration_Save").withParams(params).execute(context);
+	}
 	public static void oCH_TrainingEvent_CalculateEndDate(IContext context, myfirstmodule.proxies.TrainingEvent _trainingEvent)
 	{
 		Map<java.lang.String, Object> params = new HashMap<>();

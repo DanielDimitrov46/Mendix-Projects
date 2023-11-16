@@ -22,6 +22,7 @@ public class TrainingEvent
 	{
 		StartDate("StartDate"),
 		EndDate("EndDate"),
+		TotalNumberOfRegistrations("TotalNumberOfRegistrations"),
 		TrainingEvent_Course("MyFirstModule.TrainingEvent_Course"),
 		TrainingEvent_Location("MyFirstModule.TrainingEvent_Location"),
 		TrainingEvent_Teacher("MyFirstModule.TrainingEvent_Teacher");
@@ -197,6 +198,42 @@ public class TrainingEvent
 	public final void setEndDate(com.mendix.systemwideinterfaces.core.IContext context, java.util.Date enddate)
 	{
 		getMendixObject().setValue(context, MemberNames.EndDate.toString(), enddate);
+	}
+
+	/**
+	 * @return value of TotalNumberOfRegistrations
+	 */
+	public final java.lang.Integer getTotalNumberOfRegistrations()
+	{
+		return getTotalNumberOfRegistrations(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of TotalNumberOfRegistrations
+	 */
+	public final java.lang.Integer getTotalNumberOfRegistrations(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.Integer) getMendixObject().getValue(context, MemberNames.TotalNumberOfRegistrations.toString());
+	}
+
+	/**
+	 * Set value of TotalNumberOfRegistrations
+	 * @param totalnumberofregistrations
+	 */
+	public final void setTotalNumberOfRegistrations(java.lang.Integer totalnumberofregistrations)
+	{
+		setTotalNumberOfRegistrations(getContext(), totalnumberofregistrations);
+	}
+
+	/**
+	 * Set value of TotalNumberOfRegistrations
+	 * @param context
+	 * @param totalnumberofregistrations
+	 */
+	public final void setTotalNumberOfRegistrations(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Integer totalnumberofregistrations)
+	{
+		getMendixObject().setValue(context, MemberNames.TotalNumberOfRegistrations.toString(), totalnumberofregistrations);
 	}
 
 	/**
