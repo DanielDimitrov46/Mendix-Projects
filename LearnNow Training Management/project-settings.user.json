@@ -10,7 +10,21 @@
     {
       "suppressions": [],
       "disabledBestPractices": [],
-      "readRecommendations": [],
+      "readRecommendations": [
+        {
+          "code": "MXP006",
+          "locationObjects": [
+            {
+              "uuid": "9e694e5e-0272-43e0-9d58-17d80c3cb9c5",
+              "fullPath": "MyFirstModule.ACT_Course_ScheduleTrainingEvent"
+            },
+            {
+              "uuid": "43a49447-2b6d-4c87-8a9b-2697a7fb86ba",
+              "fullPath": "actionButton2 (ActionButton) < c68ac30f-02d6-43f2-b8c2-5ac3ced73aba (LayoutGridColumn) < 3f800e7b-a70d-4ddd-8ff0-4c8199701ff9 (LayoutGridRow) < layoutGrid1 (LayoutGrid) < listView3 (ListView) < container2 (DivContainer) < 1ad18e85-f762-45a3-a48f-25810b4fea11 (LayoutGridColumn) < 4dae554c-4ee0-4c9a-9e3a-619e97aae81d (LayoutGridRow) < layoutGrid2 (LayoutGrid) < 7a2ae84b-596a-4629-86d0-afa9b9c8b733 (LayoutCallArgument) < 5bd15440-edab-465c-afd5-9a1e54c678a0 (LayoutCall) < MyFirstModule.Course_Overview"
+            }
+          ]
+        }
+      ],
       "suppressedRecommendations": [],
       "hasShownRecommendationsNotificationForThisApp": true,
       "type": "Mendix.Modeler.MxAssist.PerformanceBot.Serialization.Configuration.PerformanceBotConfiguration, Mendix.Modeler.MxAssist.PerformanceBot.Serialization, Version=9.24.4.0, Culture=neutral, PublicKeyToken=null"
