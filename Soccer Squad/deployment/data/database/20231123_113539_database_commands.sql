@@ -1,0 +1,17 @@
+ALTER TABLE "soccersquad$match_team_2" DROP CONSTRAINT "uniq_soccersquad$match_team_2_soccersquad$matchid";
+DROP INDEX "idx_soccersquad$match_team_2_soccersquad$team_soccersquad$match";
+ALTER TABLE "soccersquad$match_team" DROP CONSTRAINT "uniq_soccersquad$match_team_soccersquad$matchid";
+DROP INDEX "idx_soccersquad$match_team_soccersquad$team_soccersquad$match";
+ALTER TABLE "soccersquad$match_team_2" RENAME TO "soccersquad$match_teamhome";
+ALTER TABLE "soccersquad$match_team" RENAME TO "soccersquad$match_teamaway";
+CREATE INDEX "idx_soccersquad$match_teamhome_soccersquad$team_soccersquad$match" ON "soccersquad$match_teamhome" ("soccersquad$teamid" ASC,"soccersquad$matchid" ASC);
+ALTER TABLE "soccersquad$match_teamhome" ADD CONSTRAINT "uniq_soccersquad$match_teamhome_soccersquad$matchid" UNIQUE ("soccersquad$matchid");
+DELETE FROM "mendixsystem$unique_constraint"  WHERE "name" = 'uniq_soccersquad$match_team_2_soccersquad$matchid' AND "column_id" = '32ff1c4a-7d9a-37e4-9c47-7dca8b0aabdd';
+INSERT INTO "mendixsystem$unique_constraint" ("name", "table_id", "column_id") VALUES ('uniq_soccersquad$match_teamhome_soccersquad$matchid', '6016d654-0b1a-4316-bcdd-e94202863900', '32ff1c4a-7d9a-37e4-9c47-7dca8b0aabdd');
+UPDATE "mendixsystem$association" SET "association_name" = 'SoccerSquad.Match_TeamHome', "table_name" = 'soccersquad$match_teamhome', "parent_entity_id" = '03810218-f04f-41b6-b536-dbd6badc383f', "child_entity_id" = '50055db6-a363-4df0-ac19-d55c25ffe2d7', "parent_column_name" = 'soccersquad$matchid', "child_column_name" = 'soccersquad$teamid', "pk_index_name" = NULL, "index_name" = 'idx_soccersquad$match_teamhome_soccersquad$team_soccersquad$match' WHERE "id" = '6016d654-0b1a-4316-bcdd-e94202863900';
+CREATE INDEX "idx_soccersquad$match_teamaway_soccersquad$team_soccersquad$match" ON "soccersquad$match_teamaway" ("soccersquad$teamid" ASC,"soccersquad$matchid" ASC);
+ALTER TABLE "soccersquad$match_teamaway" ADD CONSTRAINT "uniq_soccersquad$match_teamaway_soccersquad$matchid" UNIQUE ("soccersquad$matchid");
+DELETE FROM "mendixsystem$unique_constraint"  WHERE "name" = 'uniq_soccersquad$match_team_soccersquad$matchid' AND "column_id" = 'c10503cf-35e9-39f2-9f29-d998ba63feba';
+INSERT INTO "mendixsystem$unique_constraint" ("name", "table_id", "column_id") VALUES ('uniq_soccersquad$match_teamaway_soccersquad$matchid', '6d693d7a-92bc-40e1-9545-35065e661e68', 'c10503cf-35e9-39f2-9f29-d998ba63feba');
+UPDATE "mendixsystem$association" SET "association_name" = 'SoccerSquad.Match_TeamAway', "table_name" = 'soccersquad$match_teamaway', "parent_entity_id" = '03810218-f04f-41b6-b536-dbd6badc383f', "child_entity_id" = '50055db6-a363-4df0-ac19-d55c25ffe2d7', "parent_column_name" = 'soccersquad$matchid', "child_column_name" = 'soccersquad$teamid', "pk_index_name" = NULL, "index_name" = 'idx_soccersquad$match_teamaway_soccersquad$team_soccersquad$match' WHERE "id" = '6d693d7a-92bc-40e1-9545-35065e661e68';
+UPDATE "mendixsystem$version" SET "versionnumber" = '4.2', "lastsyncdate" = '20231123 11:35:39';

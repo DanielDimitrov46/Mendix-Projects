@@ -1,0 +1,9 @@
+Buildfile: D:\UKTC PROGRAMMING\ExamDemo _Daniel\deployment\build_core.xml
+
+clean:
+   [delete] Deleting directory D:\UKTC PROGRAMMING\ExamDemo _Daniel\deployment\model
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+
+
