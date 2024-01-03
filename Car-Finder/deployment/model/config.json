@@ -1,0 +1,30 @@
+{
+  "Configuration": {
+    "DatabaseName": "daniel",
+    "DatabasePassword": "",
+    "DatabaseType": "HSQLDB",
+    "DatabaseHost": "",
+    "DatabaseUserName": "",
+    "DatabaseUseIntegratedSecurity": "False",
+    "ApplicationRootUrl": "http://localhost:8080/",
+    "ScheduledEventExecution": "Specified",
+    "MyScheduledEvents": "DeepLink.CleanUp"
+  },
+  "Constants": {
+    "DeepLink.EnableLeadingSlash": "True",
+    "DeepLink.IndexPage": "index.html",
+    "DeepLink.RequestHandlerName": "link",
+    "DeepLink.LoginLocation": "",
+    "DeepLink.SSOHandlerLocation": "",
+    "Email_Connector.EmailLogRetention": "30",
+    "Email_Connector.azure_defaultConfig": "{\"authorization_endpoint\":\"https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize\",\"token_endpoint\":\"https://login.microsoftonline.com/organizations/oauth2/v2.0/token\",\"scopes_supported\":[\"openid\",\"profile\",\"email\",\"offline_access\",\"https://outlook.office.com/IMAP.AccessAsUser.All\",\"https://outlook.office.com/POP.AccessAsUser.All\",\"https://outlook.office.com/SMTP.Send\"]}",
+    "Email_Connector.LogNode": "Email_Connector",
+    "Email_Connector.Email_Connector_Version": "5.5.0",
+    "Encryption.EncryptionPrefix": "{AES3}",
+    "Encryption.LogNode": "Encryption",
+    "Encryption.LegacyEncryptionKey": "",
+    "Encryption.EncryptionKey": "12345678912345678912345678912345",
+    "NanoflowCommons.Nanoflow_Commons_Version": "4.0.0"
+  },
+  "AdminPassword": "1"
+}

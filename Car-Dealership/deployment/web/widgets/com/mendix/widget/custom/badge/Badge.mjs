@@ -1,0 +1,6 @@
+import{createElement as e,useCallback as n}from"react";var t;!function(e){e.Number="number",e.DateTime="datetime"}(t||(t={}));var a,o={exports:{}};
+/*!
+  Copyright (c) 2017 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/a=o,function(){var e={}.hasOwnProperty;function n(){for(var t=[],a=0;a<arguments.length;a++){var o=arguments[a];if(o){var l=typeof o;if("string"===l||"number"===l)t.push(o);else if(Array.isArray(o)&&o.length){var r=n.apply(null,o);r&&t.push(r)}else if("object"===l)for(var i in o)e.call(o,i)&&o[i]&&t.push(i)}}return t.join(" ")}a.exports?(n.default=n,a.exports=n):window.classNames=n}();var l=o.exports;const r=n=>{const{type:t,className:a,style:o,value:r,onClick:i,onKeyDown:s,tabIndex:c}=n;return e("span",{role:i||s?"button":void 0,className:l("widget-badge",t,a,{"widget-badge-clickable":i}),onClick:i,onKeyDown:s,style:o,tabIndex:c},r)};function i(t){var a,o,l;const i=n((()=>{var e;(e=t.onClick)&&e.canExecute&&!e.isExecuting&&e.execute()}),[t.onClick]),s=n((e=>{"Enter"!==e.key&&" "!==e.key||i()}),[i]),c=t.onClick&&t.onClick.canExecute;return e(r,{type:t.type,value:null!==(o=null===(a=t.value)||void 0===a?void 0:a.value)&&void 0!==o?o:"",onClick:c?i:void 0,onKeyDown:c?s:void 0,className:t.class,style:t.style,tabIndex:c?null!==(l=t.tabIndex)&&void 0!==l?l:0:void 0})}export{i as default};

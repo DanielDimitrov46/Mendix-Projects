@@ -1,0 +1,160 @@
+{
+  "DataBrokerConfiguration": {
+    "publishedServices": []
+  },
+  "RuntimeVersion": "10.0.0.9976",
+  "ProjectID": "b7aab931-1bd2-42b0-a3a1-d3220c4115df",
+  "ProjectName": "Car-Finder",
+  "ModelVersion": "unversioned",
+  "Description": "",
+  "AdminUser": "MxAdmin",
+  "Roles": {
+    "8dd52bfa-6d7e-453b-b506-303c0a3d9567": {
+      "Name": "Administrator",
+      "ManageableRoles": [
+        "8dd52bfa-6d7e-453b-b506-303c0a3d9567",
+        "53f5d6fa-6da9-4a71-b011-454ec052cce8",
+        "55b61808-56ad-4b4b-80f4-f81a5fbbe08d"
+      ]
+    },
+    "53f5d6fa-6da9-4a71-b011-454ec052cce8": {
+      "Name": "User"
+    },
+    "55b61808-56ad-4b4b-80f4-f81a5fbbe08d": {
+      "Name": "Guest"
+    }
+  },
+  "AdminRole": "8dd52bfa-6d7e-453b-b506-303c0a3d9567",
+  "Constants": [
+    {
+      "Name": "DeepLink.EnableLeadingSlash",
+      "Type": "Boolean",
+      "Description": "Adds a leading '/' to the continuation parameter value.\r\nMxSSO requires this constant to be set to 'false'.",
+      "DefaultValue": "True"
+    },
+    {
+      "Name": "DeepLink.IndexPage",
+      "Type": "String",
+      "Description": "The index page that a user will be redirected to when the deeplink request handler finishes. This pages should start the client system, which will trigger the user's home microflow, which will execute the pending link that the handler prepared. You can (for example) modify this to have deeplinks use a different styling from the rest of the system by loading a different index page.\r\nDefault: index.html",
+      "DefaultValue": "index.html"
+    },
+    {
+      "Name": "DeepLink.LoginLocation",
+      "Type": "String",
+      "Description": "If login is required, this constant defines where to use can enter his credentials. If empty, the default location in the theme folder is used: login.html\r\n\r\nThe original deeplink location will be appended to the login location when the login location ends with a '='.\r\n\r\nFor example, in case of Mendix SSO:\r\n'https://login.mendix.com/openid/login?continuation='\r\n\r\nDefault: empty",
+      "DefaultValue": ""
+    },
+    {
+      "Name": "DeepLink.RequestHandlerName",
+      "Type": "String",
+      "Description": "E.g RequesthandlerName 'link' will result in https://yourdomain.com/link/\r\n",
+      "DefaultValue": "link"
+    },
+    {
+      "Name": "DeepLink.SSOHandlerLocation",
+      "Type": "String",
+      "Description": "When a deeplink configuration allows anonymous users the SSO Handler will be requested before redirecting the user to its destination.\r\nHowever, the SSO Handler will only be requested when the user session is an anonymous user session.\r\nUseful in situations when SSO handler does not prompt users for authentication, allowing anonymous users.\r\n\r\nThe orginial deeplink location will be appended to the login location when the login location ends with a '='.\r\n\r\nExample, in case of MendixSSO: '/openid/login?continuation='",
+      "DefaultValue": ""
+    },
+    {
+      "Name": "Email_Connector.azure_defaultConfig",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "{\"authorization_endpoint\":\"https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize\",\"token_endpoint\":\"https://login.microsoftonline.com/organizations/oauth2/v2.0/token\",\"scopes_supported\":[\"openid\",\"profile\",\"email\",\"offline_access\",\"https://outlook.office.com/IMAP.AccessAsUser.All\",\"https://outlook.office.com/POP.AccessAsUser.All\",\"https://outlook.office.com/SMTP.Send\"]}"
+    },
+    {
+      "Name": "Email_Connector.Email_Connector_Version",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "5.5.0"
+    },
+    {
+      "Name": "Email_Connector.EmailLogRetention",
+      "Type": "Integer",
+      "Description": "The amount of days to preserve error messages.",
+      "DefaultValue": "30"
+    },
+    {
+      "Name": "Email_Connector.LogNode",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "Email_Connector"
+    },
+    {
+      "Name": "Encryption.EncryptionKey",
+      "Type": "String",
+      "Description": "This key will be used to encrypt and decrypt values.\r\nThe length of this key must be 32 characters.",
+      "DefaultValue": ""
+    },
+    {
+      "Name": "Encryption.EncryptionPrefix",
+      "Type": "String",
+      "Description": "Prefix for stored encrypted values.\r\nThis value is used to determine whether the value has been already encrypted.\r\nThe prefix must be either {AES}, {AES2} or {AES3}.\r\nEncryption is only supported if the prefix is {AES3}.\r\nIt is not recommended to change this value.",
+      "DefaultValue": "{AES3}"
+    },
+    {
+      "Name": "Encryption.LegacyEncryptionKey",
+      "Type": "String",
+      "Description": "This key will be used to decrypt values that are encrypted with legacy algorithms.\r\nThe length of this key must be 16 characters.",
+      "DefaultValue": ""
+    },
+    {
+      "Name": "Encryption.LogNode",
+      "Type": "String",
+      "Description": "Node which appears in log messages for this module.",
+      "DefaultValue": "Encryption"
+    },
+    {
+      "Name": "NanoflowCommons.Nanoflow_Commons_Version",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "4.0.0"
+    }
+  ],
+  "ScheduledEvents": [
+    {
+      "Name": "DeepLink.CleanUp",
+      "Description": "This event cleans up pending deeplinks that are older than the start of the previous day, that were never executed. This prevent stale links from piling up in your database."
+    }
+  ],
+  "Languages": [
+    "en_US"
+  ],
+  "Configuration": {
+    "SourceDatabaseType": "HSQLDB",
+    "SourceDatabaseName": "daniel",
+    "SourceBuiltInDatabasePath": "model/sampledata/data/database"
+  },
+  "RequestHandlers": [
+    {
+      "Name": "/api/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/link/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/api-doc/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/mxecoh/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/rest-doc/",
+      "DefaultEnabled": false,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/p/",
+      "DefaultEnabled": false,
+      "MatchExactly": false
+    }
+  ]
+}

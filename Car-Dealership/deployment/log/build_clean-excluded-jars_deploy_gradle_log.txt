@@ -1,0 +1,76 @@
+Initialized native services in: C:\Users\danid\.gradle\native
+Initialized jansi services in: C:\Users\danid\.gradle\native
+Received JVM installation metadata from 'C:\Program Files\Eclipse Adoptium\jdk-11.0.20.8-hotspot': {JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-11.0.20.8-hotspot, JAVA_VERSION=11.0.20, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=11.0.20+8, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=11.0.20+8, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
+The client will now receive all logging from the daemon (pid: 22712). The daemon log file: C:\Users\danid\.gradle\daemon\7.6\daemon-22712.out.log
+Starting 11th build in daemon [uptime: 8 mins 2.25 secs, performance: 99%, non-heap usage: 25% of 256 MiB]
+Using 16 worker leases.
+Now considering [D:\UKTC PROGRAMMING\Mendix-Projects\Car-Dealership\deployment, D:\UKTC PROGRAMMING\Mendix-Projects\Car-Finder\deployment] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file 'D:\UKTC PROGRAMMING\Mendix-Projects\Car-Dealership\deployment\settings.gradle'.
+Projects loaded. Root project using build file 'D:\UKTC PROGRAMMING\Mendix-Projects\Car-Dealership\deployment\build.gradle'.
+Included projects: [root project 'deployment']
+
+> Configure project :
+Evaluating root project 'deployment' using build file 'D:\UKTC PROGRAMMING\Mendix-Projects\Car-Dealership\deployment\build.gradle'.
+All projects evaluated.
+Task name matched 'clean-excluded-jars'
+Task name matched 'deploy'
+Selected primary task 'clean-excluded-jars' from project :
+Selected primary task 'deploy' from project :
+Tasks to be executed: [task ':clean-excluded-jars', task ':copyDeploymentArtifacts', task ':copyLibs', task ':copyResources', task ':unzipDataSnapshot', task ':deploy']
+Tasks that were excluded: []
+Resolve mutations for :clean-excluded-jars (Thread[Execution worker,5,main]) started.
+:clean-excluded-jars (Thread[Execution worker Thread 10,5,main]) started.
+destroyer locations for task group 0 (Thread[Execution worker Thread 11,5,main]) started.
+
+> Task :clean-excluded-jars UP-TO-DATE
+Caching disabled for task ':clean-excluded-jars' because:
+  Build cache is disabled
+Task ':clean-excluded-jars' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Resolve mutations for :copyDeploymentArtifacts (Thread[Execution worker Thread 10,5,main]) started.
+:copyDeploymentArtifacts (Thread[Execution worker Thread 10,5,main]) started.
+
+> Task :copyDeploymentArtifacts
+Caching disabled for task ':copyDeploymentArtifacts' because:
+  Build cache is disabled
+Task ':copyDeploymentArtifacts' is not up-to-date because:
+  Task state is not tracked.
+Resolve mutations for :copyLibs (Thread[Execution worker Thread 10,5,main]) started.
+:copyLibs (Thread[Execution worker Thread 10,5,main]) started.
+
+> Task :copyLibs UP-TO-DATE
+Watching 2 directory hierarchies to track changes
+Caching disabled for task ':copyLibs' because:
+  Build cache is disabled
+Skipping task ':copyLibs' as it is up-to-date.
+Resolve mutations for :copyResources (Thread[Execution worker Thread 10,5,main]) started.
+:copyResources (Thread[Execution worker Thread 10,5,main]) started.
+
+> Task :copyResources NO-SOURCE
+Skipping task ':copyResources' as it has no source files and no previous output files.
+Resolve mutations for :unzipDataSnapshot (Thread[Execution worker Thread 10,5,main]) started.
+:unzipDataSnapshot (Thread[Execution worker Thread 10,5,main]) started.
+
+> Task :unzipDataSnapshot SKIPPED
+Skipping task ':unzipDataSnapshot' as task onlyIf 'Task is enabled' is false.
+Resolve mutations for :deploy (Thread[Execution worker Thread 10,5,main]) started.
+:deploy (Thread[Execution worker Thread 14,5,main]) started.
+
+> Task :deploy
+Skipping task ':deploy' as it has no actions.
+
+BUILD SUCCESSFUL in 1s
+3 actionable tasks: 1 executed, 2 up-to-date
+Watched directory hierarchies: [D:\UKTC PROGRAMMING\Mendix-Projects\Car-Dealership\deployment, D:\UKTC PROGRAMMING\Mendix-Projects\Car-Finder\deployment]
+VCS Checkout Cache (D:\UKTC PROGRAMMING\Mendix-Projects\Car-Dealership\deployment\.gradle\vcs-1) removing files not accessed on or after Sun Dec 24 19:10:21 EET 2023.
+VCS Checkout Cache (D:\UKTC PROGRAMMING\Mendix-Projects\Car-Dealership\deployment\.gradle\vcs-1) cleanup deleted 0 files/directories.
+VCS Checkout Cache (D:\UKTC PROGRAMMING\Mendix-Projects\Car-Dealership\deployment\.gradle\vcs-1) cleaned up in 0.002 secs.
+dependencies-accessors (D:\UKTC PROGRAMMING\Mendix-Projects\Car-Dealership\deployment\.gradle\7.6\dependencies-accessors) removing files not accessed on or after Sun Dec 24 19:10:21 EET 2023.
+dependencies-accessors (D:\UKTC PROGRAMMING\Mendix-Projects\Car-Dealership\deployment\.gradle\7.6\dependencies-accessors) cleanup deleted 0 files/directories.
+dependencies-accessors (D:\UKTC PROGRAMMING\Mendix-Projects\Car-Dealership\deployment\.gradle\7.6\dependencies-accessors) cleaned up in 0.0 secs.
+
+
+
