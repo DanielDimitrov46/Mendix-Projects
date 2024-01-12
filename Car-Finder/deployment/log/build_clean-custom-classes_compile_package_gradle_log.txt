@@ -1,8 +1,8 @@
 Initialized native services in: C:\Users\danid\.gradle\native
 Initialized jansi services in: C:\Users\danid\.gradle\native
 Received JVM installation metadata from 'C:\Program Files\Eclipse Adoptium\jdk-11.0.20.8-hotspot': {JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-11.0.20.8-hotspot, JAVA_VERSION=11.0.20, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=11.0.20+8, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=11.0.20+8, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
-The client will now receive all logging from the daemon (pid: 14124). The daemon log file: C:\Users\danid\.gradle\daemon\7.6\daemon-14124.out.log
-Starting 4th build in daemon [uptime: 17 mins 30.785 secs, performance: 100%, non-heap usage: 19% of 256 MiB]
+The client will now receive all logging from the daemon (pid: 6424). The daemon log file: C:\Users\danid\.gradle\daemon\7.6\daemon-6424.out.log
+Starting 5th build in daemon [uptime: 1 hrs 36 mins 6.155 secs, performance: 100%, non-heap usage: 18% of 256 MiB]
 Using 16 worker leases.
 Now considering [D:\UKTC PROGRAMMING\Mendix-Projects\Car-Finder\deployment] as hierarchies to watch
 Watching the file system is configured to be enabled if available
@@ -25,7 +25,7 @@ Selected primary task 'package' from project :
 Tasks to be executed: [task ':clean-custom-classes', task ':compile', task ':package']
 Tasks that were excluded: []
 Resolve mutations for :clean-custom-classes (Thread[Execution worker,5,main]) started.
-:clean-custom-classes (Thread[Execution worker Thread 10,5,main]) started.
+:clean-custom-classes (Thread[Execution worker Thread 12,5,main]) started.
 destroyer locations for task group 0 (Thread[Execution worker Thread 3,5,main]) started.
 destroyer locations for task group 1 (Thread[Execution worker Thread 3,5,main]) started.
 
@@ -34,8 +34,8 @@ Caching disabled for task ':clean-custom-classes' because:
   Build cache is disabled
 Task ':clean-custom-classes' is not up-to-date because:
   Task has not declared any outputs despite executing actions.
-Resolve mutations for :compile (Thread[Execution worker Thread 10,5,main]) started.
-:compile (Thread[Execution worker Thread 10,5,main]) started.
+Resolve mutations for :compile (Thread[Execution worker Thread 3,5,main]) started.
+:compile (Thread[Execution worker Thread 3,5,main]) started.
 
 > Task :compile
 Caching disabled for task ':compile' because:
@@ -49,17 +49,17 @@ file or directory 'D:\UKTC PROGRAMMING\Mendix-Projects\Car-Finder\vendorlib', no
 Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
 Compiling with toolchain 'C:\Program Files\Eclipse Adoptium\jdk-11.0.20.8-hotspot'.
 Compiling with JDK Java compiler API.
-Class dependency analysis for incremental compilation took 0.808 secs.
-Created classpath snapshot for incremental compilation in 0.109 secs.
-Resolve mutations for :package (Thread[Execution worker Thread 15,5,main]) started.
-:package (Thread[Execution worker Thread 10,5,main]) started.
+Class dependency analysis for incremental compilation took 0.869 secs.
+Created classpath snapshot for incremental compilation in 0.11 secs.
+Resolve mutations for :package (Thread[Execution worker Thread 11,5,main]) started.
+:package (Thread[Execution worker Thread 11,5,main]) started.
 
 > Task :package UP-TO-DATE
 Caching disabled for task ':package' because:
   Build cache is disabled
 Skipping task ':package' as it is up-to-date.
 
-BUILD SUCCESSFUL in 8s
+BUILD SUCCESSFUL in 13s
 3 actionable tasks: 2 executed, 1 up-to-date
 Watched directory hierarchies: [D:\UKTC PROGRAMMING\Mendix-Projects\Car-Finder\deployment]
 

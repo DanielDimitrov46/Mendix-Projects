@@ -24,6 +24,7 @@ public class Car extends myfirstmodule.proxies.Vehicle
 		Horsepower("Horsepower"),
 		Mileage("Mileage"),
 		Price("Price"),
+		GalleryCar_Car("MyFirstModule.GalleryCar_Car"),
 		Ad_Vehicle("MyFirstModule.Ad_Vehicle");
 
 		private final java.lang.String metaName;
@@ -114,6 +115,53 @@ public class Car extends myfirstmodule.proxies.Vehicle
 	public final void setNumberOfDoors(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Integer numberofdoors)
 	{
 		getMendixObject().setValue(context, MemberNames.NumberOfDoors.toString(), numberofdoors);
+	}
+
+	/**
+	 * @throws com.mendix.core.CoreException
+	 * @return value of GalleryCar_Car
+	 */
+	public final myfirstmodule.proxies.GalleryCar getGalleryCar_Car() throws com.mendix.core.CoreException
+	{
+		return getGalleryCar_Car(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of GalleryCar_Car
+	 * @throws com.mendix.core.CoreException
+	 */
+	public final myfirstmodule.proxies.GalleryCar getGalleryCar_Car(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		myfirstmodule.proxies.GalleryCar result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.GalleryCar_Car.toString());
+		if (identifier != null) {
+			result = myfirstmodule.proxies.GalleryCar.load(context, identifier);
+		}
+		return result;
+	}
+
+	/**
+	 * Set value of GalleryCar_Car
+	 * @param gallerycar_car
+	 */
+	public final void setGalleryCar_Car(myfirstmodule.proxies.GalleryCar gallerycar_car)
+	{
+		setGalleryCar_Car(getContext(), gallerycar_car);
+	}
+
+	/**
+	 * Set value of GalleryCar_Car
+	 * @param context
+	 * @param gallerycar_car
+	 */
+	public final void setGalleryCar_Car(com.mendix.systemwideinterfaces.core.IContext context, myfirstmodule.proxies.GalleryCar gallerycar_car)
+	{
+		if (gallerycar_car == null) {
+			getMendixObject().setValue(context, MemberNames.GalleryCar_Car.toString(), null);
+		} else {
+			getMendixObject().setValue(context, MemberNames.GalleryCar_Car.toString(), gallerycar_car.getMendixObject().getId());
+		}
 	}
 
 	@java.lang.Override

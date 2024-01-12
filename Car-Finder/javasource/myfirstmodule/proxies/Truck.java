@@ -24,6 +24,7 @@ public class Truck extends myfirstmodule.proxies.Vehicle
 		Horsepower("Horsepower"),
 		Mileage("Mileage"),
 		Price("Price"),
+		GalleryTruck_Truck("MyFirstModule.GalleryTruck_Truck"),
 		Ad_Vehicle("MyFirstModule.Ad_Vehicle");
 
 		private final java.lang.String metaName;
@@ -114,6 +115,53 @@ public class Truck extends myfirstmodule.proxies.Vehicle
 	public final void setNumberOfAxis(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Integer numberofaxis)
 	{
 		getMendixObject().setValue(context, MemberNames.NumberOfAxis.toString(), numberofaxis);
+	}
+
+	/**
+	 * @throws com.mendix.core.CoreException
+	 * @return value of GalleryTruck_Truck
+	 */
+	public final myfirstmodule.proxies.GalleryTruck getGalleryTruck_Truck() throws com.mendix.core.CoreException
+	{
+		return getGalleryTruck_Truck(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of GalleryTruck_Truck
+	 * @throws com.mendix.core.CoreException
+	 */
+	public final myfirstmodule.proxies.GalleryTruck getGalleryTruck_Truck(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		myfirstmodule.proxies.GalleryTruck result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.GalleryTruck_Truck.toString());
+		if (identifier != null) {
+			result = myfirstmodule.proxies.GalleryTruck.load(context, identifier);
+		}
+		return result;
+	}
+
+	/**
+	 * Set value of GalleryTruck_Truck
+	 * @param gallerytruck_truck
+	 */
+	public final void setGalleryTruck_Truck(myfirstmodule.proxies.GalleryTruck gallerytruck_truck)
+	{
+		setGalleryTruck_Truck(getContext(), gallerytruck_truck);
+	}
+
+	/**
+	 * Set value of GalleryTruck_Truck
+	 * @param context
+	 * @param gallerytruck_truck
+	 */
+	public final void setGalleryTruck_Truck(com.mendix.systemwideinterfaces.core.IContext context, myfirstmodule.proxies.GalleryTruck gallerytruck_truck)
+	{
+		if (gallerytruck_truck == null) {
+			getMendixObject().setValue(context, MemberNames.GalleryTruck_Truck.toString(), null);
+		} else {
+			getMendixObject().setValue(context, MemberNames.GalleryTruck_Truck.toString(), gallerytruck_truck.getMendixObject().getId());
+		}
 	}
 
 	@java.lang.Override

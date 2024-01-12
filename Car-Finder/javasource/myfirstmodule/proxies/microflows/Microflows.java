@@ -16,24 +16,39 @@ public final class Microflows
 
 	// These are the microflows for the MyFirstModule module
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_New_VehicleBuilder(
-		myfirstmodule.proxies.Ad _ad,
-		myfirstmodule.proxies.Car _car
+		myfirstmodule.proxies.Ad _ad
 	)
 	{
 		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("MyFirstModule.ACT_New_Vehicle");
 		builder = builder.withParam("Ad", _ad);
-		builder = builder.withParam("Car", _car);
 		return builder;
 	}
 
 	public static void aCT_New_Vehicle(
 		IContext context,
-		myfirstmodule.proxies.Ad _ad,
-		myfirstmodule.proxies.Car _car
+		myfirstmodule.proxies.Ad _ad
 	)
 	{
 		aCT_New_VehicleBuilder(
-				_ad,
+				_ad
+			)
+			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder sUB_Car_CreareImageBuilder(
+		myfirstmodule.proxies.Car _car
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("MyFirstModule.SUB_Car_CreareImage");
+		builder = builder.withParam("Car", _car);
+		return builder;
+	}
+
+	public static void sUB_Car_CreareImage(
+		IContext context,
+		myfirstmodule.proxies.Car _car
+	)
+	{
+		sUB_Car_CreareImageBuilder(
 				_car
 			)
 			.execute(context);

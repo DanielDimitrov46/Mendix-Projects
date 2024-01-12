@@ -40,7 +40,7 @@ export default {
         mendixResolve(
             "C:/Program Files/Mendix/9.24.4.11007/modeler/tools/node/web-resolutions.json",
             "C:/Program Files/Mendix/9.24.4.11007/modeler/tools/node/node_modules",
-            "D:/UKTC PROGRAMMING/Mendix-Projetcs/Advance Domain Model/deployment/web/cachetag.txt"
+            "D:/UKTC PROGRAMMING/Mendix-Projects/Advance Domain Model/deployment/web/cachetag.txt"
         ),
         nodePolyfills(),
         esbuild({
@@ -86,11 +86,11 @@ export default {
             minify: isProduction
         }),
         generatePrecacheServiceWorker({
-            deploymentDir: "D:/UKTC PROGRAMMING/Mendix-Projetcs/Advance Domain Model/deployment"
+            deploymentDir: "D:/UKTC PROGRAMMING/Mendix-Projects/Advance Domain Model/deployment"
         }),
         copy({
             targets: [
-              { src: 'D:/UKTC PROGRAMMING/Mendix-Projetcs/Advance Domain Model/deployment/web/widgets/*', dest: 'dist' },
+              { src: 'D:/UKTC PROGRAMMING/Mendix-Projects/Advance Domain Model/deployment/web/widgets/*', dest: 'dist' },
             ]
         })
     ],

@@ -1,8 +1,8 @@
 {
   "watchFolders": [
-    "D:/UKTC PROGRAMMING/Mendix-Projetcs/Advance Domain Model/theme",
-    "D:/UKTC PROGRAMMING/Mendix-Projetcs/Advance Domain Model/javascriptsource",
-    "D:/UKTC PROGRAMMING/Mendix-Projetcs/Advance Domain Model/themesource",
+    "D:/UKTC PROGRAMMING/Mendix-Projects/Advance Domain Model/theme",
+    "D:/UKTC PROGRAMMING/Mendix-Projects/Advance Domain Model/javascriptsource",
+    "D:/UKTC PROGRAMMING/Mendix-Projects/Advance Domain Model/themesource",
     "C:/Program Files/Mendix/9.24.4.11007/modeler/tools/node/node_modules"
   ],
   "resolver": {
@@ -23,7 +23,7 @@
       "js_commonjs-module"
     ],
     "extraNodeModules": {
-      "externalWidgets": "D:/UKTC PROGRAMMING/Mendix-Projetcs/Advance Domain Model/deployment/native/externalWidgets",
+      "externalWidgets": "D:/UKTC PROGRAMMING/Mendix-Projects/Advance Domain Model/deployment/native/externalWidgets",
       "@babel/runtime": "C:/Program Files/Mendix/9.24.4.11007/modeler/tools/node/node_modules/@babel/runtime",
       "big.js": "C:/Program Files/Mendix/9.24.4.11007/modeler/tools/node/node_modules/big.js",
       "react": "C:/Program Files/Mendix/9.24.4.11007/modeler/tools/node/node_modules/react",

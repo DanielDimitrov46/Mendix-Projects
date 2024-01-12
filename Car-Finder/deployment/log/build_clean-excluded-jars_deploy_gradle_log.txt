@@ -1,8 +1,8 @@
 Initialized native services in: C:\Users\danid\.gradle\native
 Initialized jansi services in: C:\Users\danid\.gradle\native
 Received JVM installation metadata from 'C:\Program Files\Eclipse Adoptium\jdk-11.0.20.8-hotspot': {JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-11.0.20.8-hotspot, JAVA_VERSION=11.0.20, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=11.0.20+8, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=11.0.20+8, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
-The client will now receive all logging from the daemon (pid: 14124). The daemon log file: C:\Users\danid\.gradle\daemon\7.6\daemon-14124.out.log
-Starting 3rd build in daemon [uptime: 17 mins 20.356 secs, performance: 100%, non-heap usage: 19% of 256 MiB]
+The client will now receive all logging from the daemon (pid: 6424). The daemon log file: C:\Users\danid\.gradle\daemon\7.6\daemon-6424.out.log
+Starting 4th build in daemon [uptime: 1 hrs 35 mins 49.673 secs, performance: 100%, non-heap usage: 17% of 256 MiB]
 Using 16 worker leases.
 Now considering [D:\UKTC PROGRAMMING\Mendix-Projects\Car-Finder\deployment] as hierarchies to watch
 Watching the file system is configured to be enabled if available
@@ -23,7 +23,7 @@ Tasks to be executed: [task ':clean-excluded-jars', task ':copyDeploymentArtifac
 Tasks that were excluded: []
 Resolve mutations for :clean-excluded-jars (Thread[Execution worker,5,main]) started.
 :clean-excluded-jars (Thread[Execution worker,5,main]) started.
-destroyer locations for task group 0 (Thread[Execution worker Thread 3,5,main]) started.
+destroyer locations for task group 0 (Thread[included builds,5,main]) started.
 
 > Task :clean-excluded-jars UP-TO-DATE
 Caching disabled for task ':clean-excluded-jars' because:
@@ -38,8 +38,6 @@ Caching disabled for task ':copyDeploymentArtifacts' because:
   Build cache is disabled
 Task ':copyDeploymentArtifacts' is not up-to-date because:
   Task state is not tracked.
-Not watching anything anymore
-Watching 0 directory hierarchies to track changes
 Resolve mutations for :copyLibs (Thread[Execution worker,5,main]) started.
 :copyLibs (Thread[Execution worker,5,main]) started.
 
@@ -59,14 +57,20 @@ Resolve mutations for :unzipDataSnapshot (Thread[Execution worker,5,main]) start
 > Task :unzipDataSnapshot SKIPPED
 Skipping task ':unzipDataSnapshot' as task onlyIf 'Task is enabled' is false.
 Resolve mutations for :deploy (Thread[Execution worker,5,main]) started.
-:deploy (Thread[included builds,5,main]) started.
+:deploy (Thread[Execution worker Thread 14,5,main]) started.
 
 > Task :deploy
 Skipping task ':deploy' as it has no actions.
 
-BUILD SUCCESSFUL in 1s
+BUILD SUCCESSFUL in 3s
 3 actionable tasks: 1 executed, 2 up-to-date
 Watched directory hierarchies: [D:\UKTC PROGRAMMING\Mendix-Projects\Car-Finder\deployment]
+VCS Checkout Cache (D:\UKTC PROGRAMMING\Mendix-Projects\Car-Finder\deployment\.gradle\vcs-1) removing files not accessed on or after Thu Jan 04 15:15:11 EET 2024.
+VCS Checkout Cache (D:\UKTC PROGRAMMING\Mendix-Projects\Car-Finder\deployment\.gradle\vcs-1) cleanup deleted 0 files/directories.
+VCS Checkout Cache (D:\UKTC PROGRAMMING\Mendix-Projects\Car-Finder\deployment\.gradle\vcs-1) cleaned up in 0.002 secs.
+dependencies-accessors (D:\UKTC PROGRAMMING\Mendix-Projects\Car-Finder\deployment\.gradle\7.6\dependencies-accessors) removing files not accessed on or after Thu Jan 04 15:15:11 EET 2024.
+dependencies-accessors (D:\UKTC PROGRAMMING\Mendix-Projects\Car-Finder\deployment\.gradle\7.6\dependencies-accessors) cleanup deleted 0 files/directories.
+dependencies-accessors (D:\UKTC PROGRAMMING\Mendix-Projects\Car-Finder\deployment\.gradle\7.6\dependencies-accessors) cleaned up in 0.0 secs.
 
 
 

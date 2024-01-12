@@ -1,0 +1,62 @@
+{
+  "DataBrokerConfiguration": {
+    "publishedServices": []
+  },
+  "RuntimeVersion": "10.0.0.9976",
+  "ProjectID": "2e4a47f4-f1d7-4e6e-b372-576ce5565d2e",
+  "ProjectName": "Vacation Tracking",
+  "ModelVersion": "unversioned",
+  "Description": "",
+  "AdminUser": "MxAdmin",
+  "Roles": {
+    "8dd52bfa-6d7e-453b-b506-303c0a3d9567": {
+      "Name": "Administrator",
+      "ManageableRoles": [
+        "8dd52bfa-6d7e-453b-b506-303c0a3d9567",
+        "53f5d6fa-6da9-4a71-b011-454ec052cce8",
+        "18712093-f503-4911-9d81-9fe0456cd63a"
+      ]
+    },
+    "53f5d6fa-6da9-4a71-b011-454ec052cce8": {
+      "Name": "Employee"
+    },
+    "18712093-f503-4911-9d81-9fe0456cd63a": {
+      "Name": "Manager"
+    }
+  },
+  "AdminRole": "8dd52bfa-6d7e-453b-b506-303c0a3d9567",
+  "Constants": [
+    {
+      "Name": "NanoflowCommons.Nanoflow_Commons_Version",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "4.0.0"
+    }
+  ],
+  "ScheduledEvents": [],
+  "Languages": [
+    "en_US"
+  ],
+  "Configuration": {
+    "SourceDatabaseType": "HSQLDB",
+    "SourceDatabaseName": "default",
+    "SourceBuiltInDatabasePath": "model/sampledata/data/database"
+  },
+  "RequestHandlers": [
+    {
+      "Name": "/api/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/link/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/p/",
+      "DefaultEnabled": false,
+      "MatchExactly": false
+    }
+  ]
+}

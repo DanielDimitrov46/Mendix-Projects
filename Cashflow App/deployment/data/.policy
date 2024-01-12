@@ -4,15 +4,15 @@ grant {
   permission java.io.FilePermission "conf/dictionaries/en_US.dic", "read";
   permission java.io.FilePermission "java:fonts", "read";
   permission java.io.FilePermission "quartz.properties", "read";
-  permission java.io.FilePermission "C:/Program Files/Mendix/10.0.0.9976/-", "read";
-  permission java.io.FilePermission "D:/UKTC PROGRAMMING/Mendix-Projetcs/Cashflow App/deployment/-", "read";
-  permission java.io.FilePermission "D:/UKTC PROGRAMMING/Mendix-Projetcs/Cashflow App/deployment/data/files/-", "read";
-  permission java.io.FilePermission "D:/UKTC PROGRAMMING/Mendix-Projetcs/Cashflow App/deployment/data/tmp", "read";
-  permission java.io.FilePermission "D:/UKTC PROGRAMMING/Mendix-Projetcs/Cashflow App/deployment/data/tmp/-", "read,write,delete,execute";
-  permission java.io.FilePermission "D:/UKTC PROGRAMMING/Mendix-Projetcs/Cashflow App/deployment/model/-", "read";
-  permission java.io.FilePermission "D:/UKTC PROGRAMMING/Mendix-Projetcs/Cashflow App/deployment/model/lib/-",  "read";
-  permission java.io.FilePermission "D:/UKTC PROGRAMMING/Mendix-Projetcs/Cashflow App/deployment/model/resources/-",  "read";
-  permission java.io.FilePermission "D:/UKTC PROGRAMMING/Mendix-Projetcs/Cashflow App/deployment/web/-", "read";
+  permission java.io.FilePermission "D:/UKTC PROGRAMMING/10.0.0.9976/-", "read";
+  permission java.io.FilePermission "D:/UKTC PROGRAMMING/Mendix-Projects/Cashflow App/deployment/-", "read";
+  permission java.io.FilePermission "D:/UKTC PROGRAMMING/Mendix-Projects/Cashflow App/deployment/data/files/-", "read";
+  permission java.io.FilePermission "D:/UKTC PROGRAMMING/Mendix-Projects/Cashflow App/deployment/data/tmp", "read";
+  permission java.io.FilePermission "D:/UKTC PROGRAMMING/Mendix-Projects/Cashflow App/deployment/data/tmp/-", "read,write,delete,execute";
+  permission java.io.FilePermission "D:/UKTC PROGRAMMING/Mendix-Projects/Cashflow App/deployment/model/-", "read";
+  permission java.io.FilePermission "D:/UKTC PROGRAMMING/Mendix-Projects/Cashflow App/deployment/model/lib/-",  "read";
+  permission java.io.FilePermission "D:/UKTC PROGRAMMING/Mendix-Projects/Cashflow App/deployment/model/resources/-",  "read";
+  permission java.io.FilePermission "D:/UKTC PROGRAMMING/Mendix-Projects/Cashflow App/deployment/web/-", "read";
   permission java.lang.RuntimePermission "accessClassInPackage.com.sun.org.apache.xerces.internal.*", "";
   permission java.lang.RuntimePermission "accessClassInPackage.jdk.nashorn.internal.scripts", "";
   permission java.lang.RuntimePermission "accessClassInPackage.sun.misc", "";
@@ -186,7 +186,7 @@ grant {
   permission org.bouncycastle.jce.ProviderConfigurationPermission "BC", "ecImplicitlyCA, threadLocalEcImplicitlyCA";
 };
 
-grant codeBase "file:C:/Program Files/Mendix/10.0.0.9976/-" {
+grant codeBase "file:D:/UKTC PROGRAMMING/10.0.0.9976/-" {
   permission java.security.AllPermission;
 };
 
@@ -194,7 +194,7 @@ grant codeBase "file:${{java.ext.dirs}}/-" {
   permission java.security.AllPermission;
 };
 
-keystore "file:C:/Program Files/Mendix/10.0.0.9976/runtime/lib/keystore";
+keystore "file:D:/UKTC PROGRAMMING/10.0.0.9976/runtime/lib/keystore";
 
 grant SignedBy "mendix" {
   permission java.security.AllPermission;

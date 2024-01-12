@@ -24,6 +24,7 @@ public class Motorcycle extends myfirstmodule.proxies.Vehicle
 		Horsepower("Horsepower"),
 		Mileage("Mileage"),
 		Price("Price"),
+		GalleryMotorcycle_Motorcycle("MyFirstModule.GalleryMotorcycle_Motorcycle"),
 		Ad_Vehicle("MyFirstModule.Ad_Vehicle");
 
 		private final java.lang.String metaName;
@@ -122,6 +123,53 @@ public class Motorcycle extends myfirstmodule.proxies.Vehicle
 			getMendixObject().setValue(context, MemberNames.CoolingType.toString(), coolingtype.toString());
 		} else {
 			getMendixObject().setValue(context, MemberNames.CoolingType.toString(), null);
+		}
+	}
+
+	/**
+	 * @throws com.mendix.core.CoreException
+	 * @return value of GalleryMotorcycle_Motorcycle
+	 */
+	public final myfirstmodule.proxies.GalleryMotorcycle getGalleryMotorcycle_Motorcycle() throws com.mendix.core.CoreException
+	{
+		return getGalleryMotorcycle_Motorcycle(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of GalleryMotorcycle_Motorcycle
+	 * @throws com.mendix.core.CoreException
+	 */
+	public final myfirstmodule.proxies.GalleryMotorcycle getGalleryMotorcycle_Motorcycle(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		myfirstmodule.proxies.GalleryMotorcycle result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.GalleryMotorcycle_Motorcycle.toString());
+		if (identifier != null) {
+			result = myfirstmodule.proxies.GalleryMotorcycle.load(context, identifier);
+		}
+		return result;
+	}
+
+	/**
+	 * Set value of GalleryMotorcycle_Motorcycle
+	 * @param gallerymotorcycle_motorcycle
+	 */
+	public final void setGalleryMotorcycle_Motorcycle(myfirstmodule.proxies.GalleryMotorcycle gallerymotorcycle_motorcycle)
+	{
+		setGalleryMotorcycle_Motorcycle(getContext(), gallerymotorcycle_motorcycle);
+	}
+
+	/**
+	 * Set value of GalleryMotorcycle_Motorcycle
+	 * @param context
+	 * @param gallerymotorcycle_motorcycle
+	 */
+	public final void setGalleryMotorcycle_Motorcycle(com.mendix.systemwideinterfaces.core.IContext context, myfirstmodule.proxies.GalleryMotorcycle gallerymotorcycle_motorcycle)
+	{
+		if (gallerymotorcycle_motorcycle == null) {
+			getMendixObject().setValue(context, MemberNames.GalleryMotorcycle_Motorcycle.toString(), null);
+		} else {
+			getMendixObject().setValue(context, MemberNames.GalleryMotorcycle_Motorcycle.toString(), gallerymotorcycle_motorcycle.getMendixObject().getId());
 		}
 	}
 

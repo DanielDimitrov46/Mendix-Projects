@@ -1,10 +1,10 @@
-import * as style0 from "D:/UKTC PROGRAMMING/Mendix-Projetcs/Cashflow App/themesource/administration/native/main";
-import * as style1 from "D:/UKTC PROGRAMMING/Mendix-Projetcs/Cashflow App/themesource/nanoflowcommons/native/main";
-import * as style2 from "D:/UKTC PROGRAMMING/Mendix-Projetcs/Cashflow App/themesource/webactions/native/main";
-import * as style3 from "D:/UKTC PROGRAMMING/Mendix-Projetcs/Cashflow App/themesource/atlas_core/native/main";
-import * as style4 from "D:/UKTC PROGRAMMING/Mendix-Projetcs/Cashflow App/themesource/feedbackmodule/native/main";
-import * as style5 from "D:/UKTC PROGRAMMING/Mendix-Projetcs/Cashflow App/themesource/myfirstmodule/native/main";
-import * as style6 from "D:/UKTC PROGRAMMING/Mendix-Projetcs/Cashflow App/theme/native/main";
+import * as style0 from "D:/UKTC PROGRAMMING/Mendix-Projects/Cashflow App/themesource/administration/native/main";
+import * as style1 from "D:/UKTC PROGRAMMING/Mendix-Projects/Cashflow App/themesource/nanoflowcommons/native/main";
+import * as style2 from "D:/UKTC PROGRAMMING/Mendix-Projects/Cashflow App/themesource/webactions/native/main";
+import * as style3 from "D:/UKTC PROGRAMMING/Mendix-Projects/Cashflow App/themesource/atlas_core/native/main";
+import * as style4 from "D:/UKTC PROGRAMMING/Mendix-Projects/Cashflow App/themesource/feedbackmodule/native/main";
+import * as style5 from "D:/UKTC PROGRAMMING/Mendix-Projects/Cashflow App/themesource/myfirstmodule/native/main";
+import * as style6 from "D:/UKTC PROGRAMMING/Mendix-Projects/Cashflow App/theme/native/main";
 
 import { flatten } from "mendix/native";
 
