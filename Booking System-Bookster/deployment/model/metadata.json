@@ -1,0 +1,72 @@
+{
+  "DataBrokerConfiguration": {
+    "publishedServices": []
+  },
+  "RuntimeVersion": "10.0.0.9976",
+  "ProjectID": "02300e47-fa50-472b-9e88-72a9e3c28c6a",
+  "ProjectName": "Booking System-Bookster",
+  "ModelVersion": "unversioned",
+  "Description": "",
+  "AdminUser": "MxAdmin",
+  "Roles": {
+    "8dd52bfa-6d7e-453b-b506-303c0a3d9567": {
+      "Name": "Administrator",
+      "ManageableRoles": [
+        "8dd52bfa-6d7e-453b-b506-303c0a3d9567",
+        "53f5d6fa-6da9-4a71-b011-454ec052cce8",
+        "7218dff7-9909-470e-9a4a-70e67bbb47d0",
+        "57398e07-f347-4cda-a41a-43cc42fefbc2"
+      ]
+    },
+    "53f5d6fa-6da9-4a71-b011-454ec052cce8": {
+      "Name": "User"
+    },
+    "7218dff7-9909-470e-9a4a-70e67bbb47d0": {
+      "Name": "Manager"
+    },
+    "57398e07-f347-4cda-a41a-43cc42fefbc2": {
+      "Name": "Guest"
+    }
+  },
+  "AdminRole": "8dd52bfa-6d7e-453b-b506-303c0a3d9567",
+  "Constants": [
+    {
+      "Name": "CommunityCommons.MergeMultiplePdfs_MaxAtOnce",
+      "Type": "Integer",
+      "Description": "Restricted to 10 files at once for Mendix Cloud v4 compatibility. If you need to merge more than 10 files increase the number here. Setting the value to <=0 means unlimited.\r\n\r\nNote: We very strongly recommend to not increase the number for applications running in Mendix Cloud v4.",
+      "DefaultValue": "10"
+    },
+    {
+      "Name": "NanoflowCommons.Nanoflow_Commons_Version",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "4.0.0"
+    }
+  ],
+  "ScheduledEvents": [],
+  "Languages": [
+    "en_US"
+  ],
+  "Configuration": {
+    "SourceDatabaseType": "HSQLDB",
+    "SourceDatabaseName": "default",
+    "SourceBuiltInDatabasePath": "model/sampledata/data/database"
+  },
+  "RequestHandlers": [
+    {
+      "Name": "/api/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/link/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/p/",
+      "DefaultEnabled": false,
+      "MatchExactly": false
+    }
+  ]
+}

@@ -24,6 +24,7 @@ public class Request implements com.mendix.systemwideinterfaces.core.IEntityProx
 		Status("Status"),
 		Location("Location"),
 		TotalAmount("TotalAmount"),
+		RequestID("RequestID"),
 		Request_Project("Expenses.Request_Project");
 
 		private final java.lang.String metaName;
@@ -245,6 +246,42 @@ public class Request implements com.mendix.systemwideinterfaces.core.IEntityProx
 	public final void setTotalAmount(com.mendix.systemwideinterfaces.core.IContext context, java.math.BigDecimal totalamount)
 	{
 		getMendixObject().setValue(context, MemberNames.TotalAmount.toString(), totalamount);
+	}
+
+	/**
+	 * @return value of RequestID
+	 */
+	public final java.lang.Long getRequestID()
+	{
+		return getRequestID(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of RequestID
+	 */
+	public final java.lang.Long getRequestID(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.Long) getMendixObject().getValue(context, MemberNames.RequestID.toString());
+	}
+
+	/**
+	 * Set value of RequestID
+	 * @param requestid
+	 */
+	public final void setRequestID(java.lang.Long requestid)
+	{
+		setRequestID(getContext(), requestid);
+	}
+
+	/**
+	 * Set value of RequestID
+	 * @param context
+	 * @param requestid
+	 */
+	public final void setRequestID(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Long requestid)
+	{
+		getMendixObject().setValue(context, MemberNames.RequestID.toString(), requestid);
 	}
 
 	/**

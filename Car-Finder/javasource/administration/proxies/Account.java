@@ -68,9 +68,6 @@ public class Account extends system.proxies.User
 	 */
 	public static administration.proxies.Account initialize(com.mendix.systemwideinterfaces.core.IContext context, com.mendix.systemwideinterfaces.core.IMendixObject mendixObject)
 	{
-		if (com.mendix.core.Core.isSubClassOf("MyFirstModule.User", mendixObject.getType())) {
-			return myfirstmodule.proxies.User.initialize(context, mendixObject);
-		}
 		return new administration.proxies.Account(context, mendixObject);
 	}
 
@@ -80,7 +77,7 @@ public class Account extends system.proxies.User
 		return administration.proxies.Account.initialize(context, mendixObject);
 	}
 
-	public static java.util.List<? extends administration.proxies.Account> load(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String xpathConstraint) throws com.mendix.core.CoreException
+	public static java.util.List<administration.proxies.Account> load(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String xpathConstraint) throws com.mendix.core.CoreException
 	{
 		return com.mendix.core.Core.createXPathQuery(String.format("//%1$s%2$s", entityName, xpathConstraint))
 			.execute(context)

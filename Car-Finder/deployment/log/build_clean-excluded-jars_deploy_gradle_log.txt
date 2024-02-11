@@ -1,11 +1,17 @@
 Initialized native services in: C:\Users\danid\.gradle\native
 Initialized jansi services in: C:\Users\danid\.gradle\native
 Received JVM installation metadata from 'C:\Program Files\Eclipse Adoptium\jdk-11.0.20.8-hotspot': {JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-11.0.20.8-hotspot, JAVA_VERSION=11.0.20, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=11.0.20+8, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=11.0.20+8, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
-The client will now receive all logging from the daemon (pid: 6424). The daemon log file: C:\Users\danid\.gradle\daemon\7.6\daemon-6424.out.log
-Starting 4th build in daemon [uptime: 1 hrs 35 mins 49.673 secs, performance: 100%, non-heap usage: 17% of 256 MiB]
+Removing 0 daemon stop events from registry
+Starting a Gradle Daemon (subsequent builds will be faster)
+Starting process 'Gradle build daemon'. Working directory: C:\Users\danid\.gradle\daemon\7.6 Command: C:\Program Files\Eclipse Adoptium\jdk-11.0.20.8-hotspot\bin\java.exe --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED -XX:MaxMetaspaceSize=256m -XX:+HeapDumpOnOutOfMemoryError -Xms256m -Xmx512m -Dfile.encoding=windows-1251 -Duser.country=US -Duser.language=en -Duser.variant -cp C:\Program Files\Mendix\gradle-7.6\lib\gradle-launcher-7.6.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 7.6
+Successfully started process 'Gradle build daemon'
+An attempt to start the daemon took 2.779 secs.
+The client will now receive all logging from the daemon (pid: 141228). The daemon log file: C:\Users\danid\.gradle\daemon\7.6\daemon-141228.out.log
+Starting build in new daemon [memory: 512 MiB]
 Using 16 worker leases.
-Now considering [D:\UKTC PROGRAMMING\Mendix-Projects\Car-Finder\deployment] as hierarchies to watch
+Received JVM installation metadata from 'C:\Program Files\Eclipse Adoptium\jdk-11.0.20.8-hotspot': {JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-11.0.20.8-hotspot, JAVA_VERSION=11.0.20, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=11.0.20+8, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=11.0.20+8, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
 Watching the file system is configured to be enabled if available
+Now considering [D:\UKTC PROGRAMMING\Mendix-Projects\Car-Finder\deployment] as hierarchies to watch
 File system watching is active
 Starting Build
 Settings evaluated using settings file 'D:\UKTC PROGRAMMING\Mendix-Projects\Car-Finder\deployment\settings.gradle'.
@@ -57,20 +63,20 @@ Resolve mutations for :unzipDataSnapshot (Thread[Execution worker,5,main]) start
 > Task :unzipDataSnapshot SKIPPED
 Skipping task ':unzipDataSnapshot' as task onlyIf 'Task is enabled' is false.
 Resolve mutations for :deploy (Thread[Execution worker,5,main]) started.
-:deploy (Thread[Execution worker Thread 14,5,main]) started.
+:deploy (Thread[Execution worker,5,main]) started.
 
 > Task :deploy
 Skipping task ':deploy' as it has no actions.
 
-BUILD SUCCESSFUL in 3s
+BUILD SUCCESSFUL in 10s
 3 actionable tasks: 1 executed, 2 up-to-date
 Watched directory hierarchies: [D:\UKTC PROGRAMMING\Mendix-Projects\Car-Finder\deployment]
-VCS Checkout Cache (D:\UKTC PROGRAMMING\Mendix-Projects\Car-Finder\deployment\.gradle\vcs-1) removing files not accessed on or after Thu Jan 04 15:15:11 EET 2024.
+VCS Checkout Cache (D:\UKTC PROGRAMMING\Mendix-Projects\Car-Finder\deployment\.gradle\vcs-1) removing files not accessed on or after Mon Jan 29 14:49:09 EET 2024.
 VCS Checkout Cache (D:\UKTC PROGRAMMING\Mendix-Projects\Car-Finder\deployment\.gradle\vcs-1) cleanup deleted 0 files/directories.
-VCS Checkout Cache (D:\UKTC PROGRAMMING\Mendix-Projects\Car-Finder\deployment\.gradle\vcs-1) cleaned up in 0.002 secs.
-dependencies-accessors (D:\UKTC PROGRAMMING\Mendix-Projects\Car-Finder\deployment\.gradle\7.6\dependencies-accessors) removing files not accessed on or after Thu Jan 04 15:15:11 EET 2024.
+VCS Checkout Cache (D:\UKTC PROGRAMMING\Mendix-Projects\Car-Finder\deployment\.gradle\vcs-1) cleaned up in 0.006 secs.
+dependencies-accessors (D:\UKTC PROGRAMMING\Mendix-Projects\Car-Finder\deployment\.gradle\7.6\dependencies-accessors) removing files not accessed on or after Mon Jan 29 14:49:11 EET 2024.
 dependencies-accessors (D:\UKTC PROGRAMMING\Mendix-Projects\Car-Finder\deployment\.gradle\7.6\dependencies-accessors) cleanup deleted 0 files/directories.
-dependencies-accessors (D:\UKTC PROGRAMMING\Mendix-Projects\Car-Finder\deployment\.gradle\7.6\dependencies-accessors) cleaned up in 0.0 secs.
+dependencies-accessors (D:\UKTC PROGRAMMING\Mendix-Projects\Car-Finder\deployment\.gradle\7.6\dependencies-accessors) cleaned up in 0.001 secs.
 
 
 

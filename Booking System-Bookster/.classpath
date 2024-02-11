@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="javasource"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/UKTC PROGRAMMING/10.0.0.9976/runtime/bundles/com.mendix.json.jar"/>
+	<classpathentry kind="lib" path="D:/UKTC PROGRAMMING/10.0.0.9976/runtime/bundles/com.mendix.logging-api.jar"/>
+	<classpathentry kind="lib" path="D:/UKTC PROGRAMMING/10.0.0.9976/runtime/bundles/com.mendix.m2ee-api.jar"/>
+	<classpathentry kind="lib" path="D:/UKTC PROGRAMMING/10.0.0.9976/runtime/bundles/com.mendix.public-api.jar"/>
+	<classpathentry kind="lib" path="D:/UKTC PROGRAMMING/10.0.0.9976/runtime/bundles/javax.servlet.servlet-api.jar"/>
+	<classpathentry kind="lib" path="D:/UKTC PROGRAMMING/10.0.0.9976/runtime/bundles/javax.websocket.websocket-api.jar"/>
+	<classpathentry kind="lib" path="userlib/bcpg-jdk18on-1.75.jar"/>
+	<classpathentry kind="lib" path="userlib/bcpkix-jdk18on-1.75.jar"/>
+	<classpathentry kind="lib" path="userlib/bcprov-jdk18on-1.75.jar"/>
+	<classpathentry kind="lib" path="userlib/bcutil-jdk18on-1.75.jar"/>
+	<classpathentry kind="lib" path="userlib/checker-qual-3.33.0.jar"/>
+	<classpathentry kind="lib" path="userlib/commons-codec-1.15.jar"/>
+	<classpathentry kind="lib" path="userlib/commons-codec-1.16.0.jar"/>
+	<classpathentry kind="lib" path="userlib/commons-io-2.11.0.jar"/>
+	<classpathentry kind="lib" path="userlib/commons-lang3-3.12.0.jar"/>
+	<classpathentry kind="lib" path="userlib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="userlib/commons-text-1.10.0.jar"/>
+	<classpathentry kind="lib" path="userlib/error_prone_annotations-2.18.0.jar"/>
+	<classpathentry kind="lib" path="userlib/failureaccess-1.0.1.jar"/>
+	<classpathentry kind="lib" path="userlib/fontbox-2.0.30.jar"/>
+	<classpathentry kind="lib" path="userlib/googleauth-1.5.0.jar"/>
+	<classpathentry kind="lib" path="userlib/guava-32.0.1-jre.jar"/>
+	<classpathentry kind="lib" path="userlib/httpclient-4.5.13.jar"/>
+	<classpathentry kind="lib" path="userlib/httpcore-4.4.13.jar"/>
+	<classpathentry kind="lib" path="userlib/j2objc-annotations-2.8.jar"/>
+	<classpathentry kind="lib" path="userlib/jackson-annotations-2.16.0.jar"/>
+	<classpathentry kind="lib" path="userlib/jackson-core-2.16.0.jar"/>
+	<classpathentry kind="lib" path="userlib/jackson-databind-2.16.0.jar"/>
+	<classpathentry kind="lib" path="userlib/java-jwt-3.11.0.jar"/>
+	<classpathentry kind="lib" path="userlib/json-20231013.jar"/>
+	<classpathentry kind="lib" path="userlib/jsr305-3.0.2.jar"/>
+	<classpathentry kind="lib" path="userlib/jwks-rsa-0.13.0.jar"/>
+	<classpathentry kind="lib" path="userlib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"/>
+	<classpathentry kind="lib" path="userlib/nimbus-jose-jwt-9.31.jar"/>
+	<classpathentry kind="lib" path="userlib/owasp-java-html-sanitizer-20211018.2.jar"/>
+	<classpathentry kind="lib" path="userlib/pdfbox-2.0.30.jar"/>
+	<classpathentry kind="output" path="deployment/run/bin"/>
+</classpath>

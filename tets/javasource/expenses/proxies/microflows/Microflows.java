@@ -92,6 +92,63 @@ public final class Microflows
 			)
 			.execute(context);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Request_SaveBuilder(
+		expenses.proxies.Request _request
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Expenses.ACT_Request_Save");
+		builder = builder.withParam("Request", _request);
+		return builder;
+	}
+
+	public static void aCT_Request_Save(
+		IContext context,
+		expenses.proxies.Request _request
+	)
+	{
+		aCT_Request_SaveBuilder(
+				_request
+			)
+			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Request_StatusApprovedBuilder(
+		expenses.proxies.Request _request
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Expenses.ACT_Request_StatusApproved");
+		builder = builder.withParam("Request", _request);
+		return builder;
+	}
+
+	public static void aCT_Request_StatusApproved(
+		IContext context,
+		expenses.proxies.Request _request
+	)
+	{
+		aCT_Request_StatusApprovedBuilder(
+				_request
+			)
+			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Request_StatusRejectedBuilder(
+		expenses.proxies.Request _request
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Expenses.ACT_Request_StatusRejected");
+		builder = builder.withParam("Request", _request);
+		return builder;
+	}
+
+	public static void aCT_Request_StatusRejected(
+		IContext context,
+		expenses.proxies.Request _request
+	)
+	{
+		aCT_Request_StatusRejectedBuilder(
+				_request
+			)
+			.execute(context);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_RequestLine_CalculateTotalAmountBuilder(
 		expenses.proxies.RequestLine _requestLine
 	)

@@ -6,7 +6,7 @@ import * as style4 from "D:/UKTC PROGRAMMING/Mendix-Projects/Car-Finder/themesou
 import * as style5 from "D:/UKTC PROGRAMMING/Mendix-Projects/Car-Finder/themesource/webactions/native/main";
 import * as style6 from "D:/UKTC PROGRAMMING/Mendix-Projects/Car-Finder/themesource/atlas_core/native/main";
 import * as style7 from "D:/UKTC PROGRAMMING/Mendix-Projects/Car-Finder/themesource/feedbackmodule/native/main";
-import * as style8 from "D:/UKTC PROGRAMMING/Mendix-Projects/Car-Finder/themesource/myfirstmodule/native/main";
+import * as style8 from "D:/UKTC PROGRAMMING/Mendix-Projects/Car-Finder/themesource/carfinder/native/main";
 import * as style9 from "D:/UKTC PROGRAMMING/Mendix-Projects/Car-Finder/theme/native/main";
 
 import { flatten } from "mendix/native";

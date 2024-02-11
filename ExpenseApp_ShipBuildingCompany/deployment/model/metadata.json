@@ -1,0 +1,67 @@
+{
+  "DataBrokerConfiguration": {
+    "publishedServices": []
+  },
+  "RuntimeVersion": "10.0.0.9976",
+  "ProjectID": "5348a48b-0c38-40f9-8721-aeae646ac951",
+  "ProjectName": "ExpenseApp_ShipBuildingCompany",
+  "ModelVersion": "unversioned",
+  "Description": "",
+  "AdminUser": "MxAdmin",
+  "Roles": {
+    "8dd52bfa-6d7e-453b-b506-303c0a3d9567": {
+      "Name": "Administrator",
+      "ManageableRoles": [
+        "8dd52bfa-6d7e-453b-b506-303c0a3d9567",
+        "53f5d6fa-6da9-4a71-b011-454ec052cce8",
+        "a0bf8f86-b688-4452-a089-6f9dd27f43cd",
+        "744fd5fc-81ea-419c-8b86-c6014d09a351"
+      ]
+    },
+    "53f5d6fa-6da9-4a71-b011-454ec052cce8": {
+      "Name": "Approver"
+    },
+    "a0bf8f86-b688-4452-a089-6f9dd27f43cd": {
+      "Name": "Requestor"
+    },
+    "744fd5fc-81ea-419c-8b86-c6014d09a351": {
+      "Name": "Anonymous"
+    }
+  },
+  "AdminRole": "8dd52bfa-6d7e-453b-b506-303c0a3d9567",
+  "Constants": [
+    {
+      "Name": "NanoflowCommons.Nanoflow_Commons_Version",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "4.0.0"
+    }
+  ],
+  "ScheduledEvents": [],
+  "Languages": [
+    "en_US",
+    "nl_NL"
+  ],
+  "Configuration": {
+    "SourceDatabaseType": "HSQLDB",
+    "SourceDatabaseName": "default",
+    "SourceBuiltInDatabasePath": "model/sampledata/data/database"
+  },
+  "RequestHandlers": [
+    {
+      "Name": "/api/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/link/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/p/",
+      "DefaultEnabled": false,
+      "MatchExactly": false
+    }
+  ]
+}

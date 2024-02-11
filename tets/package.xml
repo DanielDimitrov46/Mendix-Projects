@@ -2,7 +2,7 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.mendix.com/package/1.0/">
   <modelerProject xmlns="http://www.mendix.com/modelerProject/1.0/">
     <project />
-    <projectFile path="ExpensesApp_Module4Completed_10_3_0.mpr" />
+    <projectFile path="ExpensesApp_Module6Completed_10_3_0.mpr" />
     <files>
       <file path="resources/Design_header.png" />
       <file path="resources/icon-bb.png" />
@@ -146,6 +146,7 @@
       <file path="javasource/nanoflowcommons/proxies/Geolocation.java" />
       <file path="javasource/nanoflowcommons/proxies/Platform.java" />
       <file path="javasource/nanoflowcommons/proxies/Position.java" />
+      <file path="javasource/notification/proxies/Notification.java" />
       <file path="javasource/system/actions/VerifyPassword.java" />
       <file path="javasource/system/proxies/ContextType.java" />
       <file path="javasource/system/proxies/DeviceType.java" />
@@ -215,6 +216,7 @@
       <file path="javasource/mendixsso/proxies/constants/Constants.java" />
       <file path="javasource/mendixsso/proxies/microflows/Microflows.java" />
       <file path="javasource/nanoflowcommons/proxies/constants/Constants.java" />
+      <file path="javasource/notification/proxies/microflows/Microflows.java" />
       <file path="javasource/system/proxies/microflows/Microflows.java" />
       <file path="javasource/webactions/proxies/constants/Constants.java" />
       <file path="javascriptsource/nanoflowcommons/actions/CallPhoneNumber.js" />
@@ -377,6 +379,7 @@
       <file path="themesource/datawidgets/.DS_Store" />
       <file path="themesource/datawidgets/.version" />
       <file path="themesource/nanoflowcommons/.version" />
+      <file path="themesource/notification/settings.json" />
       <file path="themesource/administration/native/design-properties.json" />
       <file path="themesource/administration/native/main.js" />
       <file path="themesource/administration/web/design-properties.json" />
@@ -409,6 +412,10 @@
       <file path="themesource/nanoflowcommons/native/main.js" />
       <file path="themesource/nanoflowcommons/web/design-properties.json" />
       <file path="themesource/nanoflowcommons/web/main.scss" />
+      <file path="themesource/notification/native/design-properties.json" />
+      <file path="themesource/notification/native/main.js" />
+      <file path="themesource/notification/web/design-properties.json" />
+      <file path="themesource/notification/web/main.scss" />
       <file path="themesource/webactions/native/design-properties.json" />
       <file path="themesource/webactions/native/main.js" />
       <file path="themesource/webactions/web/design-properties.json" />
