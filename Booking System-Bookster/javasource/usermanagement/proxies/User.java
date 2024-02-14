@@ -16,6 +16,7 @@ public class User extends administration.proxies.Account
 	 */
 	public enum MemberNames
 	{
+		Status("Status"),
 		FullName("FullName"),
 		Email("Email"),
 		IsLocalUser("IsLocalUser"),
@@ -85,6 +86,51 @@ public class User extends administration.proxies.Account
 			.stream()
 			.map(obj -> usermanagement.proxies.User.initialize(context, obj))
 			.collect(java.util.stream.Collectors.toList());
+	}
+
+	/**
+	 * Get value of Status
+	 * @param status
+	 */
+	public final usermanagement.proxies.ENUM_Status getStatus()
+	{
+		return getStatus(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of Status
+	 */
+	public final usermanagement.proxies.ENUM_Status getStatus(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		Object obj = getMendixObject().getValue(context, MemberNames.Status.toString());
+		if (obj == null) {
+			return null;
+		}
+		return usermanagement.proxies.ENUM_Status.valueOf((java.lang.String) obj);
+	}
+
+	/**
+	 * Set value of Status
+	 * @param status
+	 */
+	public final void setStatus(usermanagement.proxies.ENUM_Status status)
+	{
+		setStatus(getContext(), status);
+	}
+
+	/**
+	 * Set value of Status
+	 * @param context
+	 * @param status
+	 */
+	public final void setStatus(com.mendix.systemwideinterfaces.core.IContext context, usermanagement.proxies.ENUM_Status status)
+	{
+		if (status != null) {
+			getMendixObject().setValue(context, MemberNames.Status.toString(), status.toString());
+		} else {
+			getMendixObject().setValue(context, MemberNames.Status.toString(), null);
+		}
 	}
 
 	/**

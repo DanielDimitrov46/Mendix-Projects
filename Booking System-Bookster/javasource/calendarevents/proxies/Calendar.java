@@ -15,6 +15,31 @@ public class Calendar implements com.mendix.systemwideinterfaces.core.IEntityPro
 	 */
 	public static final java.lang.String entityName = "CalendarEvents.Calendar";
 
+	/**
+	 * Enum describing members of this entity
+	 */
+	public enum MemberNames
+	{
+		Title("Title"),
+		Start("Start"),
+		End("End"),
+		AllDay("AllDay"),
+		Color("Color");
+
+		private final java.lang.String metaName;
+
+		MemberNames(java.lang.String s)
+		{
+			metaName = s;
+		}
+
+		@java.lang.Override
+		public java.lang.String toString()
+		{
+			return metaName;
+		}
+	}
+
 	public Calendar(com.mendix.systemwideinterfaces.core.IContext context)
 	{
 		this(context, com.mendix.core.Core.instantiate(context, entityName));
@@ -58,6 +83,186 @@ public class Calendar implements com.mendix.systemwideinterfaces.core.IEntityPro
 			.stream()
 			.map(obj -> calendarevents.proxies.Calendar.initialize(context, obj))
 			.collect(java.util.stream.Collectors.toList());
+	}
+
+	/**
+	 * @return value of Title
+	 */
+	public final java.lang.String getTitle()
+	{
+		return getTitle(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of Title
+	 */
+	public final java.lang.String getTitle(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.Title.toString());
+	}
+
+	/**
+	 * Set value of Title
+	 * @param title
+	 */
+	public final void setTitle(java.lang.String title)
+	{
+		setTitle(getContext(), title);
+	}
+
+	/**
+	 * Set value of Title
+	 * @param context
+	 * @param title
+	 */
+	public final void setTitle(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String title)
+	{
+		getMendixObject().setValue(context, MemberNames.Title.toString(), title);
+	}
+
+	/**
+	 * @return value of Start
+	 */
+	public final java.util.Date getStart()
+	{
+		return getStart(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of Start
+	 */
+	public final java.util.Date getStart(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.util.Date) getMendixObject().getValue(context, MemberNames.Start.toString());
+	}
+
+	/**
+	 * Set value of Start
+	 * @param start
+	 */
+	public final void setStart(java.util.Date start)
+	{
+		setStart(getContext(), start);
+	}
+
+	/**
+	 * Set value of Start
+	 * @param context
+	 * @param start
+	 */
+	public final void setStart(com.mendix.systemwideinterfaces.core.IContext context, java.util.Date start)
+	{
+		getMendixObject().setValue(context, MemberNames.Start.toString(), start);
+	}
+
+	/**
+	 * @return value of End
+	 */
+	public final java.util.Date getEnd()
+	{
+		return getEnd(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of End
+	 */
+	public final java.util.Date getEnd(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.util.Date) getMendixObject().getValue(context, MemberNames.End.toString());
+	}
+
+	/**
+	 * Set value of End
+	 * @param end
+	 */
+	public final void setEnd(java.util.Date end)
+	{
+		setEnd(getContext(), end);
+	}
+
+	/**
+	 * Set value of End
+	 * @param context
+	 * @param end
+	 */
+	public final void setEnd(com.mendix.systemwideinterfaces.core.IContext context, java.util.Date end)
+	{
+		getMendixObject().setValue(context, MemberNames.End.toString(), end);
+	}
+
+	/**
+	 * @return value of AllDay
+	 */
+	public final java.lang.Boolean getAllDay()
+	{
+		return getAllDay(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of AllDay
+	 */
+	public final java.lang.Boolean getAllDay(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.Boolean) getMendixObject().getValue(context, MemberNames.AllDay.toString());
+	}
+
+	/**
+	 * Set value of AllDay
+	 * @param allday
+	 */
+	public final void setAllDay(java.lang.Boolean allday)
+	{
+		setAllDay(getContext(), allday);
+	}
+
+	/**
+	 * Set value of AllDay
+	 * @param context
+	 * @param allday
+	 */
+	public final void setAllDay(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Boolean allday)
+	{
+		getMendixObject().setValue(context, MemberNames.AllDay.toString(), allday);
+	}
+
+	/**
+	 * @return value of Color
+	 */
+	public final java.lang.String getColor()
+	{
+		return getColor(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of Color
+	 */
+	public final java.lang.String getColor(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.Color.toString());
+	}
+
+	/**
+	 * Set value of Color
+	 * @param color
+	 */
+	public final void setColor(java.lang.String color)
+	{
+		setColor(getContext(), color);
+	}
+
+	/**
+	 * Set value of Color
+	 * @param context
+	 * @param color
+	 */
+	public final void setColor(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String color)
+	{
+		getMendixObject().setValue(context, MemberNames.Color.toString(), color);
 	}
 
 	@Override

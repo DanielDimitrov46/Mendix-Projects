@@ -1,10 +1,10 @@
 Initialized native services in: C:\Users\danid\.gradle\native
 Initialized jansi services in: C:\Users\danid\.gradle\native
 Received JVM installation metadata from 'C:\Program Files\Eclipse Adoptium\jdk-11.0.20.8-hotspot': {JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-11.0.20.8-hotspot, JAVA_VERSION=11.0.20, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=11.0.20+8, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=11.0.20+8, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
-The client will now receive all logging from the daemon (pid: 236364). The daemon log file: C:\Users\danid\.gradle\daemon\7.6\daemon-236364.out.log
-Starting 2nd build in daemon [uptime: 57 mins 49.981 secs, performance: 100%, non-heap usage: 19% of 256 MiB]
+The client will now receive all logging from the daemon (pid: 23648). The daemon log file: C:\Users\danid\.gradle\daemon\7.6\daemon-23648.out.log
+Starting 16th build in daemon [uptime: 6 hrs 33 mins 33.452 secs, performance: 100%, non-heap usage: 25% of 256 MiB]
 Using 16 worker leases.
-Now considering [D:\UKTC PROGRAMMING\Mendix-Projects\Booking System-Bookster\deployment] as hierarchies to watch
+Now considering [D:\UKTC PROGRAMMING\Mendix-Projects\Booking System-Bookster\deployment, D:\UKTC PROGRAMMING\Mendix-Projects\tets\deployment] as hierarchies to watch
 Watching the file system is configured to be enabled if available
 File system watching is active
 Starting Build
@@ -23,7 +23,7 @@ Tasks to be executed: [task ':clean-excluded-jars', task ':copyDeploymentArtifac
 Tasks that were excluded: []
 Resolve mutations for :clean-excluded-jars (Thread[Execution worker,5,main]) started.
 :clean-excluded-jars (Thread[Execution worker,5,main]) started.
-destroyer locations for task group 0 (Thread[Execution worker Thread 2,5,main]) started.
+destroyer locations for task group 0 (Thread[Execution worker Thread 4,5,main]) started.
 
 > Task :clean-excluded-jars UP-TO-DATE
 Caching disabled for task ':clean-excluded-jars' because:
@@ -38,13 +38,12 @@ Caching disabled for task ':copyDeploymentArtifacts' because:
   Build cache is disabled
 Task ':copyDeploymentArtifacts' is not up-to-date because:
   Task state is not tracked.
-Not watching anything anymore
-Watching 0 directory hierarchies to track changes
+Watching 1 directory hierarchies to track changes
 Resolve mutations for :copyLibs (Thread[Execution worker,5,main]) started.
 :copyLibs (Thread[Execution worker,5,main]) started.
 
 > Task :copyLibs UP-TO-DATE
-Watching 1 directory hierarchies to track changes
+Watching 2 directory hierarchies to track changes
 Caching disabled for task ':copyLibs' because:
   Build cache is disabled
 Skipping task ':copyLibs' as it is up-to-date.
@@ -68,7 +67,7 @@ Skipping task ':deploy' as it has no actions.
 
 BUILD SUCCESSFUL in 1s
 4 actionable tasks: 1 executed, 3 up-to-date
-Watched directory hierarchies: [D:\UKTC PROGRAMMING\Mendix-Projects\Booking System-Bookster\deployment]
+Watched directory hierarchies: [D:\UKTC PROGRAMMING\Mendix-Projects\Booking System-Bookster\deployment, D:\UKTC PROGRAMMING\Mendix-Projects\tets\deployment]
 
 
 

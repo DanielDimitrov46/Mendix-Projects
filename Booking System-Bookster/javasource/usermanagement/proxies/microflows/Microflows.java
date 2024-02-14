@@ -34,4 +34,23 @@ public final class Microflows
 			)
 			.execute(context);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_User_EditBuilder(
+		usermanagement.proxies.User _user
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.ACT_User_Edit");
+		builder = builder.withParam("User", _user);
+		return builder;
+	}
+
+	public static void aCT_User_Edit(
+		IContext context,
+		usermanagement.proxies.User _user
+	)
+	{
+		aCT_User_EditBuilder(
+				_user
+			)
+			.execute(context);
+	}
 }

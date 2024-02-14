@@ -10,7 +10,21 @@
     {
       "suppressions": [],
       "disabledBestPractices": [],
-      "readRecommendations": [],
+      "readRecommendations": [
+        {
+          "code": "MXP008",
+          "locationObjects": [
+            {
+              "uuid": "d9e41596-d592-45ae-9d97-7a40f567e8ca",
+              "fullPath": "Expenses.HeaderData"
+            },
+            {
+              "uuid": "f05cb6fc-d5ef-4826-bebb-8ad52586998d",
+              "fullPath": "Expenses.HeaderData_Session"
+            }
+          ]
+        }
+      ],
       "suppressedRecommendations": [],
       "hasShownRecommendationsNotificationForThisApp": true,
       "type": "Mendix.Modeler.MxAssist.PerformanceBot.Serialization.Configuration.PerformanceBotConfiguration, Mendix.Modeler.MxAssist.PerformanceBot.Serialization, Version=10.3.1.0, Culture=neutral, PublicKeyToken=null"

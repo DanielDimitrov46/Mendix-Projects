@@ -6,6 +6,7 @@ package calendarevents.proxies.microflows;
 
 import com.mendix.core.Core;
 import com.mendix.systemwideinterfaces.core.IContext;
+import com.mendix.systemwideinterfaces.core.IMendixObject;
 
 public final class Microflows
 {
@@ -15,14 +16,24 @@ public final class Microflows
 	private Microflows() {}
 
 	// These are the microflows for the CalendarEvents module
-	public static com.mendix.core.actionmanagement.MicroflowCallBuilder microflowBuilder()
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Calendar_RetrieveEventsBuilder(
+		calendarevents.proxies.Calendar _calendar
+	)
 	{
-		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("CalendarEvents.Microflow");
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("CalendarEvents.ACT_Calendar_RetrieveEvents");
+		builder = builder.withParam("Calendar", _calendar);
 		return builder;
 	}
 
-	public static void microflow(IContext context)
+	public static java.util.List<calendarevents.proxies.Calendar> aCT_Calendar_RetrieveEvents(
+		IContext context,
+		calendarevents.proxies.Calendar _calendar
+	)
 	{
-		microflowBuilder().execute(context);
+		Object result = aCT_Calendar_RetrieveEventsBuilder(
+				_calendar
+			)
+			.execute(context);
+		return result == null ? null : com.mendix.utils.ListUtils.map((java.util.List<IMendixObject>) result, obj -> calendarevents.proxies.Calendar.initialize(context, obj));
 	}
 }

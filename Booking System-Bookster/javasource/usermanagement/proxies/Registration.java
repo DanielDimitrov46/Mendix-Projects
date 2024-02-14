@@ -24,7 +24,8 @@ public class Registration implements com.mendix.systemwideinterfaces.core.IEntit
 		UserName("UserName"),
 		EmailAddress("EmailAddress"),
 		Password("Password"),
-		ConfirmPassword("ConfirmPassword");
+		ConfirmPassword("ConfirmPassword"),
+		Status("Status");
 
 		private final java.lang.String metaName;
 
@@ -74,6 +75,15 @@ public class Registration implements com.mendix.systemwideinterfaces.core.IEntit
 	{
 		com.mendix.systemwideinterfaces.core.IMendixObject mendixObject = com.mendix.core.Core.retrieveId(context, mendixIdentifier);
 		return usermanagement.proxies.Registration.initialize(context, mendixObject);
+	}
+
+	public static java.util.List<usermanagement.proxies.Registration> load(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String xpathConstraint) throws com.mendix.core.CoreException
+	{
+		return com.mendix.core.Core.createXPathQuery(String.format("//%1$s%2$s", entityName, xpathConstraint))
+			.execute(context)
+			.stream()
+			.map(obj -> usermanagement.proxies.Registration.initialize(context, obj))
+			.collect(java.util.stream.Collectors.toList());
 	}
 
 	/**
@@ -254,6 +264,51 @@ public class Registration implements com.mendix.systemwideinterfaces.core.IEntit
 	public final void setConfirmPassword(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String confirmpassword)
 	{
 		getMendixObject().setValue(context, MemberNames.ConfirmPassword.toString(), confirmpassword);
+	}
+
+	/**
+	 * Get value of Status
+	 * @param status
+	 */
+	public final usermanagement.proxies.ENUM_Status getStatus()
+	{
+		return getStatus(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of Status
+	 */
+	public final usermanagement.proxies.ENUM_Status getStatus(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		Object obj = getMendixObject().getValue(context, MemberNames.Status.toString());
+		if (obj == null) {
+			return null;
+		}
+		return usermanagement.proxies.ENUM_Status.valueOf((java.lang.String) obj);
+	}
+
+	/**
+	 * Set value of Status
+	 * @param status
+	 */
+	public final void setStatus(usermanagement.proxies.ENUM_Status status)
+	{
+		setStatus(getContext(), status);
+	}
+
+	/**
+	 * Set value of Status
+	 * @param context
+	 * @param status
+	 */
+	public final void setStatus(com.mendix.systemwideinterfaces.core.IContext context, usermanagement.proxies.ENUM_Status status)
+	{
+		if (status != null) {
+			getMendixObject().setValue(context, MemberNames.Status.toString(), status.toString());
+		} else {
+			getMendixObject().setValue(context, MemberNames.Status.toString(), null);
+		}
 	}
 
 	@Override

@@ -1,0 +1,12 @@
+ALTER TABLE "calendarevents$calendar" ADD "allday" BOOLEAN NULL;
+UPDATE "calendarevents$calendar" SET "allday" = false;
+ALTER TABLE "calendarevents$calendar" ADD "end" TIMESTAMP NULL;
+ALTER TABLE "calendarevents$calendar" ADD "color" VARCHAR_IGNORECASE(200) NULL;
+ALTER TABLE "calendarevents$calendar" ADD "start" TIMESTAMP NULL;
+ALTER TABLE "calendarevents$calendar" ADD "title" VARCHAR_IGNORECASE(200) NULL;
+INSERT INTO "mendixsystem$attribute" ("id", "entity_id", "attribute_name", "column_name", "type", "length", "default_value", "is_auto_number") VALUES ('3b0da21e-7473-470a-abaa-5e0226c2e750', 'a9cda5fc-da5a-4068-b38a-a33acc5d99d7', 'Title', 'title', 30, 200, '', false);
+INSERT INTO "mendixsystem$attribute" ("id", "entity_id", "attribute_name", "column_name", "type", "length", "default_value", "is_auto_number") VALUES ('ef880e16-8c92-4ca0-9268-3bbb83ed867e', 'a9cda5fc-da5a-4068-b38a-a33acc5d99d7', 'Start', 'start', 20, 0, '', false);
+INSERT INTO "mendixsystem$attribute" ("id", "entity_id", "attribute_name", "column_name", "type", "length", "default_value", "is_auto_number") VALUES ('09202beb-f326-4db8-83bf-61b1a9e09d48', 'a9cda5fc-da5a-4068-b38a-a33acc5d99d7', 'End', 'end', 20, 0, '', false);
+INSERT INTO "mendixsystem$attribute" ("id", "entity_id", "attribute_name", "column_name", "type", "length", "default_value", "is_auto_number") VALUES ('2fe7983c-6fe8-48ab-83d4-3d17ce81896c', 'a9cda5fc-da5a-4068-b38a-a33acc5d99d7', 'AllDay', 'allday', 10, 0, 'false', false);
+INSERT INTO "mendixsystem$attribute" ("id", "entity_id", "attribute_name", "column_name", "type", "length", "default_value", "is_auto_number") VALUES ('8b888e41-9061-4d6d-9ebc-bb88b960ce30', 'a9cda5fc-da5a-4068-b38a-a33acc5d99d7', 'Color', 'color', 30, 200, '', false);
+UPDATE "mendixsystem$version" SET "versionnumber" = '4.2', "lastsyncdate" = '20240211 17:41:42';

@@ -1,8 +1,8 @@
 Initialized native services in: C:\Users\danid\.gradle\native
 Initialized jansi services in: C:\Users\danid\.gradle\native
 Received JVM installation metadata from 'C:\Program Files\Eclipse Adoptium\jdk-11.0.20.8-hotspot': {JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-11.0.20.8-hotspot, JAVA_VERSION=11.0.20, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=11.0.20+8, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=11.0.20+8, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
-The client will now receive all logging from the daemon (pid: 236364). The daemon log file: C:\Users\danid\.gradle\daemon\7.6\daemon-236364.out.log
-Starting 11th build in daemon [uptime: 1 hrs 37 mins 17.013 secs, performance: 100%, non-heap usage: 26% of 256 MiB]
+The client will now receive all logging from the daemon (pid: 23648). The daemon log file: C:\Users\danid\.gradle\daemon\7.6\daemon-23648.out.log
+Starting 7th build in daemon [uptime: 3 hrs 43 mins 41.703 secs, performance: 100%, non-heap usage: 25% of 256 MiB]
 Using 16 worker leases.
 Now considering [D:\UKTC PROGRAMMING\Mendix-Projects\tets\deployment, D:\UKTC PROGRAMMING\Mendix-Projects\Booking System-Bookster\deployment] as hierarchies to watch
 Watching the file system is configured to be enabled if available
@@ -25,41 +25,42 @@ Selected primary task 'package' from project :
 Tasks to be executed: [task ':clean-custom-classes', task ':compile', task ':package']
 Tasks that were excluded: []
 Resolve mutations for :clean-custom-classes (Thread[Execution worker,5,main]) started.
-:clean-custom-classes (Thread[Execution worker Thread 10,5,main]) started.
-destroyer locations for task group 0 (Thread[Execution worker Thread 11,5,main]) started.
-destroyer locations for task group 1 (Thread[Execution worker Thread 13,5,main]) started.
+:clean-custom-classes (Thread[Execution worker Thread 6,5,main]) started.
+destroyer locations for task group 0 (Thread[Execution worker Thread 2,5,main]) started.
+destroyer locations for task group 1 (Thread[Execution worker Thread 9,5,main]) started.
 
 > Task :clean-custom-classes
 Caching disabled for task ':clean-custom-classes' because:
   Build cache is disabled
 Task ':clean-custom-classes' is not up-to-date because:
   Task has not declared any outputs despite executing actions.
-Resolve mutations for :compile (Thread[Execution worker Thread 10,5,main]) started.
-:compile (Thread[Execution worker Thread 10,5,main]) started.
+Resolve mutations for :compile (Thread[Execution worker Thread 6,5,main]) started.
+:compile (Thread[Execution worker Thread 6,5,main]) started.
 
 > Task :compile
 Caching disabled for task ':compile' because:
   Build cache is disabled
 Task ':compile' is not up-to-date because:
-  No history is available.
+  Output property 'destinationDirectory' file D:\UKTC PROGRAMMING\Mendix-Projects\tets\deployment\run\bin has been removed.
+  Output property 'destinationDirectory' file D:\UKTC PROGRAMMING\Mendix-Projects\tets\deployment\run\bin\administration has been removed.
+  Output property 'destinationDirectory' file D:\UKTC PROGRAMMING\Mendix-Projects\tets\deployment\run\bin\administration\proxies has been removed.
 The input changes require a full rebuild for incremental task ':compile'.
 file or directory 'D:\UKTC PROGRAMMING\Mendix-Projects\tets\vendorlib', not found
 Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
 Compiling with toolchain 'C:\Program Files\Eclipse Adoptium\jdk-11.0.20.8-hotspot'.
 Compiling with JDK Java compiler API.
-Class dependency analysis for incremental compilation took 0.405 secs.
-Created classpath snapshot for incremental compilation in 0.006 secs.
-Resolve mutations for :package (Thread[Execution worker Thread 10,5,main]) started.
-:package (Thread[Execution worker,5,main]) started.
+Class dependency analysis for incremental compilation took 0.453 secs.
+Created classpath snapshot for incremental compilation in 0.019 secs.
+Resolve mutations for :package (Thread[Execution worker Thread 6,5,main]) started.
+:package (Thread[Execution worker Thread 6,5,main]) started.
 
-> Task :package
+> Task :package UP-TO-DATE
 Caching disabled for task ':package' because:
   Build cache is disabled
-Task ':package' is not up-to-date because:
-  No history is available.
+Skipping task ':package' as it is up-to-date.
 
-BUILD SUCCESSFUL in 4s
-3 actionable tasks: 3 executed
+BUILD SUCCESSFUL in 5s
+3 actionable tasks: 2 executed, 1 up-to-date
 Watched directory hierarchies: [D:\UKTC PROGRAMMING\Mendix-Projects\tets\deployment, D:\UKTC PROGRAMMING\Mendix-Projects\Booking System-Bookster\deployment]
 
 
