@@ -22,7 +22,10 @@ public class Room implements com.mendix.systemwideinterfaces.core.IEntityProxy
 	{
 		Name("Name"),
 		Description("Description"),
-		Size("Size");
+		Size("Size"),
+		ActivityStatus("ActivityStatus"),
+		RoomPicture_Room("Rooms.RoomPicture_Room"),
+		User_Room("UserManagement.User_Room");
 
 		private final java.lang.String metaName;
 
@@ -197,6 +200,145 @@ public class Room implements com.mendix.systemwideinterfaces.core.IEntityProxy
 			getMendixObject().setValue(context, MemberNames.Size.toString(), size.toString());
 		} else {
 			getMendixObject().setValue(context, MemberNames.Size.toString(), null);
+		}
+	}
+
+	/**
+	 * Get value of ActivityStatus
+	 * @param activitystatus
+	 */
+	public final rooms.proxies.ENUM_Room_ActivityStatus getActivityStatus()
+	{
+		return getActivityStatus(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of ActivityStatus
+	 */
+	public final rooms.proxies.ENUM_Room_ActivityStatus getActivityStatus(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		Object obj = getMendixObject().getValue(context, MemberNames.ActivityStatus.toString());
+		if (obj == null) {
+			return null;
+		}
+		return rooms.proxies.ENUM_Room_ActivityStatus.valueOf((java.lang.String) obj);
+	}
+
+	/**
+	 * Set value of ActivityStatus
+	 * @param activitystatus
+	 */
+	public final void setActivityStatus(rooms.proxies.ENUM_Room_ActivityStatus activitystatus)
+	{
+		setActivityStatus(getContext(), activitystatus);
+	}
+
+	/**
+	 * Set value of ActivityStatus
+	 * @param context
+	 * @param activitystatus
+	 */
+	public final void setActivityStatus(com.mendix.systemwideinterfaces.core.IContext context, rooms.proxies.ENUM_Room_ActivityStatus activitystatus)
+	{
+		if (activitystatus != null) {
+			getMendixObject().setValue(context, MemberNames.ActivityStatus.toString(), activitystatus.toString());
+		} else {
+			getMendixObject().setValue(context, MemberNames.ActivityStatus.toString(), null);
+		}
+	}
+
+	/**
+	 * @throws com.mendix.core.CoreException
+	 * @return value of RoomPicture_Room
+	 */
+	public final rooms.proxies.RoomPicture getRoomPicture_Room() throws com.mendix.core.CoreException
+	{
+		return getRoomPicture_Room(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of RoomPicture_Room
+	 * @throws com.mendix.core.CoreException
+	 */
+	public final rooms.proxies.RoomPicture getRoomPicture_Room(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		rooms.proxies.RoomPicture result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.RoomPicture_Room.toString());
+		if (identifier != null) {
+			result = rooms.proxies.RoomPicture.load(context, identifier);
+		}
+		return result;
+	}
+
+	/**
+	 * Set value of RoomPicture_Room
+	 * @param roompicture_room
+	 */
+	public final void setRoomPicture_Room(rooms.proxies.RoomPicture roompicture_room)
+	{
+		setRoomPicture_Room(getContext(), roompicture_room);
+	}
+
+	/**
+	 * Set value of RoomPicture_Room
+	 * @param context
+	 * @param roompicture_room
+	 */
+	public final void setRoomPicture_Room(com.mendix.systemwideinterfaces.core.IContext context, rooms.proxies.RoomPicture roompicture_room)
+	{
+		if (roompicture_room == null) {
+			getMendixObject().setValue(context, MemberNames.RoomPicture_Room.toString(), null);
+		} else {
+			getMendixObject().setValue(context, MemberNames.RoomPicture_Room.toString(), roompicture_room.getMendixObject().getId());
+		}
+	}
+
+	/**
+	 * @throws com.mendix.core.CoreException
+	 * @return value of User_Room
+	 */
+	public final usermanagement.proxies.User getUser_Room() throws com.mendix.core.CoreException
+	{
+		return getUser_Room(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of User_Room
+	 * @throws com.mendix.core.CoreException
+	 */
+	public final usermanagement.proxies.User getUser_Room(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		usermanagement.proxies.User result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.User_Room.toString());
+		if (identifier != null) {
+			result = usermanagement.proxies.User.load(context, identifier);
+		}
+		return result;
+	}
+
+	/**
+	 * Set value of User_Room
+	 * @param user_room
+	 */
+	public final void setUser_Room(usermanagement.proxies.User user_room)
+	{
+		setUser_Room(getContext(), user_room);
+	}
+
+	/**
+	 * Set value of User_Room
+	 * @param context
+	 * @param user_room
+	 */
+	public final void setUser_Room(com.mendix.systemwideinterfaces.core.IContext context, usermanagement.proxies.User user_room)
+	{
+		if (user_room == null) {
+			getMendixObject().setValue(context, MemberNames.User_Room.toString(), null);
+		} else {
+			getMendixObject().setValue(context, MemberNames.User_Room.toString(), user_room.getMendixObject().getId());
 		}
 	}
 

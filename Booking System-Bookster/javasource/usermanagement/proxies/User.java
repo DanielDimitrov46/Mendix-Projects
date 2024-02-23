@@ -30,6 +30,7 @@ public class User extends administration.proxies.Account
 		WebServiceUser("WebServiceUser"),
 		IsAnonymous("IsAnonymous"),
 		ProfilePicture_User("UserManagement.ProfilePicture_User"),
+		User_Room("UserManagement.User_Room"),
 		UserRoles("System.UserRoles"),
 		User_Language("System.User_Language"),
 		User_TimeZone("System.User_TimeZone");
@@ -177,6 +178,53 @@ public class User extends administration.proxies.Account
 			getMendixObject().setValue(context, MemberNames.ProfilePicture_User.toString(), null);
 		} else {
 			getMendixObject().setValue(context, MemberNames.ProfilePicture_User.toString(), profilepicture_user.getMendixObject().getId());
+		}
+	}
+
+	/**
+	 * @throws com.mendix.core.CoreException
+	 * @return value of User_Room
+	 */
+	public final rooms.proxies.Room getUser_Room() throws com.mendix.core.CoreException
+	{
+		return getUser_Room(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of User_Room
+	 * @throws com.mendix.core.CoreException
+	 */
+	public final rooms.proxies.Room getUser_Room(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		rooms.proxies.Room result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.User_Room.toString());
+		if (identifier != null) {
+			result = rooms.proxies.Room.load(context, identifier);
+		}
+		return result;
+	}
+
+	/**
+	 * Set value of User_Room
+	 * @param user_room
+	 */
+	public final void setUser_Room(rooms.proxies.Room user_room)
+	{
+		setUser_Room(getContext(), user_room);
+	}
+
+	/**
+	 * Set value of User_Room
+	 * @param context
+	 * @param user_room
+	 */
+	public final void setUser_Room(com.mendix.systemwideinterfaces.core.IContext context, rooms.proxies.Room user_room)
+	{
+		if (user_room == null) {
+			getMendixObject().setValue(context, MemberNames.User_Room.toString(), null);
+		} else {
+			getMendixObject().setValue(context, MemberNames.User_Room.toString(), user_room.getMendixObject().getId());
 		}
 	}
 

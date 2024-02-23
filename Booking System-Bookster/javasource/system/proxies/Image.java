@@ -66,6 +66,9 @@ public class Image extends system.proxies.FileDocument
 		if (com.mendix.core.Core.isSubClassOf("UserManagement.ProfilePicture", mendixObject.getType())) {
 			return usermanagement.proxies.ProfilePicture.initialize(context, mendixObject);
 		}
+		if (com.mendix.core.Core.isSubClassOf("Rooms.RoomPicture", mendixObject.getType())) {
+			return rooms.proxies.RoomPicture.initialize(context, mendixObject);
+		}
 		return new system.proxies.Image(context, mendixObject);
 	}
 

@@ -2952,6 +2952,26 @@
   content: "\ea6d";
 }
 
+.my-custom-class {
+  background-color: rgb(93, 90, 90);
+}
+
+.my-custom-class {
+  background-color: rgb(93, 90, 90);
+}
+
+.my-custom-class {
+  background-color: rgb(93, 90, 90);
+}
+
+.my-custom-class {
+  background-color: rgb(93, 90, 90);
+}
+
+.my-custom-class {
+  background-color: rgb(93, 90, 90);
+}
+
 /*!
  * Bootstrap v3.3.4 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -24334,6 +24354,10 @@ html div.dj_ios .widget-switch.auto .widget-switch-btn-wrapper.checked.widget-sw
   margin-right: 16px;
 }
 
+.my-custom-class {
+  background-color: rgb(93, 90, 90);
+}
+
 /* ==========================================================================
    Alerts
 
@@ -24941,6 +24965,10 @@ html div.dj_ios .widget-switch.auto .widget-switch-btn-wrapper.checked.widget-sw
 
 .statuspage-subtitle {
   opacity: 0.6;
+}
+
+.my-custom-class {
+  background-color: rgb(93, 90, 90);
 }
 
 .table {
@@ -26777,6 +26805,38 @@ input[type=checkbox].three-state-checkbox + .control-label {
   background-color: inherit;
   text-align: center;
   pointer-events: none;
+}
+
+.my-custom-class {
+  background-color: rgb(93, 90, 90);
+}
+
+.my-custom-class {
+  background-color: rgb(93, 90, 90);
+}
+
+.my-custom-class {
+  background-color: rgb(93, 90, 90);
+}
+
+.my-custom-class {
+  background-color: rgb(93, 90, 90);
+}
+
+.my-custom-class {
+  background-color: rgb(93, 90, 90);
+}
+
+.my-custom-class {
+  background-color: rgb(93, 90, 90);
+}
+
+.my-custom-class {
+  background-color: rgb(93, 90, 90);
+}
+
+.my-custom-class {
+  background-color: rgb(93, 90, 90);
 }
 
 /*# sourceMappingURL=theme.compiled.css.map */
