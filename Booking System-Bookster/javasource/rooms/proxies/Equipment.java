@@ -22,6 +22,7 @@ public class Equipment implements com.mendix.systemwideinterfaces.core.IEntityPr
 	{
 		Name("Name"),
 		Description("Description"),
+		Quantity("Quantity"),
 		Equipment_Room("Rooms.Equipment_Room");
 
 		private final java.lang.String metaName;
@@ -153,6 +154,42 @@ public class Equipment implements com.mendix.systemwideinterfaces.core.IEntityPr
 	public final void setDescription(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String description)
 	{
 		getMendixObject().setValue(context, MemberNames.Description.toString(), description);
+	}
+
+	/**
+	 * @return value of Quantity
+	 */
+	public final java.lang.Integer getQuantity()
+	{
+		return getQuantity(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of Quantity
+	 */
+	public final java.lang.Integer getQuantity(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.Integer) getMendixObject().getValue(context, MemberNames.Quantity.toString());
+	}
+
+	/**
+	 * Set value of Quantity
+	 * @param quantity
+	 */
+	public final void setQuantity(java.lang.Integer quantity)
+	{
+		setQuantity(getContext(), quantity);
+	}
+
+	/**
+	 * Set value of Quantity
+	 * @param context
+	 * @param quantity
+	 */
+	public final void setQuantity(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Integer quantity)
+	{
+		getMendixObject().setValue(context, MemberNames.Quantity.toString(), quantity);
 	}
 
 	/**

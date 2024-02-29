@@ -15,6 +15,48 @@ public final class Microflows
 	private Microflows() {}
 
 	// These are the microflows for the Rooms module
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Booking_SaveBuilder(
+		rooms.proxies.Booking _booking
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Rooms.ACT_Booking_Save");
+		builder = builder.withParam("Booking", _booking);
+		return builder;
+	}
+
+	public static void aCT_Booking_Save(
+		IContext context,
+		rooms.proxies.Booking _booking
+	)
+	{
+		aCT_Booking_SaveBuilder(
+				_booking
+			)
+			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Equipment_SaveBuilder(
+		rooms.proxies.Equipment _equipment,
+		rooms.proxies.Room _room
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Rooms.ACT_Equipment_Save");
+		builder = builder.withParam("Equipment", _equipment);
+		builder = builder.withParam("Room", _room);
+		return builder;
+	}
+
+	public static void aCT_Equipment_Save(
+		IContext context,
+		rooms.proxies.Equipment _equipment,
+		rooms.proxies.Room _room
+	)
+	{
+		aCT_Equipment_SaveBuilder(
+				_equipment,
+				_room
+			)
+			.execute(context);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Room_CreateBuilder()
 	{
 		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Rooms.ACT_Room_Create");
@@ -24,5 +66,45 @@ public final class Microflows
 	public static void aCT_Room_Create(IContext context)
 	{
 		aCT_Room_CreateBuilder().execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder cALC_Booking_CalculateDurationBuilder(
+		rooms.proxies.Booking _booking
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Rooms.CALC_Booking_CalculateDuration");
+		builder = builder.withParam("Booking", _booking);
+		return builder;
+	}
+
+	public static java.math.BigDecimal cALC_Booking_CalculateDuration(
+		IContext context,
+		rooms.proxies.Booking _booking
+	)
+	{
+		Object result = cALC_Booking_CalculateDurationBuilder(
+				_booking
+			)
+			.execute(context);
+		return (java.math.BigDecimal) result;
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder cALC_Booking_CalculateFirstFreeOptionBuilder(
+		rooms.proxies.Booking _booking
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Rooms.CALC_Booking_CalculateFirstFreeOption");
+		builder = builder.withParam("Booking", _booking);
+		return builder;
+	}
+
+	public static java.util.Date cALC_Booking_CalculateFirstFreeOption(
+		IContext context,
+		rooms.proxies.Booking _booking
+	)
+	{
+		Object result = cALC_Booking_CalculateFirstFreeOptionBuilder(
+				_booking
+			)
+			.execute(context);
+		return (java.util.Date) result;
 	}
 }

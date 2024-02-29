@@ -24,6 +24,7 @@ public class Room implements com.mendix.systemwideinterfaces.core.IEntityProxy
 		Description("Description"),
 		Size("Size"),
 		ActivityStatus("ActivityStatus"),
+		ReservationPerson("ReservationPerson"),
 		RoomPicture_Room("Rooms.RoomPicture_Room"),
 		User_Room("UserManagement.User_Room");
 
@@ -246,6 +247,42 @@ public class Room implements com.mendix.systemwideinterfaces.core.IEntityProxy
 		} else {
 			getMendixObject().setValue(context, MemberNames.ActivityStatus.toString(), null);
 		}
+	}
+
+	/**
+	 * @return value of ReservationPerson
+	 */
+	public final java.lang.String getReservationPerson()
+	{
+		return getReservationPerson(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of ReservationPerson
+	 */
+	public final java.lang.String getReservationPerson(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.ReservationPerson.toString());
+	}
+
+	/**
+	 * Set value of ReservationPerson
+	 * @param reservationperson
+	 */
+	public final void setReservationPerson(java.lang.String reservationperson)
+	{
+		setReservationPerson(getContext(), reservationperson);
+	}
+
+	/**
+	 * Set value of ReservationPerson
+	 * @param context
+	 * @param reservationperson
+	 */
+	public final void setReservationPerson(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String reservationperson)
+	{
+		getMendixObject().setValue(context, MemberNames.ReservationPerson.toString(), reservationperson);
 	}
 
 	/**

@@ -1,1 +1,1 @@
-define([], {});
+define(["RadioButtonList/widget/AttrRadioButtonList", "RadioButtonList/widget/AssocRadioButtonList"], {});
