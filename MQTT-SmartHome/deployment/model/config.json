@@ -1,0 +1,19 @@
+{
+  "Configuration": {
+    "DatabaseName": "default",
+    "DatabasePassword": "",
+    "DatabaseType": "HSQLDB",
+    "DatabaseHost": "",
+    "DatabaseUserName": "",
+    "DatabaseUseIntegratedSecurity": "False",
+    "ApplicationRootUrl": "http://localhost:8080/",
+    "ScheduledEventExecution": "None"
+  },
+  "Constants": {
+    "Atlas_NativeMobile_Content.Atlas_Native_Content_Version": "3.0.1",
+    "MqttConnector.EncryptionKey": "yru63LmxxUH5Oe2doRAbYnzOtOd0nFpd",
+    "MqttConnector.ClientIdPrefix": "mx-mqtt-connector-",
+    "NanoflowCommons.Nanoflow_Commons_Version": "4.0.0"
+  },
+  "AdminPassword": null
+}

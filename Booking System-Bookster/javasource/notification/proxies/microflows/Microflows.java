@@ -6,6 +6,7 @@ package notification.proxies.microflows;
 
 import com.mendix.core.Core;
 import com.mendix.systemwideinterfaces.core.IContext;
+import com.mendix.systemwideinterfaces.core.IMendixObject;
 
 public final class Microflows
 {
@@ -15,14 +16,37 @@ public final class Microflows
 	private Microflows() {}
 
 	// These are the microflows for the Notification module
-	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Booking_ComingBuilder()
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Booking_EmailSendBuilder()
 	{
-		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Notification.ACT_Booking_Coming");
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Notification.ACT_Booking_EmailSend");
 		return builder;
 	}
 
-	public static void aCT_Booking_Coming(IContext context)
+	public static void aCT_Booking_EmailSend(IContext context)
 	{
-		aCT_Booking_ComingBuilder().execute(context);
+		aCT_Booking_EmailSendBuilder().execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder sUB_CreateEmailFromTemplateAndThenSendBuilder(
+		java.util.List<calendarevents.proxies.Booking> _bookingList,
+		email_connector.proxies.EmailTemplate _emailTemplate
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Notification.SUB_CreateEmailFromTemplateAndThenSend");
+		builder = builder.withParam("BookingList", _bookingList);
+		builder = builder.withParam("EmailTemplate", _emailTemplate);
+		return builder;
+	}
+
+	public static void sUB_CreateEmailFromTemplateAndThenSend(
+		IContext context,
+		java.util.List<calendarevents.proxies.Booking> _bookingList,
+		email_connector.proxies.EmailTemplate _emailTemplate
+	)
+	{
+		sUB_CreateEmailFromTemplateAndThenSendBuilder(
+				_bookingList,
+				_emailTemplate
+			)
+			.execute(context);
 	}
 }

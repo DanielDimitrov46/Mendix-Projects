@@ -10,7 +10,17 @@
     {
       "suppressions": [],
       "disabledBestPractices": [],
-      "readRecommendations": [],
+      "readRecommendations": [
+        {
+          "code": "MXP004",
+          "locationObjects": [
+            {
+              "uuid": "73b0af6f-d448-47dd-9120-6d5e34ec30f7",
+              "fullPath": " (ActionActivity) < 7ee7c286-b42e-46a7-af3d-2ca5032d7e99 (MicroflowObjectCollection) <  (LoopedActivity) < 6d24fb78-e203-4e11-ac1f-5101729a2cb6 (MicroflowObjectCollection) < Notification.SUB_CreateEmailFromTemplateAndThenSend"
+            }
+          ]
+        }
+      ],
       "suppressedRecommendations": [],
       "hasShownRecommendationsNotificationForThisApp": true,
       "type": "Mendix.Modeler.MxAssist.PerformanceBot.Serialization.Configuration.PerformanceBotConfiguration, Mendix.Modeler.MxAssist.PerformanceBot.Serialization, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null"

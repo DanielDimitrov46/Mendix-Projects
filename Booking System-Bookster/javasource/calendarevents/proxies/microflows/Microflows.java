@@ -16,6 +16,29 @@ public final class Microflows
 	private Microflows() {}
 
 	// These are the microflows for the CalendarEvents module
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Booking_SaveBuilder(
+		calendarevents.proxies.Booking _booking,
+		rooms.proxies.Room _room
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("CalendarEvents.ACT_Booking_Save");
+		builder = builder.withParam("Booking", _booking);
+		builder = builder.withParam("Room", _room);
+		return builder;
+	}
+
+	public static void aCT_Booking_Save(
+		IContext context,
+		calendarevents.proxies.Booking _booking,
+		rooms.proxies.Room _room
+	)
+	{
+		aCT_Booking_SaveBuilder(
+				_booking,
+				_room
+			)
+			.execute(context);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Calendar_RetrieveEventsBuilder(
 		calendarevents.proxies.Calendar _calendar
 	)
