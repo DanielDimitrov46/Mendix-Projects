@@ -233,6 +233,9 @@ startApp({
         ],
         "mendix.lib.Validations.field_issue": [
             "{1} has an issue: {2}"
+        ],
+        "mxui.widget.ListView.refresh": [
+            "Refresh/Clear"
         ]
     },
     "navigationStyle": navigationStyle,
@@ -256,10 +259,10 @@ startApp({
         }
     ] ),
     "registerPages": () => {
-        NativeUI.registerPage("NativeMobile.Home_Native", require("D:/UKTC PROGRAMMING/Mendix-Projetcs/MQTT-SmartHome/deployment/native/pages/NativeMobile.Home_Native"), {"sidebar":false,"headerRegionName":"placeholder$Header","showBottomBar":true,"type":"Default"});
+        NativeUI.registerPage("NativeMobile.Home_Native", ()=> require("D:/UKTC PROGRAMMING/Mendix-Projects/MQTT-SmartHome/deployment/native/pages/NativeMobile.Home_Native"), {"sidebar":false,"headerRegionName":"placeholder$Header","showBottomBar":true,"type":"Default"});
     },
     "animationEnabled": true,
-    "deploymentID": "638458762307419006",
+    "deploymentID": "638477474664347869",
     "checkForOTAUpdates": false,
     "loggingEnabled": false,
     "encryptionDbEnabled": false,

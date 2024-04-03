@@ -26,6 +26,16 @@ public final class Microflows
 	{
 		aCT_Booking_EmailSendBuilder().execute(context);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Room_CheckForStatusBuilder()
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Notification.ACT_Room_CheckForStatus");
+		return builder;
+	}
+
+	public static void aCT_Room_CheckForStatus(IContext context)
+	{
+		aCT_Room_CheckForStatusBuilder().execute(context);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder sUB_CreateEmailFromTemplateAndThenSendBuilder(
 		java.util.List<calendarevents.proxies.Booking> _bookingList,
 		email_connector.proxies.EmailTemplate _emailTemplate

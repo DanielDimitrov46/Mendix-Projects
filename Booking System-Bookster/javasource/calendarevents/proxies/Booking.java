@@ -30,6 +30,7 @@ public class Booking implements com.mendix.systemwideinterfaces.core.IEntityProx
 		FirstFreeChoice("FirstFreeChoice"),
 		BookedRoom("BookedRoom"),
 		isSent("isSent"),
+		Calendar_Booking("CalendarEvents.Calendar_Booking"),
 		Booking_Room("CalendarEvents.Booking_Room");
 
 		private final java.lang.String metaName;
@@ -449,6 +450,53 @@ public class Booking implements com.mendix.systemwideinterfaces.core.IEntityProx
 	public final void setisSent(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Boolean issent)
 	{
 		getMendixObject().setValue(context, MemberNames.isSent.toString(), issent);
+	}
+
+	/**
+	 * @throws com.mendix.core.CoreException
+	 * @return value of Calendar_Booking
+	 */
+	public final calendarevents.proxies.Calendar getCalendar_Booking() throws com.mendix.core.CoreException
+	{
+		return getCalendar_Booking(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of Calendar_Booking
+	 * @throws com.mendix.core.CoreException
+	 */
+	public final calendarevents.proxies.Calendar getCalendar_Booking(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		calendarevents.proxies.Calendar result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.Calendar_Booking.toString());
+		if (identifier != null) {
+			result = calendarevents.proxies.Calendar.load(context, identifier);
+		}
+		return result;
+	}
+
+	/**
+	 * Set value of Calendar_Booking
+	 * @param calendar_booking
+	 */
+	public final void setCalendar_Booking(calendarevents.proxies.Calendar calendar_booking)
+	{
+		setCalendar_Booking(getContext(), calendar_booking);
+	}
+
+	/**
+	 * Set value of Calendar_Booking
+	 * @param context
+	 * @param calendar_booking
+	 */
+	public final void setCalendar_Booking(com.mendix.systemwideinterfaces.core.IContext context, calendarevents.proxies.Calendar calendar_booking)
+	{
+		if (calendar_booking == null) {
+			getMendixObject().setValue(context, MemberNames.Calendar_Booking.toString(), null);
+		} else {
+			getMendixObject().setValue(context, MemberNames.Calendar_Booking.toString(), calendar_booking.getMendixObject().getId());
+		}
 	}
 
 	/**

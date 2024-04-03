@@ -1,8 +1,8 @@
 Initialized native services in: C:\Users\danid\.gradle\native
 Initialized jansi services in: C:\Users\danid\.gradle\native
 Received JVM installation metadata from 'C:\Program Files\Eclipse Adoptium\jdk-11.0.20.8-hotspot': {JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-11.0.20.8-hotspot, JAVA_VERSION=11.0.20, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=11.0.20+8, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=11.0.20+8, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
-The client will now receive all logging from the daemon (pid: 16696). The daemon log file: C:\Users\danid\.gradle\daemon\7.6\daemon-16696.out.log
-Starting 2nd build in daemon [uptime: 16.611 secs, performance: 100%, non-heap usage: 17% of 256 MiB]
+The client will now receive all logging from the daemon (pid: 20956). The daemon log file: C:\Users\danid\.gradle\daemon\7.6\daemon-20956.out.log
+Starting 4th build in daemon [uptime: 33 mins 4.885 secs, performance: 100%, non-heap usage: 25% of 256 MiB]
 Using 16 worker leases.
 Now considering [D:\UKTC PROGRAMMING\Mendix-Projects\Booking System-Bookster\deployment] as hierarchies to watch
 Watching the file system is configured to be enabled if available
@@ -25,9 +25,9 @@ Selected primary task 'package' from project :
 Tasks to be executed: [task ':clean-custom-classes', task ':compile', task ':package']
 Tasks that were excluded: []
 Resolve mutations for :clean-custom-classes (Thread[Execution worker,5,main]) started.
-destroyer locations for task group 0 (Thread[Execution worker Thread 8,5,main]) started.
 :clean-custom-classes (Thread[Execution worker,5,main]) started.
-destroyer locations for task group 1 (Thread[Execution worker Thread 8,5,main]) started.
+destroyer locations for task group 0 (Thread[Execution worker Thread 3,5,main]) started.
+destroyer locations for task group 1 (Thread[Execution worker Thread 3,5,main]) started.
 
 > Task :clean-custom-classes
 Caching disabled for task ':clean-custom-classes' because:
@@ -49,18 +49,20 @@ file or directory 'D:\UKTC PROGRAMMING\Mendix-Projects\Booking System-Bookster\v
 Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
 Compiling with toolchain 'C:\Program Files\Eclipse Adoptium\jdk-11.0.20.8-hotspot'.
 Compiling with JDK Java compiler API.
-Class dependency analysis for incremental compilation took 1.004 secs.
-Created classpath snapshot for incremental compilation in 0.188 secs.
+Class dependency analysis for incremental compilation took 0.757 secs.
+Created classpath snapshot for incremental compilation in 0.017 secs.
 Resolve mutations for :package (Thread[Execution worker,5,main]) started.
 :package (Thread[Execution worker,5,main]) started.
 
-> Task :package UP-TO-DATE
+> Task :package
 Caching disabled for task ':package' because:
   Build cache is disabled
-Skipping task ':package' as it is up-to-date.
+Task ':package' is not up-to-date because:
+  Input property 'rootSpec$1$1' file D:\UKTC PROGRAMMING\Mendix-Projects\Booking System-Bookster\deployment\run\bin\usermanagement\proxies\Registration$MemberNames.class has changed.
+  Input property 'rootSpec$1$1' file D:\UKTC PROGRAMMING\Mendix-Projects\Booking System-Bookster\deployment\run\bin\usermanagement\proxies\Registration.class has changed.
 
-BUILD SUCCESSFUL in 9s
-3 actionable tasks: 2 executed, 1 up-to-date
+BUILD SUCCESSFUL in 5s
+3 actionable tasks: 3 executed
 Watched directory hierarchies: [D:\UKTC PROGRAMMING\Mendix-Projects\Booking System-Bookster\deployment]
 
 

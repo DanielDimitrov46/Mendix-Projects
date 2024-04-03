@@ -34,7 +34,7 @@
       "Name": "BizzomateDevTools.Enabled",
       "Type": "Boolean",
       "Description": "This constant enables or disabled the Bizzomate Mendix Dev Tools Chrome plugin. You can download the plugin here: \r\n\r\nhttps://chrome.google.com/webstore/detail/bizzomate-mendix-dev-tool/nkbokoloejkhohjlickhfkjfmbmboaof",
-      "DefaultValue": "False"
+      "DefaultValue": "True"
     },
     {
       "Name": "CommunityCommons.MergeMultiplePdfs_MaxAtOnce",
@@ -100,6 +100,10 @@
   "ScheduledEvents": [
     {
       "Name": "Notification.SCE_Notidfications_Send_Message",
+      "Description": ""
+    },
+    {
+      "Name": "Notification.SCE_Notification_Check_Availability",
       "Description": ""
     }
   ],

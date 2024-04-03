@@ -1,13 +1,14 @@
 ext {
-	mendixInstallDir = "D:/UKTC PROGRAMMING/10.0.0.9976"
+	mendixJavaVersion = 11
+	mendixInstallDir = "C:/Program Files/Mendix/10.9.0.31759"
 	projectName = "MQTT-SmartHome"
 	projectSafeName = "MQTT_SmartHome"
-	mendixProjectDir = "D:/UKTC PROGRAMMING/Mendix-Projetcs/MQTT-SmartHome"
-	deploymentDir = "D:/UKTC PROGRAMMING/Mendix-Projetcs/MQTT-SmartHome/deployment"
-	dataSnapshotFile = "D:/UKTC PROGRAMMING/Mendix-Projetcs/MQTT-SmartHome/data-snapshot.zip"
-	dataDir = "D:/UKTC PROGRAMMING/Mendix-Projetcs/MQTT-SmartHome/deployment/data"
+	mendixProjectDir = "D:/UKTC PROGRAMMING/Mendix-Projects/MQTT-SmartHome"
+	deploymentDir = "D:/UKTC PROGRAMMING/Mendix-Projects/MQTT-SmartHome/deployment"
+	dataSnapshotFile = "D:/UKTC PROGRAMMING/Mendix-Projects/MQTT-SmartHome/data-snapshot.zip"
+	dataDir = "D:/UKTC PROGRAMMING/Mendix-Projects/MQTT-SmartHome/deployment/data"
 	extractDataSnapshot = false
-	templatesDir = "D:/UKTC PROGRAMMING/10.0.0.9976/modeler/runtemplates"
+	templatesDir = "C:/Program Files/Mendix/10.9.0.31759/modeler/runtemplates"
 	runDir = "run"
 	compileTargetDir = "run/bin"
 	deploymentDirName = "deployment"
@@ -26,8 +27,8 @@ ext {
 		"runtime/bundles/com.mendix.logging-api.jar",
 		"runtime/bundles/com.mendix.m2ee-api.jar",
 		"runtime/bundles/com.mendix.public-api.jar",
-		"runtime/bundles/javax.servlet.servlet-api.jar",
-		"runtime/bundles/javax.websocket.websocket-api.jar"
+		"runtime/bundles/org.eclipse.jetty.toolchain.jetty-servlet-api.jar",
+		"runtime/bundles/org.eclipse.jetty.toolchain.jetty-javax-websocket-api.jar"
 	]
 	excludedJars = []
 	jvmRemovedPackages = [

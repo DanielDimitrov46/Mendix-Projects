@@ -15,41 +15,83 @@ public final class Microflows
 	private Microflows() {}
 
 	// These are the microflows for the NativeMobile module
-	public static com.mendix.core.actionmanagement.MicroflowCallBuilder callBuilder(
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Light_ControlBuilder(
 		mqttconnector.proxies.ConnectionDetail _connectionDetail
 	)
 	{
-		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("NativeMobile.call");
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("NativeMobile.ACT_Light_Control");
 		builder = builder.withParam("ConnectionDetail", _connectionDetail);
+		return builder;
+	}
+
+	public static void aCT_Light_Control(
+		IContext context,
+		mqttconnector.proxies.ConnectionDetail _connectionDetail
+	)
+	{
+		aCT_Light_ControlBuilder(
+				_connectionDetail
+			)
+			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Light_SaveBuilder(
+		nativemobile.proxies.Light _light,
+		mqttconnector.proxies.ConnectionDetail _connectionDetail
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("NativeMobile.ACT_Light_Save");
+		builder = builder.withParam("Light", _light);
+		builder = builder.withParam("ConnectionDetail", _connectionDetail);
+		return builder;
+	}
+
+	public static void aCT_Light_Save(
+		IContext context,
+		nativemobile.proxies.Light _light,
+		mqttconnector.proxies.ConnectionDetail _connectionDetail
+	)
+	{
+		aCT_Light_SaveBuilder(
+				_light,
+				_connectionDetail
+			)
+			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder callBuilder(
+		nativemobile.proxies.Light _light
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("NativeMobile.call");
+		builder = builder.withParam("Light", _light);
 		return builder;
 	}
 
 	public static void call(
 		IContext context,
-		mqttconnector.proxies.ConnectionDetail _connectionDetail
+		nativemobile.proxies.Light _light
 	)
 	{
 		callBuilder(
-				_connectionDetail
+				_light
 			)
 			.execute(context);
 	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder call_2Builder(
-		mqttconnector.proxies.ConnectionDetail _connectionDetail
+		nativemobile.proxies.Light _light
 	)
 	{
 		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("NativeMobile.call_2");
-		builder = builder.withParam("ConnectionDetail", _connectionDetail);
+		builder = builder.withParam("Light", _light);
 		return builder;
 	}
 
 	public static void call_2(
 		IContext context,
-		mqttconnector.proxies.ConnectionDetail _connectionDetail
+		nativemobile.proxies.Light _light
 	)
 	{
 		call_2Builder(
-				_connectionDetail
+				_light
 			)
 			.execute(context);
 	}

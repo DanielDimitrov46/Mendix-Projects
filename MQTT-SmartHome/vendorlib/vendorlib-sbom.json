@@ -1,0 +1,405 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.4",
+  "version" : 1,
+  "metadata" : {
+    "tools" : [
+      {
+        "vendor" : "CycloneDX",
+        "name" : "cyclonedx-gradle-plugin",
+        "version" : "1.8.1"
+      }
+    ],
+    "component" : {
+      "group" : "com.mendix",
+      "name" : "temp",
+      "version" : "1.0.0",
+      "purl" : "pkg:maven/com.mendix/temp@1.0.0?type=jar",
+      "type" : "application",
+      "bom-ref" : "pkg:maven/com.mendix/temp@1.0.0?type=jar"
+    }
+  },
+  "components" : [
+    {
+      "group" : "org.bouncycastle",
+      "name" : "bcutil-jdk15on",
+      "version" : "1.70",
+      "description" : "The Bouncy Castle Java APIs for ASN.1 extension and utility APIs used to support bcpkix and bctls. This jar contains APIs for JDK 1.5 and up.",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "805173dfb0891331dbe69d0e53371af4"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "54280e7195a7430d7911ded93fc01e07300b9526"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "52dc5551b0257666526c5095424567fed7dc7b00d2b1ba7bd52298411112b1d0"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "f65fc2af60be9b4a0cfa227cede3ba5ef994716dcd462a9935ef74535a32e67c56cff92e6af9d5168c7a866e5f7c9fd17797485b89eb020eda12f7018af0fca1"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "46f32ed832f447e519beab6c553ffbab455376bdaed3554bc8c687b876776861afa02bd5ae226cdc0dc3f0c2ae28c9a4"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "749aa3317618bc93fbdf12fb49f4c653f81321b4ee69d7807515f50234bf531539bd6eb5c3ed34955eeb60bdb56967dc"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "2dc5b7a38918f9eed8e3652c0794d8bf3eb674d8b0f24f03c64edc2e2ac251eb"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "0506c3a4cfad6c892568ffefb71b049ef7c943e5ab172ac8756cebcd53a7facee7c1472b18ed2211eb6f820dbfc6bd07da25dee62a5edc61dc6b333d42964fbc"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "name" : "Bouncy Castle Licence",
+            "url" : "https://www.bouncycastle.org/licence.html"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.bouncycastle/bcutil-jdk15on@1.70?type=jar",
+      "modified" : false,
+      "externalReferences" : [
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/bcgit/bc-java/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/bcgit/bc-java"
+        }
+      ],
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.bouncycastle/bcutil-jdk15on@1.70?type=jar"
+    },
+    {
+      "group" : "org.bouncycastle",
+      "name" : "bcprov-jdk15on",
+      "version" : "1.70",
+      "description" : "The Bouncy Castle Crypto package is a Java implementation of cryptographic algorithms. This jar contains JCE provider and lightweight API for the Bouncy Castle Cryptography APIs for JDK 1.5 and up.",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "1809d0449a6374279c01fdd3be26cd92"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "4636a0d01f74acaf28082fb62b317f1080118371"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "8f3c20e3e2d565d26f33e8d4857a37d0d7f8ac39b62a7026496fcab1bdac30d4"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "7dccfc636ee4df1487615818cfa99c69941081df95e8ef1eaf4bca165594dff9547e3774fd70de3418abace77d2c45889f70bcd2e6823f8539f359e68eaf36d1"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "a0b35d204cd962f1d246fa94b6e8b0fcee1a7c3f37b7e87cda742f2124a25b48794ce11a903ea8d12009c86227b6808d"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "980d81d3d9906764bbf2ae9b3b364ea58628b485ce1dc3d06734e10495d79f2be2e7cc7df61ac88cd67c1104c7af9393"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "10a3572e42d29f609721d795116e3e5d0f6f03efef84bb979ce72e26908d242b"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "a0761cb6deeb86c94b96850c72c0a0eaf516ca849f4b8268f9f60c9ed2a6730e692c15098d47e617da294e931113c6cbcaddec8957c9f029fa595b5f14ff35ac"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "name" : "Bouncy Castle Licence",
+            "url" : "https://www.bouncycastle.org/licence.html"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.bouncycastle/bcprov-jdk15on@1.70?type=jar",
+      "modified" : false,
+      "externalReferences" : [
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/bcgit/bc-java/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/bcgit/bc-java"
+        }
+      ],
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.bouncycastle/bcprov-jdk15on@1.70?type=jar"
+    },
+    {
+      "group" : "org.slf4j",
+      "name" : "slf4j-simple",
+      "version" : "2.0.0",
+      "description" : "SLF4J Simple binding",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "2ba4c81e9b7febe60b7d520d22112b58"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "bf7158cef919bb65a6de45766fcf0546a88f5907"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "a84d085bd8acd071eff5d1cc18a7ba6d9cfd080a2ee88a6689492e2c49f97e96"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "a60daa5fe1768c4cbbb39fdc249003d9e6bde8dcfa054902ef735e4d9b01b27a3ae889509667b6e7ece00da00d6bf66d00a7278c2f08581e6f939ede81bcb0fd"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "2ebb54ea9eae50fb465c8b69637ecf3dc52d30eb09b9de3184ad876e361627e5e96e18e4eb2a389a6ad29f940aa62a38"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "9565a1d862919d5f64bd467caccb35e9b4881d0613e4b82e87e6f3c5ab83878011e2fe63c2d0936168a711c11da3ea61"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "c167c72d5f076e533918f93642e799f6ba7bfa979871087577c4687ba60646be"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "b8e37fb4b10f5c43f985306fa1fac0af7aa648c16b2998517a669141abe83e49a552e2e02a0feef5603d65763bb304b9758eb96d599ee1730a193649f595c8e1"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "MIT",
+            "url" : "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.slf4j/slf4j-simple@2.0.0?type=jar",
+      "modified" : false,
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.slf4j/slf4j-simple@2.0.0?type=jar"
+    },
+    {
+      "group" : "org.eclipse.paho",
+      "name" : "org.eclipse.paho.client.mqttv3",
+      "version" : "1.2.5",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "eb09d20835460ad2de7b6d46e77ad113"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "1546cfc794449c39ad569853843a930104fdc297"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "59914287adac506a28d5e8172eed262a22605f3df4d426b9d92f41dae2448185"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "3bfcecbd97a2afea3bb4c2bd2eacb9d67349a7f460353e3a522399f1c5960c884710623a400d085bddf1c39a366b2ca316ade6cbe1fae277ca62145675a428b6"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "ea508a01d535f9936ae040d5752d5505e8a6c288d71a937de588ea5b9f304468e3292ed851b29809c70f15a50b6f3f38"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "c8e8655ffcc13aa17347a7498b2a43e0c2a14de7e2f64b14f713ea4322e1af35712b09e19504b85c12b7f6cef81812fe"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "e9bafa23bc03aba45ded347511c0184d158a5bf8f9ccbb93702c3f2ee2ddd117"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "d2db4b371e8118ee68b71a40d5d031b8c703a021d59ae888001b128e27344dd9530a4a54ba8a26382bfbfbab074001433010048438197099b736ffe3c850442e"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.eclipse.paho/org.eclipse.paho.client.mqttv3@1.2.5?type=jar",
+      "modified" : false,
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.eclipse.paho/org.eclipse.paho.client.mqttv3@1.2.5?type=jar"
+    },
+    {
+      "group" : "org.bouncycastle",
+      "name" : "bcpkix-jdk15on",
+      "version" : "1.70",
+      "description" : "The Bouncy Castle Java APIs for CMS, PKCS, EAC, TSP, CMP, CRMF, OCSP, and certificate generation. This jar contains APIs for JDK 1.5 and up. The APIs can be used in conjunction with a JCE/JCA provider such as the one provided with the Bouncy Castle Cryptography APIs.",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "2c383f50d41937eae4fd32c35d8668cd"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "f81e5af49571a9d5a109a88f239a73ce87055417"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "e5b9cb821df57f70b0593358e89c0e8d7266515da9d088af6c646f63d433c07c"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "477001e9556cdbe7fe9eca0c35b3ce29cd6b4d9cd5e13d1f44e3da6433d56a18e23f3679603a23730d78a93bd401113b804562c8bacb1e745e7944127f7afa4c"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "249614fa138e4b405ad067f69ee538269ade5a517d8f47b6d69bfc8180ae48c019570540a47314f3b64060a6bca20682"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "13d1354f83de80b89fa91ffc44a14b0aeee418367ec7dde95aaecd70f6d219e4ed1bbf102e099cdfe64737c06dafc199"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "afc8204fb76d0ec343ba436eaeac7834156ee976a1e0b2bafd0075812451046a"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "b55bcc09c9f9c87332160ce068ca349502d628c34b156ebb30a99d94f87606d59ccc62f8ded4a927d57ed9553d274b34a8f9b5602a5eefad66958f9eddbffa28"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "name" : "Bouncy Castle Licence",
+            "url" : "https://www.bouncycastle.org/licence.html"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.bouncycastle/bcpkix-jdk15on@1.70?type=jar",
+      "modified" : false,
+      "externalReferences" : [
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/bcgit/bc-java/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/bcgit/bc-java"
+        }
+      ],
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.bouncycastle/bcpkix-jdk15on@1.70?type=jar"
+    },
+    {
+      "group" : "org.slf4j",
+      "name" : "slf4j-api",
+      "version" : "2.0.0",
+      "description" : "The slf4j API",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "5e0d71b5aefc04790c6a6b8545c833c0"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "82b150a36b504a09076b29c0509e31702c9c3999"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "a223e6df91b84f19d49c5ebc5f5f97c7f4438419f84a52fa05e1cfc6eed38aa9"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "0101a4848b4234ed23412c5a8fef85e0fc449f22c1c8ee722732f213199a0ebb757e18f96a24b66a8677cec04af3a61da154d8412660e5ed9a31cad21fa3d9e8"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "e8b65f0038ee1268d5fad4e2ee661e56ca9436deeb6b6bf7b75636f265f32b40e561bff294c36f8d52da77a1acf28032"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "3d37ee51481504a2461ffb3c0b996909bedfdbbfb22fb4e0b2eb10c6f2cddd88a804de8c7ae010d20ec3ae5627484d7e"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "b841d04a184d1a0af0ddef795807a4171de66dc00ac1dfa0d10811d75366b54d"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "aad86ac21841d16248f8db3c619496262882f930ba5704d8f7707e1bb937565a3c883d7f8081389b9fb72dbadf81541c901e397e316b8cefd640ec51860b25a5"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "MIT",
+            "url" : "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.slf4j/slf4j-api@2.0.0?type=jar",
+      "modified" : false,
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.slf4j/slf4j-api@2.0.0?type=jar"
+    }
+  ],
+  "dependencies" : [
+    {
+      "ref" : "pkg:maven/org.slf4j/slf4j-api@2.0.0?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.bouncycastle/bcprov-jdk15on@1.70?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.bouncycastle/bcutil-jdk15on@1.70?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.bouncycastle/bcprov-jdk15on@1.70?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.eclipse.paho/org.eclipse.paho.client.mqttv3@1.2.5?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.slf4j/slf4j-simple@2.0.0?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.slf4j/slf4j-api@2.0.0?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/com.mendix/temp@1.0.0?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.eclipse.paho/org.eclipse.paho.client.mqttv3@1.2.5?type=jar",
+        "pkg:maven/org.slf4j/slf4j-simple@2.0.0?type=jar",
+        "pkg:maven/org.bouncycastle/bcpkix-jdk15on@1.70?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.bouncycastle/bcpkix-jdk15on@1.70?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.bouncycastle/bcutil-jdk15on@1.70?type=jar",
+        "pkg:maven/org.bouncycastle/bcprov-jdk15on@1.70?type=jar"
+      ]
+    }
+  ]
+}

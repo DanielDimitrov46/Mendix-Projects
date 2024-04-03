@@ -50,29 +50,6 @@ class ProtectedModule {
     }
 }
 
-tasks.register("checkDependencies") {
-    description "Check dependencies"
-
-    def packagesArg = jvmRemovedPackages.collect { ["-p", it] }.flatten()
-    def classpath = (publicApiJars + "$mendixProjectDir/$userlibDirName/.*").join(File.pathSeparator)
-
-    def buffer = new ByteArrayOutputStream()
-
-    exec {
-        standardOutput = buffer
-        commandLine = ["java", "-Duser.language=en", "com.sun.tools.jdeps.Main", "-cp", classpath,
-                "--multi-release", "11", "-verbose:class"] + packagesArg + "$deploymentDir/$runDir"
-    }
-
-    def output = new String(buffer.toByteArray())
-    def lines = output.split("\\R")
-
-    if (lines.any { !it.contains("Warning: ") && it.toLowerCase().contains("not found") }) {
-        System.err.println output
-        throw new GradleException("Dependency check failed, most probably some packages and/or classes are not provided.")
-    }
-}
-
 tasks.register('clean', Delete) {
     description 'clean the deployment directory'
     delete modelDir
@@ -146,8 +123,10 @@ tasks.register("compile", JavaCompile) {
     options.debugOptions.debugLevel = debugLevel
 
     options.encoding = "UTF-8"
-    sourceCompatibility = JavaVersion.VERSION_11.toString()
-    targetCompatibility = JavaVersion.VERSION_11.toString()
+
+    options.release = mendixJavaVersion
+    sourceCompatibility = mendixJavaVersion
+    targetCompatibility = mendixJavaVersion
 
     def protectedModulesSources = protectedModules.stream().map { fileTree(it.javasource()) }.collect(Collectors.toList())
     def publicApiJarFiles = files(publicApiJars)

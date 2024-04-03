@@ -44,7 +44,8 @@ public class ConnectionDetail implements com.mendix.systemwideinterfaces.core.IE
 		WillPayLoad("WillPayLoad"),
 		WillQoS("WillQoS"),
 		WillRetain("WillRetain"),
-		OperationTimeout("OperationTimeout");
+		OperationTimeout("OperationTimeout"),
+		Light_ConnectionDetail("NativeMobile.Light_ConnectionDetail");
 
 		private final java.lang.String metaName;
 
@@ -1023,13 +1024,60 @@ public class ConnectionDetail implements com.mendix.systemwideinterfaces.core.IE
 		getMendixObject().setValue(context, MemberNames.OperationTimeout.toString(), operationtimeout);
 	}
 
-	@Override
+	/**
+	 * @throws com.mendix.core.CoreException
+	 * @return value of Light_ConnectionDetail
+	 */
+	public final nativemobile.proxies.Light getLight_ConnectionDetail() throws com.mendix.core.CoreException
+	{
+		return getLight_ConnectionDetail(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of Light_ConnectionDetail
+	 * @throws com.mendix.core.CoreException
+	 */
+	public final nativemobile.proxies.Light getLight_ConnectionDetail(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		nativemobile.proxies.Light result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.Light_ConnectionDetail.toString());
+		if (identifier != null) {
+			result = nativemobile.proxies.Light.load(context, identifier);
+		}
+		return result;
+	}
+
+	/**
+	 * Set value of Light_ConnectionDetail
+	 * @param light_connectiondetail
+	 */
+	public final void setLight_ConnectionDetail(nativemobile.proxies.Light light_connectiondetail)
+	{
+		setLight_ConnectionDetail(getContext(), light_connectiondetail);
+	}
+
+	/**
+	 * Set value of Light_ConnectionDetail
+	 * @param context
+	 * @param light_connectiondetail
+	 */
+	public final void setLight_ConnectionDetail(com.mendix.systemwideinterfaces.core.IContext context, nativemobile.proxies.Light light_connectiondetail)
+	{
+		if (light_connectiondetail == null) {
+			getMendixObject().setValue(context, MemberNames.Light_ConnectionDetail.toString(), null);
+		} else {
+			getMendixObject().setValue(context, MemberNames.Light_ConnectionDetail.toString(), light_connectiondetail.getMendixObject().getId());
+		}
+	}
+
+	@java.lang.Override
 	public final com.mendix.systemwideinterfaces.core.IMendixObject getMendixObject()
 	{
 		return connectionDetailMendixObject;
 	}
 
-	@Override
+	@java.lang.Override
 	public final com.mendix.systemwideinterfaces.core.IContext getContext()
 	{
 		return context;

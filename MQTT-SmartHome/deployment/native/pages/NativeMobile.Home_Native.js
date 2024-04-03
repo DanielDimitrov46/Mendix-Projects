@@ -5,44 +5,44 @@ import { ExpressionProperty } from "mendix/ExpressionProperty";
 import { IconProperty } from "mendix/IconProperty";
 import { StyleProperty } from "mendix/StyleProperty";
 
-import { com_mendix_widget_native_animation_Animation } from "externalWidgets";
-import { com_mendix_widget_native_introscreen_IntroScreen } from "externalWidgets";
+import { Animation as com_mendix_widget_native_animation_Animation } from "../widgets/com/mendix/widget/native/animation/Animation";
+import { IntroScreen as com_mendix_widget_native_introscreen_IntroScreen } from "../widgets/com/mendix/widget/native/introscreen/IntroScreen";
 import { Container } from "mendix/Container";
 import { Text } from "mendix/Text";
 import { addEnumerations, asPluginWidgets, t } from "mendix/native";
 
-import { mainContent, sidebar } from "D:/UKTC PROGRAMMING/Mendix-Projetcs/MQTT-SmartHome/deployment/native/layouts/Atlas_Core.NativePhone_Default.js";
+import { mainContent, sidebar } from "D:/UKTC PROGRAMMING/Mendix-Projects/MQTT-SmartHome/deployment/native/layouts/Atlas_Core.NativePhone_Default.js";
 
 import * as styles from "../styles.js";
 
 const { $com_mendix_widget_native_introscreen_IntroScreen, $Container, $com_mendix_widget_native_animation_Animation, $Text } = asPluginWidgets({ com_mendix_widget_native_introscreen_IntroScreen, Container, com_mendix_widget_native_animation_Animation, Text });
 
 const placeholder$Main = () => [
-    <$com_mendix_widget_native_introscreen_IntroScreen key="p5.NativeMobile.Home_Native.introScreen1"
-        $widgetId="p5.NativeMobile.Home_Native.introScreen1"
+    <$com_mendix_widget_native_introscreen_IntroScreen key="p0.NativeMobile.Home_Native.introScreen1"
+        $widgetId="p0.NativeMobile.Home_Native.introScreen1"
         slides={[
             {
                 "name": "Start",
                 "content": [
-                    <$Container key="p5.NativeMobile.Home_Native.container4"
-                        $widgetId="p5.NativeMobile.Home_Native.container4"
+                    <$Container key="p0.NativeMobile.Home_Native.container4"
+                        $widgetId="p0.NativeMobile.Home_Native.container4"
                         style={StyleProperty({
                             "styles": [ styles.Container, styles.flexMain, styles.alignChildrenCenter, styles.justifyContentCenter ]
                         })}
                         onClick={undefined}
                         content={[
-                            <$Container key="p5.NativeMobile.Home_Native.container3"
-                                $widgetId="p5.NativeMobile.Home_Native.container3"
+                            <$Container key="p0.NativeMobile.Home_Native.container3"
+                                $widgetId="p0.NativeMobile.Home_Native.container3"
                                 style={StyleProperty({
                                     "styles": [ styles.Container, styles.spacingOuterBottomSmaller ]
                                 })}
                                 onClick={undefined}
                                 content={[
-                                    <$com_mendix_widget_native_animation_Animation key="p5.NativeMobile.Home_Native.animation1"
-                                        $widgetId="p5.NativeMobile.Home_Native.animation1"
+                                    <$com_mendix_widget_native_animation_Animation key="p0.NativeMobile.Home_Native.animation1"
+                                        $widgetId="p0.NativeMobile.Home_Native.animation1"
                                         content={[
-                                            <$Text key="p5.NativeMobile.Home_Native.text1"
-                                                $widgetId="p5.NativeMobile.Home_Native.text1"
+                                            <$Text key="p0.NativeMobile.Home_Native.text1"
+                                                $widgetId="p0.NativeMobile.Home_Native.text1"
                                                 style={StyleProperty({
                                                     "styles": [ styles.Text, styles.TextHeading1, styles.h1 ]
                                                 })}
@@ -69,18 +69,18 @@ const placeholder$Main = () => [
                                         })} />
                                 ]}
                                 accessible={false} />,
-                            <$Container key="p5.NativeMobile.Home_Native.container2"
-                                $widgetId="p5.NativeMobile.Home_Native.container2"
+                            <$Container key="p0.NativeMobile.Home_Native.container2"
+                                $widgetId="p0.NativeMobile.Home_Native.container2"
                                 style={StyleProperty({
                                     "styles": [ styles.Container, styles.flexRow ]
                                 })}
                                 onClick={undefined}
                                 content={[
-                                    <$com_mendix_widget_native_animation_Animation key="p5.NativeMobile.Home_Native.animation2"
-                                        $widgetId="p5.NativeMobile.Home_Native.animation2"
+                                    <$com_mendix_widget_native_animation_Animation key="p0.NativeMobile.Home_Native.animation2"
+                                        $widgetId="p0.NativeMobile.Home_Native.animation2"
                                         content={[
-                                            <$Text key="p5.NativeMobile.Home_Native.text3"
-                                                $widgetId="p5.NativeMobile.Home_Native.text3"
+                                            <$Text key="p0.NativeMobile.Home_Native.text3"
+                                                $widgetId="p0.NativeMobile.Home_Native.text3"
                                                 style={StyleProperty({
                                                     "styles": [ styles.Text, styles.h1, styles.textLarge ]
                                                 })}
@@ -105,14 +105,14 @@ const placeholder$Main = () => [
                                         style={StyleProperty({
                                             "styles": [ styles.com_mendix_widget_native_animation_Animation ]
                                         })} />,
-                                    <$com_mendix_widget_native_animation_Animation key="p5.NativeMobile.Home_Native.animation4"
-                                        $widgetId="p5.NativeMobile.Home_Native.animation4"
+                                    <$com_mendix_widget_native_animation_Animation key="p0.NativeMobile.Home_Native.animation4"
+                                        $widgetId="p0.NativeMobile.Home_Native.animation4"
                                         content={[
-                                            <$com_mendix_widget_native_animation_Animation key="p5.NativeMobile.Home_Native.animation5"
-                                                $widgetId="p5.NativeMobile.Home_Native.animation5"
+                                            <$com_mendix_widget_native_animation_Animation key="p0.NativeMobile.Home_Native.animation5"
+                                                $widgetId="p0.NativeMobile.Home_Native.animation5"
                                                 content={[
-                                                    <$Text key="p5.NativeMobile.Home_Native.text6"
-                                                        $widgetId="p5.NativeMobile.Home_Native.text6"
+                                                    <$Text key="p0.NativeMobile.Home_Native.text6"
+                                                        $widgetId="p0.NativeMobile.Home_Native.text6"
                                                         style={StyleProperty({
                                                             "styles": [ styles.Text, styles.h1, styles.textLarge ]
                                                         })}
@@ -152,11 +152,11 @@ const placeholder$Main = () => [
                                         style={StyleProperty({
                                             "styles": [ styles.com_mendix_widget_native_animation_Animation ]
                                         })} />,
-                                    <$com_mendix_widget_native_animation_Animation key="p5.NativeMobile.Home_Native.animation6"
-                                        $widgetId="p5.NativeMobile.Home_Native.animation6"
+                                    <$com_mendix_widget_native_animation_Animation key="p0.NativeMobile.Home_Native.animation6"
+                                        $widgetId="p0.NativeMobile.Home_Native.animation6"
                                         content={[
-                                            <$Text key="p5.NativeMobile.Home_Native.text5"
-                                                $widgetId="p5.NativeMobile.Home_Native.text5"
+                                            <$Text key="p0.NativeMobile.Home_Native.text5"
+                                                $widgetId="p0.NativeMobile.Home_Native.text5"
                                                 style={StyleProperty({
                                                     "styles": [ styles.Text, styles.h1, styles.textLarge ]
                                                 })}
@@ -225,22 +225,22 @@ const placeholder$Main = () => [
         style={StyleProperty({
             "styles": [ styles.com_mendix_widget_native_introscreen_IntroScreen ]
         })} />,
-    <$Container key="p5.NativeMobile.Home_Native.container5"
-        $widgetId="p5.NativeMobile.Home_Native.container5"
+    <$Container key="p0.NativeMobile.Home_Native.container5"
+        $widgetId="p0.NativeMobile.Home_Native.container5"
         style={StyleProperty({
             "styles": [ styles.Container, styles.flexMain, styles.alignChildrenCenter, styles.justifyContentCenter, styles.spacingInnerLeftMedium, styles.spacingInnerRightMedium, styles.backgroundPrimary ]
         })}
         onClick={undefined}
         content={[
-            <$Container key="p5.NativeMobile.Home_Native.container6"
-                $widgetId="p5.NativeMobile.Home_Native.container6"
+            <$Container key="p0.NativeMobile.Home_Native.container6"
+                $widgetId="p0.NativeMobile.Home_Native.container6"
                 style={StyleProperty({
                     "styles": [ styles.Container, styles.spacingOuterBottomSmaller ]
                 })}
                 onClick={undefined}
                 content={[
-                    <$Text key="p5.NativeMobile.Home_Native.text7"
-                        $widgetId="p5.NativeMobile.Home_Native.text7"
+                    <$Text key="p0.NativeMobile.Home_Native.text7"
+                        $widgetId="p0.NativeMobile.Home_Native.text7"
                         style={StyleProperty({
                             "styles": [ styles.Text, styles.TextHeading1, styles.h1 ]
                         })}
@@ -252,15 +252,15 @@ const placeholder$Main = () => [
                         accessible={false} />
                 ]}
                 accessible={false} />,
-            <$Container key="p5.NativeMobile.Home_Native.container7"
-                $widgetId="p5.NativeMobile.Home_Native.container7"
+            <$Container key="p0.NativeMobile.Home_Native.container7"
+                $widgetId="p0.NativeMobile.Home_Native.container7"
                 style={StyleProperty({
                     "styles": [ styles.Container, styles.flexRow ]
                 })}
                 onClick={undefined}
                 content={[
-                    <$Text key="p5.NativeMobile.Home_Native.text11"
-                        $widgetId="p5.NativeMobile.Home_Native.text11"
+                    <$Text key="p0.NativeMobile.Home_Native.text11"
+                        $widgetId="p0.NativeMobile.Home_Native.text11"
                         style={StyleProperty({
                             "styles": [ styles.Text, styles.h1, styles.textLarge, styles.textCenter ]
                         })}

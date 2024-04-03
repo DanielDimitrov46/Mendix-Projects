@@ -40,7 +40,7 @@ export default {
         mendixResolve(
             "D:/UKTC PROGRAMMING/10.0.0.9976/modeler/tools/node/web-resolutions.json",
             "D:/UKTC PROGRAMMING/10.0.0.9976/modeler/tools/node/node_modules",
-            "D:/UKTC PROGRAMMING/Mendix-Projetcs/MQTT-SmartHome/deployment/web/cachetag.txt"
+            "D:/UKTC PROGRAMMING/Mendix-Projects/MQTT-SmartHome/deployment/web/cachetag.txt"
         ),
         nodePolyfills(),
         esbuild({
@@ -86,11 +86,11 @@ export default {
             minify: isProduction
         }),
         generatePrecacheServiceWorker({
-            deploymentDir: "D:/UKTC PROGRAMMING/Mendix-Projetcs/MQTT-SmartHome/deployment"
+            deploymentDir: "D:/UKTC PROGRAMMING/Mendix-Projects/MQTT-SmartHome/deployment"
         }),
         copy({
             targets: [
-              { src: 'D:/UKTC PROGRAMMING/Mendix-Projetcs/MQTT-SmartHome/deployment/web/widgets/*', dest: 'dist' },
+              { src: 'D:/UKTC PROGRAMMING/Mendix-Projects/MQTT-SmartHome/deployment/web/widgets/*', dest: 'dist' },
             ]
         })
     ],

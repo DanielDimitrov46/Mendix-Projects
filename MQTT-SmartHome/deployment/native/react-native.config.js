@@ -1,3 +1,3 @@
 module.exports = {
-  reactNativePath: 'D:/UKTC PROGRAMMING/10.0.0.9976/modeler/tools/node/node_modules/react-native'
+  reactNativePath: 'C:/Program Files/Mendix/10.9.0.31759/modeler/tools/node/node_modules/react-native'
 };

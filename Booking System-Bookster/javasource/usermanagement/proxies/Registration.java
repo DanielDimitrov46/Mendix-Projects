@@ -25,6 +25,7 @@ public class Registration implements com.mendix.systemwideinterfaces.core.IEntit
 		EmailAddress("EmailAddress"),
 		Password("Password"),
 		ConfirmPassword("ConfirmPassword"),
+		CreationTime("CreationTime"),
 		Status("Status");
 
 		private final java.lang.String metaName;
@@ -264,6 +265,42 @@ public class Registration implements com.mendix.systemwideinterfaces.core.IEntit
 	public final void setConfirmPassword(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String confirmpassword)
 	{
 		getMendixObject().setValue(context, MemberNames.ConfirmPassword.toString(), confirmpassword);
+	}
+
+	/**
+	 * @return value of CreationTime
+	 */
+	public final java.util.Date getCreationTime()
+	{
+		return getCreationTime(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of CreationTime
+	 */
+	public final java.util.Date getCreationTime(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.util.Date) getMendixObject().getValue(context, MemberNames.CreationTime.toString());
+	}
+
+	/**
+	 * Set value of CreationTime
+	 * @param creationtime
+	 */
+	public final void setCreationTime(java.util.Date creationtime)
+	{
+		setCreationTime(getContext(), creationtime);
+	}
+
+	/**
+	 * Set value of CreationTime
+	 * @param context
+	 * @param creationtime
+	 */
+	public final void setCreationTime(com.mendix.systemwideinterfaces.core.IContext context, java.util.Date creationtime)
+	{
+		getMendixObject().setValue(context, MemberNames.CreationTime.toString(), creationtime);
 	}
 
 	/**

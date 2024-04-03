@@ -9,7 +9,6 @@ public enum ENUM_Room_ActivityStatus
 	Available(new java.lang.String[][] { new java.lang.String[] { "en_US", "Available" } }),
 	Reserved(new java.lang.String[][] { new java.lang.String[] { "en_US", "Reserved" } }),
 	Meeting(new java.lang.String[][] { new java.lang.String[] { "en_US", "In Meeting" } }),
-	Active(new java.lang.String[][] { new java.lang.String[] { "en_US", "Active" } }),
 	Maintance(new java.lang.String[][] { new java.lang.String[] { "en_US", "Maintance" } });
 
 	private final java.util.Map<java.lang.String, java.lang.String> captions;

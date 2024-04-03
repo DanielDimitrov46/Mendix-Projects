@@ -39,6 +39,44 @@ public final class Microflows
 			)
 			.execute(context);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Calendar_EditBuilder(
+		calendarevents.proxies.Calendar _calendar
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("CalendarEvents.ACT_Calendar_Edit");
+		builder = builder.withParam("Calendar", _calendar);
+		return builder;
+	}
+
+	public static void aCT_Calendar_Edit(
+		IContext context,
+		calendarevents.proxies.Calendar _calendar
+	)
+	{
+		aCT_Calendar_EditBuilder(
+				_calendar
+			)
+			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Calendar_MovingBuilder(
+		calendarevents.proxies.Calendar _calendar
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("CalendarEvents.ACT_Calendar_Moving");
+		builder = builder.withParam("Calendar", _calendar);
+		return builder;
+	}
+
+	public static void aCT_Calendar_Moving(
+		IContext context,
+		calendarevents.proxies.Calendar _calendar
+	)
+	{
+		aCT_Calendar_MovingBuilder(
+				_calendar
+			)
+			.execute(context);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Calendar_RetrieveEventsBuilder(
 		calendarevents.proxies.Calendar _calendar
 	)
