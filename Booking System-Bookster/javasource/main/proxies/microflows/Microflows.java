@@ -27,4 +27,34 @@ public final class Microflows
 		Object result = aCT_GetUserBuilder().execute(context);
 		return result == null ? null : usermanagement.proxies.User.initialize(context, (IMendixObject) result);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder dS_Notification_RetrieveBuilder()
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Main.DS_Notification_Retrieve");
+		return builder;
+	}
+
+	public static notification.proxies.Notification dS_Notification_Retrieve(IContext context)
+	{
+		Object result = dS_Notification_RetrieveBuilder().execute(context);
+		return result == null ? null : notification.proxies.Notification.initialize(context, (IMendixObject) result);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder oCh_Microflow_ChangeToFalseBuilder(
+		notification.proxies.Notification _notification
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Main.OCh_Microflow_ChangeToFalse");
+		builder = builder.withParam("Notification", _notification);
+		return builder;
+	}
+
+	public static void oCh_Microflow_ChangeToFalse(
+		IContext context,
+		notification.proxies.Notification _notification
+	)
+	{
+		oCh_Microflow_ChangeToFalseBuilder(
+				_notification
+			)
+			.execute(context);
+	}
 }

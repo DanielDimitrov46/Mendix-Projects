@@ -18,7 +18,7 @@
                 <caption>Content</caption>
                 <description>Content of a box</description>
             </property>
-            <property key="characterLimit" type="integer" defaultValue="400">
+            <property key="characterLimit" type="integer" defaultValue="200">
                 <caption>Character Limit</caption>
                 <description/>
             </property>

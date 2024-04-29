@@ -38,24 +38,28 @@ public final class Microflows
 	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder sUB_CreateEmailFromTemplateAndThenSendBuilder(
 		java.util.List<calendarevents.proxies.Booking> _bookingList,
-		email_connector.proxies.EmailTemplate _emailTemplate
+		email_connector.proxies.EmailTemplate _emailTemplate,
+		usermanagement.proxies.User _user
 	)
 	{
 		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Notification.SUB_CreateEmailFromTemplateAndThenSend");
 		builder = builder.withParam("BookingList", _bookingList);
 		builder = builder.withParam("EmailTemplate", _emailTemplate);
+		builder = builder.withParam("User", _user);
 		return builder;
 	}
 
 	public static void sUB_CreateEmailFromTemplateAndThenSend(
 		IContext context,
 		java.util.List<calendarevents.proxies.Booking> _bookingList,
-		email_connector.proxies.EmailTemplate _emailTemplate
+		email_connector.proxies.EmailTemplate _emailTemplate,
+		usermanagement.proxies.User _user
 	)
 	{
 		sUB_CreateEmailFromTemplateAndThenSendBuilder(
 				_bookingList,
-				_emailTemplate
+				_emailTemplate,
+				_user
 			)
 			.execute(context);
 	}

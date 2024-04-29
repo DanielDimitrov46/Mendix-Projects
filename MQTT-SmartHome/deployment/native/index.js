@@ -262,7 +262,7 @@ startApp({
         NativeUI.registerPage("NativeMobile.Home_Native", ()=> require("D:/UKTC PROGRAMMING/Mendix-Projects/MQTT-SmartHome/deployment/native/pages/NativeMobile.Home_Native"), {"sidebar":false,"headerRegionName":"placeholder$Header","showBottomBar":true,"type":"Default"});
     },
     "animationEnabled": true,
-    "deploymentID": "638477474664347869",
+    "deploymentID": "638487776659916890",
     "checkForOTAUpdates": false,
     "loggingEnabled": false,
     "encryptionDbEnabled": false,

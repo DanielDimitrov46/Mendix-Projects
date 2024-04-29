@@ -31,7 +31,9 @@ public class Booking implements com.mendix.systemwideinterfaces.core.IEntityProx
 		BookedRoom("BookedRoom"),
 		isSent("isSent"),
 		Calendar_Booking("CalendarEvents.Calendar_Booking"),
-		Booking_Room("CalendarEvents.Booking_Room");
+		Booking_Room("CalendarEvents.Booking_Room"),
+		Booking_User("CalendarEvents.Booking_User"),
+		Booking_Notification("CalendarEvents.Booking_Notification");
 
 		private final java.lang.String metaName;
 
@@ -543,6 +545,100 @@ public class Booking implements com.mendix.systemwideinterfaces.core.IEntityProx
 			getMendixObject().setValue(context, MemberNames.Booking_Room.toString(), null);
 		} else {
 			getMendixObject().setValue(context, MemberNames.Booking_Room.toString(), booking_room.getMendixObject().getId());
+		}
+	}
+
+	/**
+	 * @throws com.mendix.core.CoreException
+	 * @return value of Booking_User
+	 */
+	public final usermanagement.proxies.User getBooking_User() throws com.mendix.core.CoreException
+	{
+		return getBooking_User(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of Booking_User
+	 * @throws com.mendix.core.CoreException
+	 */
+	public final usermanagement.proxies.User getBooking_User(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		usermanagement.proxies.User result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.Booking_User.toString());
+		if (identifier != null) {
+			result = usermanagement.proxies.User.load(context, identifier);
+		}
+		return result;
+	}
+
+	/**
+	 * Set value of Booking_User
+	 * @param booking_user
+	 */
+	public final void setBooking_User(usermanagement.proxies.User booking_user)
+	{
+		setBooking_User(getContext(), booking_user);
+	}
+
+	/**
+	 * Set value of Booking_User
+	 * @param context
+	 * @param booking_user
+	 */
+	public final void setBooking_User(com.mendix.systemwideinterfaces.core.IContext context, usermanagement.proxies.User booking_user)
+	{
+		if (booking_user == null) {
+			getMendixObject().setValue(context, MemberNames.Booking_User.toString(), null);
+		} else {
+			getMendixObject().setValue(context, MemberNames.Booking_User.toString(), booking_user.getMendixObject().getId());
+		}
+	}
+
+	/**
+	 * @throws com.mendix.core.CoreException
+	 * @return value of Booking_Notification
+	 */
+	public final notification.proxies.Notification getBooking_Notification() throws com.mendix.core.CoreException
+	{
+		return getBooking_Notification(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of Booking_Notification
+	 * @throws com.mendix.core.CoreException
+	 */
+	public final notification.proxies.Notification getBooking_Notification(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		notification.proxies.Notification result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.Booking_Notification.toString());
+		if (identifier != null) {
+			result = notification.proxies.Notification.load(context, identifier);
+		}
+		return result;
+	}
+
+	/**
+	 * Set value of Booking_Notification
+	 * @param booking_notification
+	 */
+	public final void setBooking_Notification(notification.proxies.Notification booking_notification)
+	{
+		setBooking_Notification(getContext(), booking_notification);
+	}
+
+	/**
+	 * Set value of Booking_Notification
+	 * @param context
+	 * @param booking_notification
+	 */
+	public final void setBooking_Notification(com.mendix.systemwideinterfaces.core.IContext context, notification.proxies.Notification booking_notification)
+	{
+		if (booking_notification == null) {
+			getMendixObject().setValue(context, MemberNames.Booking_Notification.toString(), null);
+		} else {
+			getMendixObject().setValue(context, MemberNames.Booking_Notification.toString(), booking_notification.getMendixObject().getId());
 		}
 	}
 

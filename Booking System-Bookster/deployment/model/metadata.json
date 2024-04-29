@@ -105,6 +105,10 @@
     {
       "Name": "Notification.SCE_Notification_Check_Availability",
       "Description": ""
+    },
+    {
+      "Name": "Notification.SCE_Notification_Retrieve",
+      "Description": ""
     }
   ],
   "Languages": [

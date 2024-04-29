@@ -31,6 +31,7 @@ public class User extends administration.proxies.Account
 		IsAnonymous("IsAnonymous"),
 		ProfilePicture_User("UserManagement.ProfilePicture_User"),
 		User_Room("UserManagement.User_Room"),
+		Booking_User("CalendarEvents.Booking_User"),
 		UserRoles("System.UserRoles"),
 		User_Language("System.User_Language"),
 		User_TimeZone("System.User_TimeZone");
@@ -225,6 +226,53 @@ public class User extends administration.proxies.Account
 			getMendixObject().setValue(context, MemberNames.User_Room.toString(), null);
 		} else {
 			getMendixObject().setValue(context, MemberNames.User_Room.toString(), user_room.getMendixObject().getId());
+		}
+	}
+
+	/**
+	 * @throws com.mendix.core.CoreException
+	 * @return value of Booking_User
+	 */
+	public final calendarevents.proxies.Booking getBooking_User() throws com.mendix.core.CoreException
+	{
+		return getBooking_User(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of Booking_User
+	 * @throws com.mendix.core.CoreException
+	 */
+	public final calendarevents.proxies.Booking getBooking_User(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		calendarevents.proxies.Booking result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.Booking_User.toString());
+		if (identifier != null) {
+			result = calendarevents.proxies.Booking.load(context, identifier);
+		}
+		return result;
+	}
+
+	/**
+	 * Set value of Booking_User
+	 * @param booking_user
+	 */
+	public final void setBooking_User(calendarevents.proxies.Booking booking_user)
+	{
+		setBooking_User(getContext(), booking_user);
+	}
+
+	/**
+	 * Set value of Booking_User
+	 * @param context
+	 * @param booking_user
+	 */
+	public final void setBooking_User(com.mendix.systemwideinterfaces.core.IContext context, calendarevents.proxies.Booking booking_user)
+	{
+		if (booking_user == null) {
+			getMendixObject().setValue(context, MemberNames.Booking_User.toString(), null);
+		} else {
+			getMendixObject().setValue(context, MemberNames.Booking_User.toString(), booking_user.getMendixObject().getId());
 		}
 	}
 
