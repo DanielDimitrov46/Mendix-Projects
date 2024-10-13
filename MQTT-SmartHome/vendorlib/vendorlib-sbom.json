@@ -71,6 +71,68 @@
       "bom-ref" : "pkg:maven/org.eclipse.paho/org.eclipse.paho.client.mqttv3@1.2.5?type=jar"
     },
     {
+      "group" : "org.bouncycastle",
+      "name" : "bcpkix-jdk15on",
+      "version" : "1.70",
+      "description" : "The Bouncy Castle Java APIs for CMS, PKCS, EAC, TSP, CMP, CRMF, OCSP, and certificate generation. This jar contains APIs for JDK 1.5 and up. The APIs can be used in conjunction with a JCE/JCA provider such as the one provided with the Bouncy Castle Cryptography APIs.",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "2c383f50d41937eae4fd32c35d8668cd"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "f81e5af49571a9d5a109a88f239a73ce87055417"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "e5b9cb821df57f70b0593358e89c0e8d7266515da9d088af6c646f63d433c07c"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "477001e9556cdbe7fe9eca0c35b3ce29cd6b4d9cd5e13d1f44e3da6433d56a18e23f3679603a23730d78a93bd401113b804562c8bacb1e745e7944127f7afa4c"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "249614fa138e4b405ad067f69ee538269ade5a517d8f47b6d69bfc8180ae48c019570540a47314f3b64060a6bca20682"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "13d1354f83de80b89fa91ffc44a14b0aeee418367ec7dde95aaecd70f6d219e4ed1bbf102e099cdfe64737c06dafc199"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "afc8204fb76d0ec343ba436eaeac7834156ee976a1e0b2bafd0075812451046a"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "b55bcc09c9f9c87332160ce068ca349502d628c34b156ebb30a99d94f87606d59ccc62f8ded4a927d57ed9553d274b34a8f9b5602a5eefad66958f9eddbffa28"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "name" : "Bouncy Castle Licence",
+            "url" : "https://www.bouncycastle.org/licence.html"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.bouncycastle/bcpkix-jdk15on@1.70?type=jar",
+      "modified" : false,
+      "externalReferences" : [
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/bcgit/bc-java/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/bcgit/bc-java"
+        }
+      ],
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.bouncycastle/bcpkix-jdk15on@1.70?type=jar"
+    },
+    {
       "group" : "org.slf4j",
       "name" : "slf4j-simple",
       "version" : "2.0.0",
@@ -297,68 +359,6 @@
       "modified" : false,
       "type" : "library",
       "bom-ref" : "pkg:maven/org.slf4j/slf4j-api@2.0.0?type=jar"
-    },
-    {
-      "group" : "org.bouncycastle",
-      "name" : "bcpkix-jdk15on",
-      "version" : "1.70",
-      "description" : "The Bouncy Castle Java APIs for CMS, PKCS, EAC, TSP, CMP, CRMF, OCSP, and certificate generation. This jar contains APIs for JDK 1.5 and up. The APIs can be used in conjunction with a JCE/JCA provider such as the one provided with the Bouncy Castle Cryptography APIs.",
-      "hashes" : [
-        {
-          "alg" : "MD5",
-          "content" : "2c383f50d41937eae4fd32c35d8668cd"
-        },
-        {
-          "alg" : "SHA-1",
-          "content" : "f81e5af49571a9d5a109a88f239a73ce87055417"
-        },
-        {
-          "alg" : "SHA-256",
-          "content" : "e5b9cb821df57f70b0593358e89c0e8d7266515da9d088af6c646f63d433c07c"
-        },
-        {
-          "alg" : "SHA-512",
-          "content" : "477001e9556cdbe7fe9eca0c35b3ce29cd6b4d9cd5e13d1f44e3da6433d56a18e23f3679603a23730d78a93bd401113b804562c8bacb1e745e7944127f7afa4c"
-        },
-        {
-          "alg" : "SHA-384",
-          "content" : "249614fa138e4b405ad067f69ee538269ade5a517d8f47b6d69bfc8180ae48c019570540a47314f3b64060a6bca20682"
-        },
-        {
-          "alg" : "SHA3-384",
-          "content" : "13d1354f83de80b89fa91ffc44a14b0aeee418367ec7dde95aaecd70f6d219e4ed1bbf102e099cdfe64737c06dafc199"
-        },
-        {
-          "alg" : "SHA3-256",
-          "content" : "afc8204fb76d0ec343ba436eaeac7834156ee976a1e0b2bafd0075812451046a"
-        },
-        {
-          "alg" : "SHA3-512",
-          "content" : "b55bcc09c9f9c87332160ce068ca349502d628c34b156ebb30a99d94f87606d59ccc62f8ded4a927d57ed9553d274b34a8f9b5602a5eefad66958f9eddbffa28"
-        }
-      ],
-      "licenses" : [
-        {
-          "license" : {
-            "name" : "Bouncy Castle Licence",
-            "url" : "https://www.bouncycastle.org/licence.html"
-          }
-        }
-      ],
-      "purl" : "pkg:maven/org.bouncycastle/bcpkix-jdk15on@1.70?type=jar",
-      "modified" : false,
-      "externalReferences" : [
-        {
-          "type" : "issue-tracker",
-          "url" : "https://github.com/bcgit/bc-java/issues"
-        },
-        {
-          "type" : "vcs",
-          "url" : "https://github.com/bcgit/bc-java"
-        }
-      ],
-      "type" : "library",
-      "bom-ref" : "pkg:maven/org.bouncycastle/bcpkix-jdk15on@1.70?type=jar"
     }
   ],
   "dependencies" : [

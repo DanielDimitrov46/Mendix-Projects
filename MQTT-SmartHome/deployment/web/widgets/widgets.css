@@ -4,8 +4,20 @@ Place your custom CSS here
 .widget-hello-world {
 color:red;
 }
+.character_counter_60_percent {
+  color: orange;
+  border-style: solid;
+  border-color: orange;
+}
+.character_counter_80_percent {
+  color: red;
+  border-style: solid;
+  border-color: red;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uL3NyYy91aS9DaGFyYWN0ZXJDb3VudGVyLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Q0FFQztBQUNEO0FBQ0EsU0FBUztBQUNUIiwiZmlsZSI6IkNoYXJhY3RlckNvdW50ZXIuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLypcblBsYWNlIHlvdXIgY3VzdG9tIENTUyBoZXJlXG4qL1xuLndpZGdldC1oZWxsby13b3JsZCB7XG5jb2xvcjpyZWQ7XG59XG4iXX0=*/
+
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uL3NyYy91aS9DaGFyYWN0ZXJDb3VudGVyLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Q0FFQztBQUNEO0FBQ0EsU0FBUztBQUNUO0FBRUE7RUFDRSxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLG9CQUFvQjtBQUN0QjtBQUVBO0VBQ0UsVUFBVTtFQUNWLG1CQUFtQjtFQUNuQixpQkFBaUI7QUFDbkIiLCJmaWxlIjoiQ2hhcmFjdGVyQ291bnRlci5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKlxuUGxhY2UgeW91ciBjdXN0b20gQ1NTIGhlcmVcbiovXG4ud2lkZ2V0LWhlbGxvLXdvcmxkIHtcbmNvbG9yOnJlZDtcbn1cblxuLmNoYXJhY3Rlcl9jb3VudGVyXzYwX3BlcmNlbnQge1xuICBjb2xvcjogb3JhbmdlO1xuICBib3JkZXItc3R5bGU6IHNvbGlkO1xuICBib3JkZXItY29sb3I6IG9yYW5nZTtcbn1cblxuLmNoYXJhY3Rlcl9jb3VudGVyXzgwX3BlcmNlbnQge1xuICBjb2xvcjogcmVkO1xuICBib3JkZXItc3R5bGU6IHNvbGlkO1xuICBib3JkZXItY29sb3I6IHJlZDtcbn1cblxuXG4iXX0=*/
 .widget-events{flex-grow:1;position:relative;transition:color .15s ease 0s}
 .navbar-brand .widget-language-selector .current-language-text,.navbar-brand .widget-language-selector .language-arrow{color:#fff}.navbar-brand .widget-language-selector .current-language-text .arrow-image,.navbar-brand .widget-language-selector .language-arrow .arrow-image{filter:invert(1)}.widget-language-selector .popupmenu-trigger{align-items:center;display:flex}.widget-language-selector .language-arrow{display:inline-flex;transition:transform .2s ease-in-out 50ms}.widget-language-selector .language-arrow .arrow-image{background-image:url(com/mendix/widget/web/languageselector/assets/arrow_black.svg);background-repeat:no-repeat;height:14px!important;margin-top:2px;width:14px}.widget-language-selector .language-arrow .arrow-image.arrow-up{transform:rotate(180deg)}.widget-language-selector .current-language-text{font-size:14px;margin-right:6px}.widget-language-selector .popupmenu-menu{background:#f8f8f8}.widget-language-selector .popupmenu-menu .popupmenu-basic-item.active{font-weight:600}.widget-language-selector .popupmenu-menu .popupmenu-basic-item:hover{background:#fff}
 /* https://raw.githubusercontent.com/mendix/atlas-framework/master/_variables.scss */

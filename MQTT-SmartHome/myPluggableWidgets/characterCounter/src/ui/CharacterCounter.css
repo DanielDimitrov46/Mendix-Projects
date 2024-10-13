@@ -4,3 +4,23 @@ Place your custom CSS here
 .widget-hello-world {
 color:red;
 }
+
+.character_counter_60_percent {
+  color: orange;
+  border-style: solid;
+  border-color: orange;
+}
+
+.character_counter_80_percent {
+  color: red;
+  border-style: solid;
+  border-color: red;
+  .custom-widget{
+  color: red;
+  border-style: solid;
+  border-color: red;
+}
+}
+
+
+

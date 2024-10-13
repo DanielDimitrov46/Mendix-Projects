@@ -1,5 +1,5 @@
 ext {
-	mendixInstallDir = "D:/UKTC PROGRAMMING/10.0.0.9976"
+	mendixInstallDir = "C:/Program Files/Mendix/10.0.0.9976"
 	projectName = "Booking System-Bookster"
 	projectSafeName = "Booking_System_Bookster"
 	mendixProjectDir = "D:/UKTC PROGRAMMING/Mendix-Projects/Booking System-Bookster"
@@ -7,7 +7,7 @@ ext {
 	dataSnapshotFile = "D:/UKTC PROGRAMMING/Mendix-Projects/Booking System-Bookster/data-snapshot.zip"
 	dataDir = "D:/UKTC PROGRAMMING/Mendix-Projects/Booking System-Bookster/deployment/data"
 	extractDataSnapshot = false
-	templatesDir = "D:/UKTC PROGRAMMING/10.0.0.9976/modeler/runtemplates"
+	templatesDir = "C:/Program Files/Mendix/10.0.0.9976/modeler/runtemplates"
 	runDir = "run"
 	compileTargetDir = "run/bin"
 	deploymentDirName = "deployment"

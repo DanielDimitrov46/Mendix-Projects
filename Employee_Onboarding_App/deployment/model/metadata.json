@@ -1,0 +1,57 @@
+{
+  "RuntimeVersion": "10.6.11.39264",
+  "ProjectID": "e6e88ed5-e4c1-4eeb-b3b7-4e97e8b4e414",
+  "ProjectName": "Employee_Onboarding_App",
+  "ModelVersion": "unversioned",
+  "Description": "",
+  "AdminUser": "MxAdmin",
+  "AdminRole": "cccadddd-18a2-4e85-9bdf-710d9834a434",
+  "JavaVersion": 11,
+  "Roles": {
+    "cccadddd-18a2-4e85-9bdf-710d9834a434": {
+      "Name": "Admin",
+      "ManageableRoles": [
+        "cccadddd-18a2-4e85-9bdf-710d9834a434",
+        "84549b5d-e242-41e8-bb01-847ff84dc2c9",
+        "a261f14c-ffb3-4ead-867d-e1cdb061ec97",
+        "0551ed6f-7287-4c85-b2a4-7ca960629253"
+      ]
+    },
+    "84549b5d-e242-41e8-bb01-847ff84dc2c9": {
+      "Name": "Trainer"
+    },
+    "a261f14c-ffb3-4ead-867d-e1cdb061ec97": {
+      "Name": "Trainee"
+    },
+    "0551ed6f-7287-4c85-b2a4-7ca960629253": {
+      "Name": "Guest"
+    }
+  },
+  "Constants": [],
+  "ScheduledEvents": [],
+  "Languages": [
+    "en_US"
+  ],
+  "Configuration": {
+    "SourceDatabaseType": "HSQLDB",
+    "SourceDatabaseName": "default",
+    "SourceBuiltInDatabasePath": "model/sampledata/data/database"
+  },
+  "RequestHandlers": [
+    {
+      "Name": "/api/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/link/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/p/",
+      "DefaultEnabled": false,
+      "MatchExactly": false
+    }
+  ]
+}

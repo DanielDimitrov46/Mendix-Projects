@@ -44,7 +44,7 @@ export function CharacterCounter({
         return "";
     };
     return (
-        <div className={`${charLimitStyles()} character_counter`}>
+        <div className={`${charLimitStyles()}`}>
             <div ref={myContainerRef}>{content}</div>
             <span>
                 {currentInput.length} / {characterLimit}

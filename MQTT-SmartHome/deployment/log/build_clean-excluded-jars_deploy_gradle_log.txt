@@ -1,10 +1,10 @@
 Initialized native services in: C:\Users\danid\.gradle\native
 Initialized jansi services in: C:\Users\danid\.gradle\native
 Received JVM installation metadata from 'C:\Program Files\Eclipse Adoptium\jdk-11.0.20.8-hotspot': {JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-11.0.20.8-hotspot, JAVA_VERSION=11.0.20, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=11.0.20+8, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=11.0.20+8, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
-The client will now receive all logging from the daemon (pid: 38296). The daemon log file: C:\Users\danid\.gradle\daemon\7.6\daemon-38296.out.log
-Starting 3rd build in daemon [uptime: 26 mins 1.133 secs, performance: 100%, non-heap usage: 27% of 256 MiB]
+The client will now receive all logging from the daemon (pid: 67392). The daemon log file: C:\Users\danid\.gradle\daemon\7.6\daemon-67392.out.log
+Starting 11th build in daemon [uptime: 2 hrs 15 mins 55.143 secs, performance: 100%, non-heap usage: 33% of 256 MiB]
 Using 16 worker leases.
-Now considering [D:\UKTC PROGRAMMING\Mendix-Projects\MQTT-SmartHome\deployment, D:\UKTC PROGRAMMING\Mendix-Projects\MQTT-SmartHome\vendorlib\temp] as hierarchies to watch
+Now considering [D:\UKTC PROGRAMMING\Mendix-Projects\MQTT-SmartHome\deployment] as hierarchies to watch
 Watching the file system is configured to be enabled if available
 File system watching is active
 Starting Build
@@ -38,18 +38,16 @@ Caching disabled for task ':copyDeploymentArtifacts' because:
   Build cache is disabled
 Task ':copyDeploymentArtifacts' is not up-to-date because:
   Task state is not tracked.
+Not watching anything anymore
+Watching 0 directory hierarchies to track changes
 Resolve mutations for :copyLibs (Thread[Execution worker,5,main]) started.
 :copyLibs (Thread[Execution worker,5,main]) started.
 
-> Task :copyLibs
+> Task :copyLibs UP-TO-DATE
 Watching 1 directory hierarchies to track changes
 Caching disabled for task ':copyLibs' because:
   Build cache is disabled
-Task ':copyLibs' is not up-to-date because:
-  Input property 'rootSpec$1' file D:\UKTC PROGRAMMING\Mendix-Projects\MQTT-SmartHome\vendorlib\vendorlib-sbom.json has changed.
-Not watching anything anymore
-Watching 0 directory hierarchies to track changes
-Watching 1 directory hierarchies to track changes
+Skipping task ':copyLibs' as it is up-to-date.
 Resolve mutations for :copyResources (Thread[Execution worker,5,main]) started.
 :copyResources (Thread[Execution worker,5,main]) started.
 
@@ -61,20 +59,14 @@ Resolve mutations for :unzipDataSnapshot (Thread[Execution worker,5,main]) start
 > Task :unzipDataSnapshot SKIPPED
 Skipping task ':unzipDataSnapshot' as task onlyIf 'Task is enabled' is false.
 Resolve mutations for :deploy (Thread[Execution worker,5,main]) started.
-:deploy (Thread[Execution worker Thread 10,5,main]) started.
+:deploy (Thread[Execution worker,5,main]) started.
 
 > Task :deploy
 Skipping task ':deploy' as it has no actions.
 
-BUILD SUCCESSFUL in 3s
-3 actionable tasks: 2 executed, 1 up-to-date
+BUILD SUCCESSFUL in 1s
+3 actionable tasks: 1 executed, 2 up-to-date
 Watched directory hierarchies: [D:\UKTC PROGRAMMING\Mendix-Projects\MQTT-SmartHome\deployment]
-VCS Checkout Cache (D:\UKTC PROGRAMMING\Mendix-Projects\MQTT-SmartHome\deployment\.gradle\vcs-1) removing files not accessed on or after Mon Apr 08 11:34:29 EEST 2024.
-VCS Checkout Cache (D:\UKTC PROGRAMMING\Mendix-Projects\MQTT-SmartHome\deployment\.gradle\vcs-1) cleanup deleted 0 files/directories.
-VCS Checkout Cache (D:\UKTC PROGRAMMING\Mendix-Projects\MQTT-SmartHome\deployment\.gradle\vcs-1) cleaned up in 0.0 secs.
-dependencies-accessors (D:\UKTC PROGRAMMING\Mendix-Projects\MQTT-SmartHome\deployment\.gradle\7.6\dependencies-accessors) removing files not accessed on or after Mon Apr 08 11:34:29 EEST 2024.
-dependencies-accessors (D:\UKTC PROGRAMMING\Mendix-Projects\MQTT-SmartHome\deployment\.gradle\7.6\dependencies-accessors) cleanup deleted 0 files/directories.
-dependencies-accessors (D:\UKTC PROGRAMMING\Mendix-Projects\MQTT-SmartHome\deployment\.gradle\7.6\dependencies-accessors) cleaned up in 0.001 secs.
 
 
 
