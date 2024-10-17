@@ -1,8 +1,8 @@
 Initialized native services in: C:\Users\danid\.gradle\native
 Initialized jansi services in: C:\Users\danid\.gradle\native
 Received JVM installation metadata from 'C:\Program Files\Eclipse Adoptium\jdk-11.0.16.101-hotspot': {JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-11.0.16.101-hotspot, JAVA_VERSION=11.0.16.1, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=11.0.16.1+1, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=11.0.16.1+1, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
-The client will now receive all logging from the daemon (pid: 24872). The daemon log file: C:\Users\danid\.gradle\daemon\8.5\daemon-24872.out.log
-Starting 6th build in daemon [uptime: 25 mins 14.767 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 16% of 384 MiB]
+The client will now receive all logging from the daemon (pid: 10856). The daemon log file: C:\Users\danid\.gradle\daemon\8.5\daemon-10856.out.log
+Starting 2nd build in daemon [uptime: 12.213 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 12% of 384 MiB]
 Using 16 worker leases.
 Now considering [D:\UKTC PROGRAMMING\Mendix-Projects\Employee_Onboarding_App\deployment] as hierarchies to watch
 Watching the file system is configured to be enabled if available
@@ -26,8 +26,8 @@ Tasks to be executed: [task ':clean-custom-classes', task ':compile', task ':pac
 Tasks that were excluded: []
 Resolve mutations for :clean-custom-classes (Thread[Execution worker,5,main]) started.
 :clean-custom-classes (Thread[Execution worker,5,main]) started.
-destroyer locations for task group 0 (Thread[Execution worker Thread 12,5,main]) started.
-destroyer locations for task group 1 (Thread[Execution worker Thread 12,5,main]) started.
+destroyer locations for task group 0 (Thread[included builds,5,main]) started.
+destroyer locations for task group 1 (Thread[Execution worker Thread 2,5,main]) started.
 
 > Task :clean-custom-classes
 Caching disabled for task ':clean-custom-classes' because:
@@ -55,17 +55,17 @@ file or directory 'D:\UKTC PROGRAMMING\Mendix-Projects\Employee_Onboarding_App\v
 Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
 Compiling with toolchain 'C:\Program Files\Eclipse Adoptium\jdk-11.0.16.101-hotspot'.
 Compiling with JDK Java compiler API.
-Class dependency analysis for incremental compilation took 0.065 secs.
-Created classpath snapshot for incremental compilation in 0.002 secs.
-Resolve mutations for :package (Thread[Execution worker,5,main]) started.
-:package (Thread[Execution worker,5,main]) started.
+Class dependency analysis for incremental compilation took 0.167 secs.
+Created classpath snapshot for incremental compilation in 0.019 secs.
+Resolve mutations for :package (Thread[Execution worker Thread 2,5,main]) started.
+:package (Thread[Execution worker Thread 2,5,main]) started.
 
 > Task :package UP-TO-DATE
 Caching disabled for task ':package' because:
   Build cache is disabled
 Skipping task ':package' as it is up-to-date.
 
-BUILD SUCCESSFUL in 2s
+BUILD SUCCESSFUL in 4s
 3 actionable tasks: 2 executed, 1 up-to-date
 Watched directory hierarchies: [D:\UKTC PROGRAMMING\Mendix-Projects\Employee_Onboarding_App\deployment]
 

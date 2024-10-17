@@ -1,0 +1,13 @@
+ @import "../../onboardingdesignsystem/web/custom-variables.scss";  
+.layout-snacco {  
+    .region-topbar {  
+            .navbar-brand {  
+                img { 
+margin-left: $spacing-small;  
+}  
+}  
+            .mx-navbar ul.nav > li.mx-navbar-item > a { 
+color: #fff; 
+}  
+}  
+} 
