@@ -23,7 +23,8 @@ public class AccountPasswordData implements com.mendix.systemwideinterfaces.core
 		OldPassword("OldPassword"),
 		NewPassword("NewPassword"),
 		ConfirmPassword("ConfirmPassword"),
-		AccountPasswordData_Account("Administration.AccountPasswordData_Account");
+		AccountPasswordData_Account("Administration.AccountPasswordData_Account"),
+		AccountPasswordData_User("Administration.AccountPasswordData_User");
 
 		private final java.lang.String metaName;
 
@@ -227,6 +228,53 @@ public class AccountPasswordData implements com.mendix.systemwideinterfaces.core
 			getMendixObject().setValue(context, MemberNames.AccountPasswordData_Account.toString(), null);
 		} else {
 			getMendixObject().setValue(context, MemberNames.AccountPasswordData_Account.toString(), accountpassworddata_account.getMendixObject().getId());
+		}
+	}
+
+	/**
+	 * @throws com.mendix.core.CoreException
+	 * @return value of AccountPasswordData_User
+	 */
+	public final usermanagement.proxies.User getAccountPasswordData_User() throws com.mendix.core.CoreException
+	{
+		return getAccountPasswordData_User(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of AccountPasswordData_User
+	 * @throws com.mendix.core.CoreException
+	 */
+	public final usermanagement.proxies.User getAccountPasswordData_User(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		usermanagement.proxies.User result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.AccountPasswordData_User.toString());
+		if (identifier != null) {
+			result = usermanagement.proxies.User.load(context, identifier);
+		}
+		return result;
+	}
+
+	/**
+	 * Set value of AccountPasswordData_User
+	 * @param accountpassworddata_user
+	 */
+	public final void setAccountPasswordData_User(usermanagement.proxies.User accountpassworddata_user)
+	{
+		setAccountPasswordData_User(getContext(), accountpassworddata_user);
+	}
+
+	/**
+	 * Set value of AccountPasswordData_User
+	 * @param context
+	 * @param accountpassworddata_user
+	 */
+	public final void setAccountPasswordData_User(com.mendix.systemwideinterfaces.core.IContext context, usermanagement.proxies.User accountpassworddata_user)
+	{
+		if (accountpassworddata_user == null) {
+			getMendixObject().setValue(context, MemberNames.AccountPasswordData_User.toString(), null);
+		} else {
+			getMendixObject().setValue(context, MemberNames.AccountPasswordData_User.toString(), accountpassworddata_user.getMendixObject().getId());
 		}
 	}
 

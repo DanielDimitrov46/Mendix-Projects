@@ -29,7 +29,7 @@ public class User extends administration.proxies.Account
 		FailedLogins("FailedLogins"),
 		WebServiceUser("WebServiceUser"),
 		IsAnonymous("IsAnonymous"),
-		ProfilePicture("UserManagement.ProfilePicture"),
+		User_ProfilePicture("UserManagement.User_ProfilePicture"),
 		UserRoles("System.UserRoles"),
 		User_Language("System.User_Language"),
 		User_TimeZone("System.User_TimeZone");
@@ -135,48 +135,48 @@ public class User extends administration.proxies.Account
 
 	/**
 	 * @throws com.mendix.core.CoreException
-	 * @return value of ProfilePicture
+	 * @return value of User_ProfilePicture
 	 */
-	public final usermanagement.proxies.Entity getProfilePicture() throws com.mendix.core.CoreException
+	public final usermanagement.proxies.ProfilePicture getUser_ProfilePicture() throws com.mendix.core.CoreException
 	{
-		return getProfilePicture(getContext());
+		return getUser_ProfilePicture(getContext());
 	}
 
 	/**
 	 * @param context
-	 * @return value of ProfilePicture
+	 * @return value of User_ProfilePicture
 	 * @throws com.mendix.core.CoreException
 	 */
-	public final usermanagement.proxies.Entity getProfilePicture(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	public final usermanagement.proxies.ProfilePicture getUser_ProfilePicture(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
 	{
-		usermanagement.proxies.Entity result = null;
-		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.ProfilePicture.toString());
+		usermanagement.proxies.ProfilePicture result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.User_ProfilePicture.toString());
 		if (identifier != null) {
-			result = usermanagement.proxies.Entity.load(context, identifier);
+			result = usermanagement.proxies.ProfilePicture.load(context, identifier);
 		}
 		return result;
 	}
 
 	/**
-	 * Set value of ProfilePicture
-	 * @param profilepicture
+	 * Set value of User_ProfilePicture
+	 * @param user_profilepicture
 	 */
-	public final void setProfilePicture(usermanagement.proxies.Entity profilepicture)
+	public final void setUser_ProfilePicture(usermanagement.proxies.ProfilePicture user_profilepicture)
 	{
-		setProfilePicture(getContext(), profilepicture);
+		setUser_ProfilePicture(getContext(), user_profilepicture);
 	}
 
 	/**
-	 * Set value of ProfilePicture
+	 * Set value of User_ProfilePicture
 	 * @param context
-	 * @param profilepicture
+	 * @param user_profilepicture
 	 */
-	public final void setProfilePicture(com.mendix.systemwideinterfaces.core.IContext context, usermanagement.proxies.Entity profilepicture)
+	public final void setUser_ProfilePicture(com.mendix.systemwideinterfaces.core.IContext context, usermanagement.proxies.ProfilePicture user_profilepicture)
 	{
-		if (profilepicture == null) {
-			getMendixObject().setValue(context, MemberNames.ProfilePicture.toString(), null);
+		if (user_profilepicture == null) {
+			getMendixObject().setValue(context, MemberNames.User_ProfilePicture.toString(), null);
 		} else {
-			getMendixObject().setValue(context, MemberNames.ProfilePicture.toString(), profilepicture.getMendixObject().getId());
+			getMendixObject().setValue(context, MemberNames.User_ProfilePicture.toString(), user_profilepicture.getMendixObject().getId());
 		}
 	}
 
