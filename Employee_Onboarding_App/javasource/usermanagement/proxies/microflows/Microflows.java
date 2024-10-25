@@ -6,6 +6,7 @@ package usermanagement.proxies.microflows;
 
 import com.mendix.core.Core;
 import com.mendix.systemwideinterfaces.core.IContext;
+import com.mendix.systemwideinterfaces.core.IMendixObject;
 
 public final class Microflows
 {
@@ -63,15 +64,34 @@ public final class Microflows
 	{
 		aCT_User_CreateUserBuilder().execute(context);
 	}
-	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_User_OpenUserAccountBuilder()
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_User_EditAccountBuilder(
+		usermanagement.proxies.User _user_2
+	)
 	{
-		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.ACT_User_OpenUserAccount");
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.ACT_User_EditAccount");
+		builder = builder.withParam("User_2", _user_2);
 		return builder;
 	}
 
-	public static void aCT_User_OpenUserAccount(IContext context)
+	public static void aCT_User_EditAccount(
+		IContext context,
+		usermanagement.proxies.User _user_2
+	)
 	{
-		aCT_User_OpenUserAccountBuilder().execute(context);
+		aCT_User_EditAccountBuilder(
+				_user_2
+			)
+			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_User_EditUserBuilder()
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.ACT_User_EditUser");
+		return builder;
+	}
+
+	public static void aCT_User_EditUser(IContext context)
+	{
+		aCT_User_EditUserBuilder().execute(context);
 	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_User_SaveUserBuilder(
 		administration.proxies.AccountPasswordData _accountPasswordData
@@ -91,5 +111,16 @@ public final class Microflows
 				_accountPasswordData
 			)
 			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder cWS_Retrieve_CountriesBuilder()
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.CWS_Retrieve_Countries");
+		return builder;
+	}
+
+	public static java.util.List<usermanagement.proxies.JsonObject> cWS_Retrieve_Countries(IContext context)
+	{
+		Object result = cWS_Retrieve_CountriesBuilder().execute(context);
+		return result == null ? null : com.mendix.utils.ListUtils.map((java.util.List<IMendixObject>) result, obj -> usermanagement.proxies.JsonObject.initialize(context, obj));
 	}
 }
