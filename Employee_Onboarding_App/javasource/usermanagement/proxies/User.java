@@ -17,6 +17,7 @@ public class User extends administration.proxies.Account
 	public enum MemberNames
 	{
 		Status("Status"),
+		Department("Department"),
 		FullName("FullName"),
 		Email("Email"),
 		IsLocalUser("IsLocalUser"),
@@ -30,6 +31,7 @@ public class User extends administration.proxies.Account
 		WebServiceUser("WebServiceUser"),
 		IsAnonymous("IsAnonymous"),
 		User_ProfilePicture("UserManagement.User_ProfilePicture"),
+		User_UserRole("UserManagement.User_UserRole"),
 		UserRoles("System.UserRoles"),
 		User_Language("System.User_Language"),
 		User_TimeZone("System.User_TimeZone");
@@ -134,6 +136,51 @@ public class User extends administration.proxies.Account
 	}
 
 	/**
+	 * Get value of Department
+	 * @param department
+	 */
+	public final usermanagement.proxies.ENUM_User_Departments getDepartment()
+	{
+		return getDepartment(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of Department
+	 */
+	public final usermanagement.proxies.ENUM_User_Departments getDepartment(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		Object obj = getMendixObject().getValue(context, MemberNames.Department.toString());
+		if (obj == null) {
+			return null;
+		}
+		return usermanagement.proxies.ENUM_User_Departments.valueOf((java.lang.String) obj);
+	}
+
+	/**
+	 * Set value of Department
+	 * @param department
+	 */
+	public final void setDepartment(usermanagement.proxies.ENUM_User_Departments department)
+	{
+		setDepartment(getContext(), department);
+	}
+
+	/**
+	 * Set value of Department
+	 * @param context
+	 * @param department
+	 */
+	public final void setDepartment(com.mendix.systemwideinterfaces.core.IContext context, usermanagement.proxies.ENUM_User_Departments department)
+	{
+		if (department != null) {
+			getMendixObject().setValue(context, MemberNames.Department.toString(), department.toString());
+		} else {
+			getMendixObject().setValue(context, MemberNames.Department.toString(), null);
+		}
+	}
+
+	/**
 	 * @throws com.mendix.core.CoreException
 	 * @return value of User_ProfilePicture
 	 */
@@ -177,6 +224,53 @@ public class User extends administration.proxies.Account
 			getMendixObject().setValue(context, MemberNames.User_ProfilePicture.toString(), null);
 		} else {
 			getMendixObject().setValue(context, MemberNames.User_ProfilePicture.toString(), user_profilepicture.getMendixObject().getId());
+		}
+	}
+
+	/**
+	 * @throws com.mendix.core.CoreException
+	 * @return value of User_UserRole
+	 */
+	public final system.proxies.UserRole getUser_UserRole() throws com.mendix.core.CoreException
+	{
+		return getUser_UserRole(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of User_UserRole
+	 * @throws com.mendix.core.CoreException
+	 */
+	public final system.proxies.UserRole getUser_UserRole(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		system.proxies.UserRole result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.User_UserRole.toString());
+		if (identifier != null) {
+			result = system.proxies.UserRole.load(context, identifier);
+		}
+		return result;
+	}
+
+	/**
+	 * Set value of User_UserRole
+	 * @param user_userrole
+	 */
+	public final void setUser_UserRole(system.proxies.UserRole user_userrole)
+	{
+		setUser_UserRole(getContext(), user_userrole);
+	}
+
+	/**
+	 * Set value of User_UserRole
+	 * @param context
+	 * @param user_userrole
+	 */
+	public final void setUser_UserRole(com.mendix.systemwideinterfaces.core.IContext context, system.proxies.UserRole user_userrole)
+	{
+		if (user_userrole == null) {
+			getMendixObject().setValue(context, MemberNames.User_UserRole.toString(), null);
+		} else {
+			getMendixObject().setValue(context, MemberNames.User_UserRole.toString(), user_userrole.getMendixObject().getId());
 		}
 	}
 

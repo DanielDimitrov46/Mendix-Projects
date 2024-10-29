@@ -54,6 +54,16 @@ public final class Microflows
 			)
 			.execute(context);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_User_CreateTraineeBuilder()
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.ACT_User_CreateTrainee");
+		return builder;
+	}
+
+	public static void aCT_User_CreateTrainee(IContext context)
+	{
+		aCT_User_CreateTraineeBuilder().execute(context);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_User_CreateUserBuilder()
 	{
 		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.ACT_User_CreateUser");
@@ -93,6 +103,25 @@ public final class Microflows
 	{
 		aCT_User_EditUserBuilder().execute(context);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_User_SaveTraineeBuilder(
+		administration.proxies.AccountPasswordData _accountPasswordData
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.ACT_User_SaveTrainee");
+		builder = builder.withParam("AccountPasswordData", _accountPasswordData);
+		return builder;
+	}
+
+	public static void aCT_User_SaveTrainee(
+		IContext context,
+		administration.proxies.AccountPasswordData _accountPasswordData
+	)
+	{
+		aCT_User_SaveTraineeBuilder(
+				_accountPasswordData
+			)
+			.execute(context);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_User_SaveUserBuilder(
 		administration.proxies.AccountPasswordData _accountPasswordData
 	)
@@ -118,9 +147,20 @@ public final class Microflows
 		return builder;
 	}
 
-	public static java.util.List<usermanagement.proxies.JsonObject> cWS_Retrieve_Countries(IContext context)
+	public static java.util.List<usermanagement.proxies.Capital> cWS_Retrieve_Countries(IContext context)
 	{
 		Object result = cWS_Retrieve_CountriesBuilder().execute(context);
-		return result == null ? null : com.mendix.utils.ListUtils.map((java.util.List<IMendixObject>) result, obj -> usermanagement.proxies.JsonObject.initialize(context, obj));
+		return result == null ? null : com.mendix.utils.ListUtils.map((java.util.List<IMendixObject>) result, obj -> usermanagement.proxies.Capital.initialize(context, obj));
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder dS_Trainee_RetrieveBuilder()
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.DS_Trainee_Retrieve");
+		return builder;
+	}
+
+	public static java.util.List<usermanagement.proxies.User> dS_Trainee_Retrieve(IContext context)
+	{
+		Object result = dS_Trainee_RetrieveBuilder().execute(context);
+		return result == null ? null : com.mendix.utils.ListUtils.map((java.util.List<IMendixObject>) result, obj -> usermanagement.proxies.User.initialize(context, obj));
 	}
 }
