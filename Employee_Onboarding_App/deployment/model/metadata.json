@@ -18,7 +18,13 @@
       ]
     },
     "84549b5d-e242-41e8-bb01-847ff84dc2c9": {
-      "Name": "Trainer"
+      "Name": "Trainer",
+      "ManageableRoles": [
+        "cccadddd-18a2-4e85-9bdf-710d9834a434",
+        "84549b5d-e242-41e8-bb01-847ff84dc2c9",
+        "a261f14c-ffb3-4ead-867d-e1cdb061ec97",
+        "0551ed6f-7287-4c85-b2a4-7ca960629253"
+      ]
     },
     "a261f14c-ffb3-4ead-867d-e1cdb061ec97": {
       "Name": "Trainee"
@@ -27,7 +33,56 @@
       "Name": "Guest"
     }
   },
-  "Constants": [],
+  "Constants": [
+    {
+      "Name": "Email_Connector.azure_defaultConfig",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "{\"authorization_endpoint\":\"https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize\",\"token_endpoint\":\"https://login.microsoftonline.com/organizations/oauth2/v2.0/token\",\"scopes_supported\":[\"openid\",\"profile\",\"email\",\"offline_access\",\"https://outlook.office.com/IMAP.AccessAsUser.All\",\"https://outlook.office.com/POP.AccessAsUser.All\",\"https://outlook.office.com/SMTP.Send\"]}"
+    },
+    {
+      "Name": "Email_Connector.Email_Connector_Version",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "5.9.1"
+    },
+    {
+      "Name": "Email_Connector.EmailLogRetention",
+      "Type": "Integer",
+      "Description": "The amount of days to preserve error messages.",
+      "DefaultValue": "30"
+    },
+    {
+      "Name": "Email_Connector.LogNode",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "Email_Connector"
+    },
+    {
+      "Name": "Encryption.EncryptionKey",
+      "Type": "String",
+      "Description": "This key will be used to encrypt and decrypt values.\r\nThe length of this key must be 32 characters.",
+      "DefaultValue": "12345678912345678912345678912345"
+    },
+    {
+      "Name": "Encryption.EncryptionPrefix",
+      "Type": "String",
+      "Description": "Prefix for stored encrypted values.\r\nThis value is used to determine whether the value has been already encrypted.\r\nThe prefix must be either {AES}, {AES2} or {AES3}.\r\nEncryption is only supported if the prefix is {AES3}.\r\nIt is not recommended to change this value.",
+      "DefaultValue": "{AES3}"
+    },
+    {
+      "Name": "Encryption.LegacyEncryptionKey",
+      "Type": "String",
+      "Description": "This key will be used to decrypt values that are encrypted with legacy algorithms.\r\nThe length of this key must be 16 characters.",
+      "DefaultValue": ""
+    },
+    {
+      "Name": "Encryption.LogNode",
+      "Type": "String",
+      "Description": "Node which appears in log messages for this module.",
+      "DefaultValue": "Encryption"
+    }
+  ],
   "ScheduledEvents": [],
   "Languages": [
     "en_US"
@@ -46,6 +101,21 @@
     {
       "Name": "/link/",
       "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/api-doc/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/mxecoh/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/rest-doc/",
+      "DefaultEnabled": false,
       "MatchExactly": false
     },
     {

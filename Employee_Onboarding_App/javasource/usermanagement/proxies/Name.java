@@ -24,7 +24,8 @@ public class Name implements com.mendix.systemwideinterfaces.core.IEntityProxy
 		Common("Common"),
 		Name_Root("UserManagement.Name_Root"),
 		NativeName_Name("UserManagement.NativeName_Name"),
-		Name_JsonObject("UserManagement.Name_JsonObject");
+		Name_JsonObject("UserManagement.Name_JsonObject"),
+		Name_User("UserManagement.Name_User");
 
 		private final java.lang.String metaName;
 
@@ -286,6 +287,53 @@ public class Name implements com.mendix.systemwideinterfaces.core.IEntityProxy
 			getMendixObject().setValue(context, MemberNames.Name_JsonObject.toString(), null);
 		} else {
 			getMendixObject().setValue(context, MemberNames.Name_JsonObject.toString(), name_jsonobject.getMendixObject().getId());
+		}
+	}
+
+	/**
+	 * @throws com.mendix.core.CoreException
+	 * @return value of Name_User
+	 */
+	public final usermanagement.proxies.User getName_User() throws com.mendix.core.CoreException
+	{
+		return getName_User(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of Name_User
+	 * @throws com.mendix.core.CoreException
+	 */
+	public final usermanagement.proxies.User getName_User(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		usermanagement.proxies.User result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.Name_User.toString());
+		if (identifier != null) {
+			result = usermanagement.proxies.User.load(context, identifier);
+		}
+		return result;
+	}
+
+	/**
+	 * Set value of Name_User
+	 * @param name_user
+	 */
+	public final void setName_User(usermanagement.proxies.User name_user)
+	{
+		setName_User(getContext(), name_user);
+	}
+
+	/**
+	 * Set value of Name_User
+	 * @param context
+	 * @param name_user
+	 */
+	public final void setName_User(com.mendix.systemwideinterfaces.core.IContext context, usermanagement.proxies.User name_user)
+	{
+		if (name_user == null) {
+			getMendixObject().setValue(context, MemberNames.Name_User.toString(), null);
+		} else {
+			getMendixObject().setValue(context, MemberNames.Name_User.toString(), name_user.getMendixObject().getId());
 		}
 	}
 

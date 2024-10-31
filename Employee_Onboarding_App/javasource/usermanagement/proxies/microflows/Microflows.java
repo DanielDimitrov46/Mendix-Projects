@@ -16,6 +16,35 @@ public final class Microflows
 	private Microflows() {}
 
 	// These are the microflows for the UserManagement module
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Country_CreationBuilder(
+		java.util.List<usermanagement.proxies.Name> _nameList
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.ACT_Country_Creation");
+		builder = builder.withParam("NameList", _nameList);
+		return builder;
+	}
+
+	public static void aCT_Country_Creation(
+		IContext context,
+		java.util.List<usermanagement.proxies.Name> _nameList
+	)
+	{
+		aCT_Country_CreationBuilder(
+				_nameList
+			)
+			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Country_DeleteDataBuilder()
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.ACT_Country_DeleteData");
+		return builder;
+	}
+
+	public static void aCT_Country_DeleteData(IContext context)
+	{
+		aCT_Country_DeleteDataBuilder().execute(context);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Show_PasswordFormBuilder(
 		usermanagement.proxies.User _user
 	)
@@ -147,10 +176,10 @@ public final class Microflows
 		return builder;
 	}
 
-	public static java.util.List<usermanagement.proxies.Capital> cWS_Retrieve_Countries(IContext context)
+	public static boolean cWS_Retrieve_Countries(IContext context)
 	{
 		Object result = cWS_Retrieve_CountriesBuilder().execute(context);
-		return result == null ? null : com.mendix.utils.ListUtils.map((java.util.List<IMendixObject>) result, obj -> usermanagement.proxies.Capital.initialize(context, obj));
+		return (boolean) result;
 	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder dS_Trainee_RetrieveBuilder()
 	{

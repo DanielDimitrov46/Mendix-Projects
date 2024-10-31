@@ -29,8 +29,7 @@ public class Root implements com.mendix.systemwideinterfaces.core.IEntityProxy
 		Timezones_Root("UserManagement.Timezones_Root"),
 		BGN_Root("UserManagement.BGN_Root"),
 		Tld_Root("UserManagement.Tld_Root"),
-		Currencies_Root("UserManagement.Currencies_Root"),
-		Root_User("UserManagement.Root_User");
+		Currencies_Root("UserManagement.Currencies_Root");
 
 		private final java.lang.String metaName;
 
@@ -516,53 +515,6 @@ public class Root implements com.mendix.systemwideinterfaces.core.IEntityProxy
 			getMendixObject().setValue(context, MemberNames.Currencies_Root.toString(), null);
 		} else {
 			getMendixObject().setValue(context, MemberNames.Currencies_Root.toString(), currencies_root.getMendixObject().getId());
-		}
-	}
-
-	/**
-	 * @throws com.mendix.core.CoreException
-	 * @return value of Root_User
-	 */
-	public final usermanagement.proxies.User getRoot_User() throws com.mendix.core.CoreException
-	{
-		return getRoot_User(getContext());
-	}
-
-	/**
-	 * @param context
-	 * @return value of Root_User
-	 * @throws com.mendix.core.CoreException
-	 */
-	public final usermanagement.proxies.User getRoot_User(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
-	{
-		usermanagement.proxies.User result = null;
-		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.Root_User.toString());
-		if (identifier != null) {
-			result = usermanagement.proxies.User.load(context, identifier);
-		}
-		return result;
-	}
-
-	/**
-	 * Set value of Root_User
-	 * @param root_user
-	 */
-	public final void setRoot_User(usermanagement.proxies.User root_user)
-	{
-		setRoot_User(getContext(), root_user);
-	}
-
-	/**
-	 * Set value of Root_User
-	 * @param context
-	 * @param root_user
-	 */
-	public final void setRoot_User(com.mendix.systemwideinterfaces.core.IContext context, usermanagement.proxies.User root_user)
-	{
-		if (root_user == null) {
-			getMendixObject().setValue(context, MemberNames.Root_User.toString(), null);
-		} else {
-			getMendixObject().setValue(context, MemberNames.Root_User.toString(), root_user.getMendixObject().getId());
 		}
 	}
 

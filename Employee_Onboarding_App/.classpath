@@ -8,5 +8,28 @@
 	<classpathentry kind="lib" path="C:/Programming/10.6.11.39264/runtime/bundles/com.mendix.public-api.jar"/>
 	<classpathentry kind="lib" path="C:/Programming/10.6.11.39264/runtime/bundles/org.eclipse.jetty.toolchain.jetty-servlet-api.jar"/>
 	<classpathentry kind="lib" path="C:/Programming/10.6.11.39264/runtime/bundles/org.eclipse.jetty.toolchain.jetty-javax-websocket-api.jar"/>
+	<classpathentry kind="lib" path="vendorlib/angus-activation-2.0.1.jar"/>
+	<classpathentry kind="lib" path="vendorlib/angus-mail-2.0.2.jar"/>
+	<classpathentry kind="lib" path="vendorlib/bcjmail-jdk18on-1.78.1.jar"/>
+	<classpathentry kind="lib" path="vendorlib/bcpg-jdk18on-1.78.1.jar"/>
+	<classpathentry kind="lib" path="vendorlib/bcpkix-jdk18on-1.78.1.jar"/>
+	<classpathentry kind="lib" path="vendorlib/bcprov-jdk18on-1.78.1.jar"/>
+	<classpathentry kind="lib" path="vendorlib/bcutil-jdk18on-1.78.1.jar"/>
+	<classpathentry kind="lib" path="vendorlib/commons-codec-1.15.jar"/>
+	<classpathentry kind="lib" path="vendorlib/commons-io-2.17.0.jar"/>
+	<classpathentry kind="lib" path="vendorlib/core-module-8.9.0.jar"/>
+	<classpathentry kind="lib" path="vendorlib/jakarta.activation-api-2.1.2.jar"/>
+	<classpathentry kind="lib" path="vendorlib/jakarta.mail-api-2.1.2.jar"/>
+	<classpathentry kind="lib" path="vendorlib/jetbrains-runtime-annotations-1.0.2.jar"/>
+	<classpathentry kind="lib" path="vendorlib/jmail-1.4.1.jar"/>
+	<classpathentry kind="lib" path="vendorlib/jsoup-1.15.4.jar"/>
+	<classpathentry kind="lib" path="vendorlib/simple-java-mail-8.9.0.jar"/>
+	<classpathentry kind="lib" path="vendorlib/slf4j-api-2.0.7.jar"/>
+	<classpathentry kind="lib" path="vendorlib/slf4j-simple-2.0.7.jar"/>
+	<classpathentry kind="lib" path="vendorlib/smime-module-8.9.0.jar"/>
+	<classpathentry kind="lib" path="vendorlib/throwing-function-1.5.1.jar"/>
+	<classpathentry kind="lib" path="vendorlib/utils-mail-smime-2.3.3.jar"/>
+	<classpathentry kind="lib" path="userlib/Email_Connector-1.0.0.jar"/>
+	<classpathentry kind="lib" path="userlib/eventTrackingLibrary-1.0.2.jar"/>
 	<classpathentry kind="output" path="deployment/run/bin"/>
 </classpath>

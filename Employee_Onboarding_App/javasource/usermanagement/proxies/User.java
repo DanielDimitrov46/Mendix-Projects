@@ -31,6 +31,7 @@ public class User extends administration.proxies.Account
 		WebServiceUser("WebServiceUser"),
 		IsAnonymous("IsAnonymous"),
 		User_ProfilePicture("UserManagement.User_ProfilePicture"),
+		User_Country("UserManagement.User_Country"),
 		User_UserRole("UserManagement.User_UserRole"),
 		UserRoles("System.UserRoles"),
 		User_Language("System.User_Language"),
@@ -224,6 +225,53 @@ public class User extends administration.proxies.Account
 			getMendixObject().setValue(context, MemberNames.User_ProfilePicture.toString(), null);
 		} else {
 			getMendixObject().setValue(context, MemberNames.User_ProfilePicture.toString(), user_profilepicture.getMendixObject().getId());
+		}
+	}
+
+	/**
+	 * @throws com.mendix.core.CoreException
+	 * @return value of User_Country
+	 */
+	public final usermanagement.proxies.Country getUser_Country() throws com.mendix.core.CoreException
+	{
+		return getUser_Country(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of User_Country
+	 * @throws com.mendix.core.CoreException
+	 */
+	public final usermanagement.proxies.Country getUser_Country(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		usermanagement.proxies.Country result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.User_Country.toString());
+		if (identifier != null) {
+			result = usermanagement.proxies.Country.load(context, identifier);
+		}
+		return result;
+	}
+
+	/**
+	 * Set value of User_Country
+	 * @param user_country
+	 */
+	public final void setUser_Country(usermanagement.proxies.Country user_country)
+	{
+		setUser_Country(getContext(), user_country);
+	}
+
+	/**
+	 * Set value of User_Country
+	 * @param context
+	 * @param user_country
+	 */
+	public final void setUser_Country(com.mendix.systemwideinterfaces.core.IContext context, usermanagement.proxies.Country user_country)
+	{
+		if (user_country == null) {
+			getMendixObject().setValue(context, MemberNames.User_Country.toString(), null);
+		} else {
+			getMendixObject().setValue(context, MemberNames.User_Country.toString(), user_country.getMendixObject().getId());
 		}
 	}
 

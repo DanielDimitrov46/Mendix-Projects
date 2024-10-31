@@ -1,6 +1,27 @@
 {
   "schemaVersion": "2.2",
   "appName": "Employee_Onboarding_App",
-  "published": [],
+  "published": [
+    {
+      "name": "OAuthHandler",
+      "version": "1.0.0",
+      "path": "mxecoh/",
+      "serviceType": "REST",
+      "contracts": [
+        {
+          "type": "OpenAPI 2.0",
+          "value": "{\"swagger\":\"2.0\",\"info\":{\"title\":\"OAuthHandler\",\"version\":\"1.0.0\"},\"host\":\"{host}\",\"basePath\":\"/mxecoh\",\"schemes\":[\"{scheme}\"],\"paths\":{\"/callback/{customOpPath}\":{\"get\":{\"tags\":[\"callback\"],\"parameters\":[{\"name\":\"customOpPath\",\"in\":\"path\",\"required\":true,\"type\":\"string\"},{\"name\":\"code\",\"in\":\"query\",\"type\":\"string\"},{\"name\":\"state\",\"in\":\"query\",\"type\":\"string\"},{\"name\":\"error\",\"in\":\"query\",\"type\":\"string\"},{\"name\":\"error_description\",\"in\":\"query\",\"type\":\"string\"}],\"responses\":{\"200\":{\"description\":\"successful operation\",\"schema\":{\"type\":\"string\"}}}}}},\"tags\":[{\"name\":\"callback\",\"description\":\"\"}]}"
+        }
+      ],
+      "security": {
+        "types": [
+          {
+            "type": "None"
+          }
+        ],
+        "allowedRoles": []
+      }
+    }
+  ],
   "consumed": []
 }
