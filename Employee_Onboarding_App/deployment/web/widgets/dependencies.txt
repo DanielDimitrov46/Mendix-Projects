@@ -33,72 +33,11 @@ SOFTWARE.
 
 ---
 
-Name: @mendix/widget-plugin-filter-selector
+Name: @mendix/widget-plugin-component-kit
 Version: 0.1.0
 License: Apache-2.0
 Private: false
-Description: FilterSelector component for datagrid filters
-Repository: https://github.com/mendix/web-widgets.git
-
----
-
-Name: @mendix/widget-plugin-filtering
-Version: 1.0.0
-License: Apache-2.0
-Private: false
-Description: Filtering API plugin.
-Repository: https://github.com/mendix/web-widgets.git
-
----
-
-Name: @mendix/widget-plugin-external-events
-Version: 0.1.0
-License: Apache-2.0
-Private: false
-Description: Plugin for subscribing to and publishing widget events
-Repository: https://github.com/mendix/web-widgets.git
-
----
-
-Name: nanoevents
-Version: 9.0.0
-License: MIT
-Private: false
-Description: Simple and tiny (107 bytes) event emitter library
-Repository: undefined
-Author: Andrey Sitnik <andrey@sitnik.ru>
-License Copyright:
-===
-
-The MIT License (MIT)
-
-Copyright 2016 Andrey Sitnik <andrey@sitnik.ru>
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
-the Software, and to permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
----
-
-Name: @mendix/widget-plugin-hooks
-Version: 0.1.0
-License: Apache-2.0
-Private: false
-Description: Hooks for the pluggable widgets.
+Description: Common components for the pluggable widgets.
 Repository: https://github.com/mendix/web-widgets.git
 
 ---
@@ -112,9 +51,104 @@ Repository: https://github.com/mendix/web-widgets.git
 
 ---
 
-Name: @mendix/widget-plugin-component-kit
-Version: 0.1.0
-License: Apache-2.0
+Name: prop-types
+Version: 15.8.1
+License: MIT
 Private: false
-Description: Common components for the pluggable widgets.
-Repository: https://github.com/mendix/web-widgets.git
+Description: Runtime type checking for React props and similar objects.
+Repository: undefined
+Homepage: https://facebook.github.io/react/
+License Copyright:
+===
+
+MIT License
+
+Copyright (c) 2013-present, Facebook, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+---
+
+Name: @tinymce/tinymce-react
+Version: 5.1.0-rc
+License: MIT
+Private: false
+Description: Official TinyMCE React Component
+Repository: https://github.com/uicontent/tinymce-react
+Author: Ephox Corporation DBA Tiny Technologies, Inc.
+License Copyright:
+===
+
+MIT License
+
+Copyright (c) 2022 Ephox Corporation DBA Tiny Technologies, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+Name: tinymce
+Version: 6.8.4
+License: MIT
+Private: false
+Description: Web based JavaScript HTML WYSIWYG editor control.
+Repository: https://github.com/tinymce/tinymce.git
+Homepage: https://www.tiny.cloud/
+Author: Ephox Corporation DBA Tiny Technologies, Inc
+License Copyright:
+===
+
+MIT License
+
+Copyright (c) 2022 Ephox Corporation DBA Tiny Technologies, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
