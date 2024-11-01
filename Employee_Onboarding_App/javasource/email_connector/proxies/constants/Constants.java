@@ -37,4 +37,9 @@ public final class Constants
 	{
 		return (java.lang.String)Core.getConfiguration().getConstantValue("Email_Connector.LogNode");
 	}
+
+	public static java.lang.String getSMTP_PASS()
+	{
+		return (java.lang.String)Core.getConfiguration().getConstantValue("Email_Connector.SMTP_PASS");
+	}
 }

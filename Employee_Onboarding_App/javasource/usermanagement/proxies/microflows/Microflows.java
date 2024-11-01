@@ -132,6 +132,25 @@ public final class Microflows
 	{
 		aCT_User_EditUserBuilder().execute(context);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_User_SaveImageBuilder(
+		usermanagement.proxies.ProfilePicture _profilePicture
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.ACT_User_SaveImage");
+		builder = builder.withParam("ProfilePicture", _profilePicture);
+		return builder;
+	}
+
+	public static void aCT_User_SaveImage(
+		IContext context,
+		usermanagement.proxies.ProfilePicture _profilePicture
+	)
+	{
+		aCT_User_SaveImageBuilder(
+				_profilePicture
+			)
+			.execute(context);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_User_SaveTraineeBuilder(
 		administration.proxies.AccountPasswordData _accountPasswordData
 	)

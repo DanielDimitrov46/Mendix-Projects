@@ -2952,6 +2952,13 @@
   content: "\ea6d";
 }
 
+.tr {
+  display: contents;
+}
+.tr.change-row-color .td {
+  background-color: gray;
+}
+
 .mx-administration-lv-dg-list.mx-listview > ul {
   margin: 0;
 }
@@ -2962,6 +2969,20 @@
   text-align: left;
   width: auto;
   margin: 8px 0 0 0;
+}
+
+.tr {
+  display: contents;
+}
+.tr.change-row-color .td {
+  background-color: gray;
+}
+
+.tr {
+  display: contents;
+}
+.tr.change-row-color .td {
+  background-color: gray;
 }
 
 /* 
@@ -3434,6 +3455,20 @@
   background-color: inherit;
   text-align: center;
   pointer-events: none;
+}
+
+.tr {
+  display: contents;
+}
+.tr.change-row-color .td {
+  background-color: gray;
+}
+
+.tr {
+  display: contents;
+}
+.tr.change-row-color .td {
+  background-color: gray;
 }
 
 /* ==========================================================================
@@ -4215,6 +4250,13 @@
   --callout-info-color: #0086d9;
   /* Background Color */
   --callout-info-bg: #cce7f7;
+}
+
+.tr {
+  display: contents;
+}
+.tr.change-row-color .td {
+  background-color: gray;
 }
 
 /*!
@@ -25617,6 +25659,13 @@ html div.dj_ios .widget-switch.auto .widget-switch-btn-wrapper.checked.widget-sw
   margin-right: 16px;
 }
 
+.tr {
+  display: contents;
+}
+.tr.change-row-color .td {
+  background-color: gray;
+}
+
 /* ==========================================================================
    Alerts
 
@@ -26224,6 +26273,13 @@ html div.dj_ios .widget-switch.auto .widget-switch-btn-wrapper.checked.widget-sw
 
 .statuspage-subtitle {
   opacity: 0.6;
+}
+
+.tr {
+  display: contents;
+}
+.tr.change-row-color .td {
+  background-color: gray;
 }
 
 .table {
@@ -27651,11 +27707,81 @@ input[type=checkbox].three-state-checkbox + .control-label {
   border-width: 0;
 }
 
+.tr {
+  display: contents;
+}
+.tr.change-row-color .td {
+  background-color: gray;
+}
+
+.tr {
+  display: contents;
+}
+.tr.change-row-color .td {
+  background-color: gray;
+}
+
 .layout-snacco     .region-topbar             .navbar-brand                 img {
   margin-left: 8px;
 }
 .layout-snacco     .region-topbar             .mx-navbar ul.nav > li.mx-navbar-item > a {
   color: #fff;
+}
+
+.tr {
+  display: contents;
+}
+.tr.change-row-color .td {
+  background-color: gray;
+}
+
+.tr {
+  display: contents;
+}
+.tr.change-row-color .td {
+  background-color: gray;
+}
+
+.tr {
+  display: contents;
+}
+.tr.change-row-color .td {
+  background-color: gray;
+}
+
+.tr {
+  display: contents;
+}
+.tr.change-row-color .td {
+  background-color: gray;
+}
+
+.tr {
+  display: contents;
+}
+.tr.change-row-color .td {
+  background-color: gray;
+}
+
+.tr {
+  display: contents;
+}
+.tr.change-row-color .td {
+  background-color: gray;
+}
+
+.tr {
+  display: contents;
+}
+.tr.change-row-color .td {
+  background-color: gray;
+}
+
+.tr {
+  display: contents;
+}
+.tr.change-row-color .td {
+  background-color: gray;
 }
 
 /*# sourceMappingURL=theme.compiled.css.map */

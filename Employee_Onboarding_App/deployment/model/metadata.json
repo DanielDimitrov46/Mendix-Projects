@@ -14,13 +14,18 @@
         "cccadddd-18a2-4e85-9bdf-710d9834a434",
         "84549b5d-e242-41e8-bb01-847ff84dc2c9",
         "a261f14c-ffb3-4ead-867d-e1cdb061ec97",
-        "0551ed6f-7287-4c85-b2a4-7ca960629253"
+        "0551ed6f-7287-4c85-b2a4-7ca960629253",
+        "893d08ae-8814-428e-a2ba-e42235427286"
       ]
     },
     "84549b5d-e242-41e8-bb01-847ff84dc2c9": {
       "Name": "Trainer",
       "ManageableRoles": [
-        "a261f14c-ffb3-4ead-867d-e1cdb061ec97"
+        "cccadddd-18a2-4e85-9bdf-710d9834a434",
+        "84549b5d-e242-41e8-bb01-847ff84dc2c9",
+        "a261f14c-ffb3-4ead-867d-e1cdb061ec97",
+        "0551ed6f-7287-4c85-b2a4-7ca960629253",
+        "893d08ae-8814-428e-a2ba-e42235427286"
       ]
     },
     "a261f14c-ffb3-4ead-867d-e1cdb061ec97": {
@@ -28,9 +33,18 @@
     },
     "0551ed6f-7287-4c85-b2a4-7ca960629253": {
       "Name": "Guest"
+    },
+    "893d08ae-8814-428e-a2ba-e42235427286": {
+      "Name": "TechnicalAdmin"
     }
   },
   "Constants": [
+    {
+      "Name": "CommunityCommons.MergeMultiplePdfs_MaxAtOnce",
+      "Type": "Integer",
+      "Description": "Restricted to 10 files at once for Mendix Cloud v4 compatibility. If you need to merge more than 10 files increase the number here. Setting the value to <=0 means unlimited.\r\n\r\nNote: We very strongly recommend to not increase the number for applications running in Mendix Cloud v4.",
+      "DefaultValue": "10"
+    },
     {
       "Name": "Email_Connector.azure_defaultConfig",
       "Type": "String",
@@ -54,6 +68,12 @@
       "Type": "String",
       "Description": "",
       "DefaultValue": "Email_Connector"
+    },
+    {
+      "Name": "Email_Connector.SMTP_PASS",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "amdw wllr memh tywf"
     },
     {
       "Name": "Encryption.EncryptionKey",
