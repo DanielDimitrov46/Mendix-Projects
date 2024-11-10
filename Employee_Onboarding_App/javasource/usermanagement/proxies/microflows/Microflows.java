@@ -211,4 +211,24 @@ public final class Microflows
 		Object result = dS_Trainee_RetrieveBuilder().execute(context);
 		return result == null ? null : com.mendix.utils.ListUtils.map((java.util.List<IMendixObject>) result, obj -> usermanagement.proxies.User.initialize(context, obj));
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder dS_UserRole_RetrieveBuilder(
+		usermanagement.proxies.User _user
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("UserManagement.DS_UserRole_Retrieve");
+		builder = builder.withParam("User", _user);
+		return builder;
+	}
+
+	public static java.util.List<system.proxies.UserRole> dS_UserRole_Retrieve(
+		IContext context,
+		usermanagement.proxies.User _user
+	)
+	{
+		Object result = dS_UserRole_RetrieveBuilder(
+				_user
+			)
+			.execute(context);
+		return result == null ? null : com.mendix.utils.ListUtils.map((java.util.List<IMendixObject>) result, obj -> system.proxies.UserRole.initialize(context, obj));
+	}
 }
