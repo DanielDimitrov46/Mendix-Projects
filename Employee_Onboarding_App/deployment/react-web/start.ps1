@@ -1,1 +1,0 @@
-C:/Programming/10.6.11.39264\modeler\tools\node\win-x64\node.exe C:/Programming/10.6.11.39264\modeler\tools\node\node_modules\rollup\dist\bin\rollup -c -w
